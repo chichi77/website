@@ -50,7 +50,7 @@ button:focus {outline-style:none;box-shadow:none;border-color:transparent;border
 
 div{padding:0; margin:0; border:0; box-sizing: border-box;}
 .row{margin: -1px 0 0 0;}
-.max_width{max-width:1200px; margin:auto;}
+.max_width{max-width:1200px; margin:auto; position:relative;}
 
 /*header*/
 .header, .footer, .box_inner{margin: 0; padding:0;}
@@ -100,6 +100,17 @@ div{padding:0; margin:0; border:0; box-sizing: border-box;}
     width: 130px;
 }
 /*header END*/
+
+/*right menu*/
+.menu_right{position:fixed; width:80px; padding:20px 10px; background-color:#FFF; border:1px #CCC solid; border-radius:7px; text-align:center; right:10px; top:40%;}
+.menu_right li{margin:10px 0;}
+.menu_right li a{color:#333;}
+.menu_right span{font-size:0.8em;}
+.menu_right img{width:100%;}
+.right_menu_txt{width:25px; height:25px; margin:auto; padding:3px 0 0 0; border-radius:50%; color:#FFF;}
+.right_menu_txt.red{background-color:#E15514;}
+.right_menu_txt.blue{background-color:#26B7EC;}
+/*right menu END*/
 
 /*index*/
 .index_page_banner_img{width:100%;}
