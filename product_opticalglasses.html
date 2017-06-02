@@ -85,11 +85,11 @@ $(document).ready(function(){
 			</div>
 			<div id="navbar" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
-                	<li class="header_menu_txt"><a href="product_glasses.html">光學眼鏡</a></li>
-                    <li class="header_menu_txt"><a href="product_glasses.html">太陽眼鏡</a></li>
+                	<li class="header_menu_txt"><a href="product_opticalglasses.html">光學眼鏡</a></li>
+                    <li class="header_menu_txt"><a href="product_sunglasses.html">太陽眼鏡</a></li>
                     <li class="header_menu_txt"><a href="#">眼鏡周邊</a></li>
 					<li class="header_menu_txt dropdown">
-						<a href="product_brand.html" class=" dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">品牌眼鏡 <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+						<a href="javascript:;" class=" dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">品牌眼鏡 <i class="fa fa-caret-down" aria-hidden="true"></i></a>
                         <ul class="dropdown-menu" role="menu">
                         	<li><a href="product_brand.html" class="header_menu_second_floor">agnes b</a></li>
                             <li><a href="product_brand.html" class="header_menu_second_floor">Anna Sui 安娜蘇</a></li>
@@ -124,8 +124,20 @@ $(document).ready(function(){
                             <li><a href="product_brand.html" class="header_menu_second_floor">VOGUE</a></li>
                         </ul>
                     </li>
-					<li class="header_menu_txt"><a href="reserve.html">預約賞框</a></li>
-                    <li class="header_menu_txt"><a href="#">護眼教室</a></li>
+					<li class="header_menu_txt dropdown">
+                    	<a href="javascript:;" class=" dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">隱形眼鏡 <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu" role="menu">
+                        	<li><a href="product_lenses.html" class="header_menu_second_floor">RICHBABY</a></li>
+                            <li><a href="product_lenses.html" class="header_menu_second_floor">嬌生</a></li>
+                            <li><a href="product_lenses.html" class="header_menu_second_floor">博士倫</a></li>
+                            <li><a href="product_lenses.html" class="header_menu_second_floor">愛爾康</a></li>
+                            <li><a href="product_lenses.html" class="header_menu_second_floor">海昌</a></li>
+                            <li><a href="product_lenses.html" class="header_menu_second_floor">睛靚</a></li>
+                            <li><a href="product_lenses.html" class="header_menu_second_floor">酷柏</a></li>
+                            <li><a href="product_lenses.html" class="header_menu_second_floor">博士倫</a></li>
+                        </ul>                   	
+                    </li>
+                    <li class="header_menu_txt"><a href="news.html">最新消息</a></li>
 					<li class="header_menu_txt hidden-xs"><a href="store.html">文雄門市</a></li>
                     <li class="header_menu_txt hidden-md hidden-lg hidden-sm"><a href="store_list.html">文雄門市</a></li>
 					<li class="header_menu_link visible-lg visible-md visible-sm">
@@ -148,266 +160,267 @@ $(document).ready(function(){
 	 <div class="container-fluid box_inner inner_page_type">
      	<div class="max_width"><a href="index.html">首頁</a>&nbsp;&nbsp;|&nbsp;&nbsp;<span>光學眼鏡</span></div>
      </div>
-     <div class="row product_page">
-     	<div class="col-lg-3 col-md-4 col-sm-4 product_page_left_menu">
-        	<span class=" visible-lg visible-md visible-sm">正在顯示 1-20 個 | 共230個產品</span>
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-4 product_page_left_menu_item">
-            		<select class="form-control black_select" title="排序">
-  						<option value="high_price">價格最高</option>
-  						<option value="low_price">價格最低</option>
-					</select>
-                </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-4 product_page_left_menu_item">
-                    <select class="form-control black_select">
-  						<option value="optical_glass">光學眼鏡</option>
-  						<option value="sun_glass">太陽眼鏡</option>
-					</select>
-                </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-4 product_page_left_menu_item">	
-                    <select class="form-control black_select" title="品牌">
-  						<option value="high_price">agnes b</option>
-  						<option value="low_price">Anna Sui 安娜蘇</option>
-                    	<option value="low_price">Ray Ban 雷朋</option>
-                    	<option value="low_price">TODS</option>
-                    	<option value="low_price">VOGUE</option>
-					</select>
-            	</div>
-            </div>
-     	</div>
-        <div class="col-md-12 col-xs-12 product_page_top">
-        	<div class="row">
-     			<div class="col-lg-4 col-md-4 col-sm-4 visible-lg visible-md visible-sm product_page_top_current_type">正在瀏覽<span>光學眼鏡</span></div>
-        		<div class="col-lg-4 col-md-4 col-sm-4 visible-lg visible-md visible-sm">
-  					<button type="button" class="btn btn-default active">20</button>
-  					<button type="button" class="btn btn-default">40</button>
-  					<button type="button" class="btn btn-default">100</button>
-        		</div>
-        		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 product_page_top_page_ctrl">
-            		<button type="button" class="btn btn-default disabled"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
-  					<button type="button" class="btn btn-default"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
-            	</div>
-     		</div>
-        </div>
-        <div class="col-lg-9 col-md-8 col-sm-8 col-xs-12 product_page_item_box">
-        	<div class="row">
-            	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                	<a href="product_detail.html">
-                    	<div class="product_page_item">
-                			<div class="product_page_item_favor active"></div>
-                    		<div class="product_page_item_img" style="background-image:url(images/product_1.jpg)"></div>
-                    		<div class="product_page_item_txt">
-                    			<h5 class="type">RAY-BAN RX5154</h5>
-                    	    	<h5 class="price">$5400</h5>
-                    		</div>
-                    		<div class="product_page_item_type">
-                    			<a href="#"><img src="images/product_type.jpg" class="img-circle"></a>
-                    	    	<a href="#"><img src="images/product_type.jpg" class="img-circle active"></a>
-                    	    	<a href="#"><img src="images/product_type.jpg" class="img-circle"></a>
-                    		</div>
-                		</div>
-                    </a>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                	<a href="product_detail.html">
-                    	<div class="product_page_item">
-                			<div class="product_page_item_favor"></div>
-                    		<div class="product_page_item_img" style="background-image:url(images/product_1.jpg)"></div>
-                    		<div class="product_page_item_txt">
-                    			<h5 class="type">RAY-BAN RX5154</h5>
-                    	    	<h5 class="price">$5400</h5>
-                    		</div>
-                    		<div class="product_page_item_type">
-                    			<a href="#"><img src="images/product_type.jpg" class="img-circle"></a>
-                    	    	<a href="#"><img src="images/product_type.jpg" class="img-circle active"></a>
-                    	    	<a href="#"><img src="images/product_type.jpg" class="img-circle"></a>
-                    		</div>
-                		</div>
-                    </a>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                	<a href="product_detail.html">
-                    	<div class="product_page_item">
-                			<div class="product_page_item_favor"></div>
-                    		<div class="product_page_item_img" style="background-image:url(images/product_1.jpg)"></div>
-                    		<div class="product_page_item_txt">
-                    			<h5 class="type">RAY-BAN RX5154</h5>
-                    	    	<h5 class="price">$5400</h5>
-                    		</div>
-                    		<div class="product_page_item_type">
-                    			<a href="#"><img src="images/product_type.jpg" class="img-circle"></a>
-                    	    	<a href="#"><img src="images/product_type.jpg" class="img-circle active"></a>
-                    	    	<a href="#"><img src="images/product_type.jpg" class="img-circle"></a>
-                    		</div>
-                		</div>
-                    </a>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                	<a href="product_detail.html">
-                    	<div class="product_page_item">
-                			<div class="product_page_item_favor"></div>
-                    		<div class="product_page_item_img" style="background-image:url(images/product_1.jpg)"></div>
-                    		<div class="product_page_item_txt">
-                    			<h5 class="type">RAY-BAN RX5154</h5>
-                    	    	<h5 class="price">$5400</h5>
-                    		</div>
-                    		<div class="product_page_item_type">
-                    			<a href="#"><img src="images/product_type.jpg" class="img-circle"></a>
-                    	    	<a href="#"><img src="images/product_type.jpg" class="img-circle active"></a>
-                    	    	<a href="#"><img src="images/product_type.jpg" class="img-circle"></a>
-                    		</div>
-                		</div>
-                    </a>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                	<a href="product_detail.html">
-                    	<div class="product_page_item">
-                			<div class="product_page_item_favor"></div>
-                    		<div class="product_page_item_img" style="background-image:url(images/product_1.jpg)"></div>
-                    		<div class="product_page_item_txt">
-                    			<h5 class="type">RAY-BAN RX5154</h5>
-                    	    	<h5 class="price">$5400</h5>
-                    		</div>
-                    		<div class="product_page_item_type">
-                    			<a href="#"><img src="images/product_type.jpg" class="img-circle"></a>
-                    	    	<a href="#"><img src="images/product_type.jpg" class="img-circle active"></a>
-                    	    	<a href="#"><img src="images/product_type.jpg" class="img-circle"></a>
-                    		</div>
-                		</div>
-                    </a>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                	<a href="product_detail.html">
-                    	<div class="product_page_item">
-                			<div class="product_page_item_favor"></div>
-                    		<div class="product_page_item_img" style="background-image:url(images/product_1.jpg)"></div>
-                    		<div class="product_page_item_txt">
-                    			<h5 class="type">RAY-BAN RX5154</h5>
-                    	    	<h5 class="price">$5400</h5>
-                    		</div>
-                    		<div class="product_page_item_type">
-                    			<a href="#"><img src="images/product_type.jpg" class="img-circle"></a>
-                    	    	<a href="#"><img src="images/product_type.jpg" class="img-circle active"></a>
-                    	    	<a href="#"><img src="images/product_type.jpg" class="img-circle"></a>
-                    		</div>
-                		</div>
-                    </a>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                	<a href="product_detail.html">
-                    	<div class="product_page_item">
-                			<div class="product_page_item_favor"></div>
-                    		<div class="product_page_item_img" style="background-image:url(images/product_1.jpg)"></div>
-                    		<div class="product_page_item_txt">
-                    			<h5 class="type">RAY-BAN RX5154</h5>
-                    	    	<h5 class="price">$5400</h5>
-                    		</div>
-                    		<div class="product_page_item_type">
-                    			<a href="#"><img src="images/product_type.jpg" class="img-circle"></a>
-                    	    	<a href="#"><img src="images/product_type.jpg" class="img-circle active"></a>
-                    	    	<a href="#"><img src="images/product_type.jpg" class="img-circle"></a>
-                    		</div>
-                		</div>
-                    </a>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                	<a href="product_detail.html">
-                    	<div class="product_page_item">
-                			<div class="product_page_item_favor"></div>
-                    		<div class="product_page_item_img" style="background-image:url(images/product_1.jpg)"></div>
-                    		<div class="product_page_item_txt">
-                    			<h5 class="type">RAY-BAN RX5154</h5>
-                    	    	<h5 class="price">$5400</h5>
-                    		</div>
-                    		<div class="product_page_item_type">
-                    			<a href="#"><img src="images/product_type.jpg" class="img-circle"></a>
-                    	    	<a href="#"><img src="images/product_type.jpg" class="img-circle active"></a>
-                    	    	<a href="#"><img src="images/product_type.jpg" class="img-circle"></a>
-                    		</div>
-                		</div>
-                    </a>
+     <div class="product_page">
+         <div class="row product_page_inner max_width">
+            <div class="col-lg-3 col-md-4 col-sm-4 product_page_left_menu">
+                <span class=" visible-lg visible-md visible-sm">正在顯示 1-20 個 | 共230個產品</span>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-4 product_page_left_menu_item">
+                        <select class="form-control black_select" title="排序">
+                            <option value="high_price">價格最高</option>
+                            <option value="low_price">價格最低</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-4 product_page_left_menu_item">
+                        <select class="form-control black_select">
+                            <option value="optical_glass">光學眼鏡</option>
+                            <option value="sun_glass">太陽眼鏡</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-4 product_page_left_menu_item">	
+                        <select class="form-control black_select" title="品牌">
+                            <option value="high_price">agnes b</option>
+                            <option value="low_price">Anna Sui 安娜蘇</option>
+                            <option value="low_price">Ray Ban 雷朋</option>
+                            <option value="low_price">TODS</option>
+                            <option value="low_price">VOGUE</option>
+                        </select>
+                    </div>
                 </div>
             </div>
-     	</div>
-     	<div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 inner_page_left_favor">
-        	<div class="row inner_page_left_favor_tile">
-            	<picture>
-    				<source srcset="images/favor_title.png" media="(max-width: 400px)">
-    				<source srcset="images/favor_title_sm.png" media="(max-width: 768px) and (min-width:401px;)">
-    				<source srcset="images/favor_title.png" media="(min-width:768px;)">
-    				<img src="images/favor_title.png" alt="My default image">
-				</picture>
-                <i class="fa fa-chevron-up arrow_up visible-lg visible-md visible-sm" aria-hidden="true"></i>
-                <div class="favor_slider">                	
-                	<div>
-                    	<div class="favor_slider_img" style="background-image:url(images/product_1.jpg)"></div>
-                    	<div class="inner_page_left_favor_slider_txt">
-                    		<h5 class="type">RAY-BAN RX5154</h5>
-                    	    <h5 class="price">$5400</h5>
-                    	</div>
+            <div class="col-md-12 col-xs-12 product_page_top">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4 visible-lg visible-md visible-sm product_page_top_current_type">正在瀏覽<span>光學眼鏡</span></div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 visible-lg visible-md visible-sm">
+                        <button type="button" class="btn btn-default active">20</button>
+                        <button type="button" class="btn btn-default">40</button>
+                        <button type="button" class="btn btn-default">100</button>
                     </div>
-                    <div>
-                    	<div class="favor_slider_img" style="background-image:url(images/product_1.jpg)"></div>
-                    	<div class="inner_page_left_favor_slider_txt">
-                    		<h5 class="type">RAY-BAN RX5154</h5>
-                    	    <h5 class="price">$5400</h5>
-                    	</div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 product_page_top_page_ctrl">
+                        <button type="button" class="btn btn-default disabled"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-default"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
                     </div>
-                    <div>
-                    	<div class="favor_slider_img" style="background-image:url(images/product_1.jpg)"></div>
-                    	<div class="inner_page_left_favor_slider_txt">
-                    		<h5 class="type">RAY-BAN RX5154</h5>
-                    	    <h5 class="price">$5400</h5>
-                    	</div>
-                    </div>
-                    <div>
-                    	<div class="favor_slider_img" style="background-image:url(images/product_1.jpg)"></div>
-                    	<div class="inner_page_left_favor_slider_txt">
-                    		<h5 class="type">RAY-BAN RX5154</h5>
-                    	    <h5 class="price">$5400</h5>
-                    	</div>
-                    </div>
-                    
                 </div>
-                <i class="fa fa-chevron-down arrow_down visible-lg visible-md visible-sm" aria-hidden="true"></i>
-           	</div>
-     	</div>
-        <div class="col-lg-12 col-md-12 col-sm-12 visible-lg visible-md visible-sm product_page_bottom">
-        	<div class="row">
-        		<div class="col-lg-6 col-md-6 col-sm-6 product_page_bottom_num">
-  					<button type="button" class="btn btn-default active">20</button>
-  					<button type="button" class="btn btn-default">40</button>
-  					<button type="button" class="btn btn-default">100</button>
-        		</div>
-                <div class="col-lg-6 col-md-6 col-sm-6 product_page_bottom_page">
-                	<nav>
-  						<ul class="pagination">
-    						<li><a href="#"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a></li>
-    						<li class="active"><a href="#">1</a></li>
-    						<li><a href="#">2</a></li>
-    						<li><a href="#">3</a></li>
-    						<li><a href="#">4</a></li>
-    						<li><a href="#">5</a></li>
-    						<li><a href="#"><span aria-hidden="true">&raquo;</span><span class="sr-only">Next</span></a></li>
-  						</ul>
-					</nav>
+            </div>
+            <div class="col-lg-9 col-md-8 col-sm-8 col-xs-12 product_page_item_box">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <a href="product_detail.html">
+                            <div class="product_page_item">
+                                <div class="product_page_item_favor active"></div>
+                                <div class="product_page_item_img" style="background-image:url(images/product_1.jpg)"></div>
+                                <div class="product_page_item_txt">
+                                    <h5 class="type">RAY-BAN RX5154</h5>
+                                    <h5 class="price">$5400</h5>
+                                </div>
+                                <div class="product_page_item_type">
+                                    <a href="#"><img src="images/product_type.jpg" class="img-circle"></a>
+                                    <a href="#"><img src="images/product_type.jpg" class="img-circle active"></a>
+                                    <a href="#"><img src="images/product_type.jpg" class="img-circle"></a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <a href="product_detail.html">
+                            <div class="product_page_item">
+                                <div class="product_page_item_favor"></div>
+                                <div class="product_page_item_img" style="background-image:url(images/product_1.jpg)"></div>
+                                <div class="product_page_item_txt">
+                                    <h5 class="type">RAY-BAN RX5154</h5>
+                                    <h5 class="price">$5400</h5>
+                                </div>
+                                <div class="product_page_item_type">
+                                    <a href="#"><img src="images/product_type.jpg" class="img-circle"></a>
+                                    <a href="#"><img src="images/product_type.jpg" class="img-circle active"></a>
+                                    <a href="#"><img src="images/product_type.jpg" class="img-circle"></a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <a href="product_detail.html">
+                            <div class="product_page_item">
+                                <div class="product_page_item_favor"></div>
+                                <div class="product_page_item_img" style="background-image:url(images/product_1.jpg)"></div>
+                                <div class="product_page_item_txt">
+                                    <h5 class="type">RAY-BAN RX5154</h5>
+                                    <h5 class="price">$5400</h5>
+                                </div>
+                                <div class="product_page_item_type">
+                                    <a href="#"><img src="images/product_type.jpg" class="img-circle"></a>
+                                    <a href="#"><img src="images/product_type.jpg" class="img-circle active"></a>
+                                    <a href="#"><img src="images/product_type.jpg" class="img-circle"></a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <a href="product_detail.html">
+                            <div class="product_page_item">
+                                <div class="product_page_item_favor"></div>
+                                <div class="product_page_item_img" style="background-image:url(images/product_1.jpg)"></div>
+                                <div class="product_page_item_txt">
+                                    <h5 class="type">RAY-BAN RX5154</h5>
+                                    <h5 class="price">$5400</h5>
+                                </div>
+                                <div class="product_page_item_type">
+                                    <a href="#"><img src="images/product_type.jpg" class="img-circle"></a>
+                                    <a href="#"><img src="images/product_type.jpg" class="img-circle active"></a>
+                                    <a href="#"><img src="images/product_type.jpg" class="img-circle"></a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <a href="product_detail.html">
+                            <div class="product_page_item">
+                                <div class="product_page_item_favor"></div>
+                                <div class="product_page_item_img" style="background-image:url(images/product_1.jpg)"></div>
+                                <div class="product_page_item_txt">
+                                    <h5 class="type">RAY-BAN RX5154</h5>
+                                    <h5 class="price">$5400</h5>
+                                </div>
+                                <div class="product_page_item_type">
+                                    <a href="#"><img src="images/product_type.jpg" class="img-circle"></a>
+                                    <a href="#"><img src="images/product_type.jpg" class="img-circle active"></a>
+                                    <a href="#"><img src="images/product_type.jpg" class="img-circle"></a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <a href="product_detail.html">
+                            <div class="product_page_item">
+                                <div class="product_page_item_favor"></div>
+                                <div class="product_page_item_img" style="background-image:url(images/product_1.jpg)"></div>
+                                <div class="product_page_item_txt">
+                                    <h5 class="type">RAY-BAN RX5154</h5>
+                                    <h5 class="price">$5400</h5>
+                                </div>
+                                <div class="product_page_item_type">
+                                    <a href="#"><img src="images/product_type.jpg" class="img-circle"></a>
+                                    <a href="#"><img src="images/product_type.jpg" class="img-circle active"></a>
+                                    <a href="#"><img src="images/product_type.jpg" class="img-circle"></a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <a href="product_detail.html">
+                            <div class="product_page_item">
+                                <div class="product_page_item_favor"></div>
+                                <div class="product_page_item_img" style="background-image:url(images/product_1.jpg)"></div>
+                                <div class="product_page_item_txt">
+                                    <h5 class="type">RAY-BAN RX5154</h5>
+                                    <h5 class="price">$5400</h5>
+                                </div>
+                                <div class="product_page_item_type">
+                                    <a href="#"><img src="images/product_type.jpg" class="img-circle"></a>
+                                    <a href="#"><img src="images/product_type.jpg" class="img-circle active"></a>
+                                    <a href="#"><img src="images/product_type.jpg" class="img-circle"></a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <a href="product_detail.html">
+                            <div class="product_page_item">
+                                <div class="product_page_item_favor"></div>
+                                <div class="product_page_item_img" style="background-image:url(images/product_1.jpg)"></div>
+                                <div class="product_page_item_txt">
+                                    <h5 class="type">RAY-BAN RX5154</h5>
+                                    <h5 class="price">$5400</h5>
+                                </div>
+                                <div class="product_page_item_type">
+                                    <a href="#"><img src="images/product_type.jpg" class="img-circle"></a>
+                                    <a href="#"><img src="images/product_type.jpg" class="img-circle active"></a>
+                                    <a href="#"><img src="images/product_type.jpg" class="img-circle"></a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-        	</div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 inner_page_left_favor">
+                <div class="row inner_page_left_favor_tile">
+                    <picture>
+                        <source srcset="images/favor_title.png" media="(max-width: 400px)">
+                        <source srcset="images/favor_title_sm.png" media="(max-width: 768px) and (min-width:401px;)">
+                        <source srcset="images/favor_title.png" media="(min-width:768px;)">
+                        <img src="images/favor_title.png" alt="My default image">
+                    </picture>
+                    <i class="fa fa-chevron-up arrow_up visible-lg visible-md visible-sm" aria-hidden="true"></i>
+                    <div class="favor_slider">                	
+                        <div>
+                            <div class="favor_slider_img" style="background-image:url(images/product_1.jpg)"></div>
+                            <div class="inner_page_left_favor_slider_txt">
+                                <h5 class="type">RAY-BAN RX5154</h5>
+                                <h5 class="price">$5400</h5>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="favor_slider_img" style="background-image:url(images/product_1.jpg)"></div>
+                            <div class="inner_page_left_favor_slider_txt">
+                                <h5 class="type">RAY-BAN RX5154</h5>
+                                <h5 class="price">$5400</h5>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="favor_slider_img" style="background-image:url(images/product_1.jpg)"></div>
+                            <div class="inner_page_left_favor_slider_txt">
+                                <h5 class="type">RAY-BAN RX5154</h5>
+                                <h5 class="price">$5400</h5>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="favor_slider_img" style="background-image:url(images/product_1.jpg)"></div>
+                            <div class="inner_page_left_favor_slider_txt">
+                                <h5 class="type">RAY-BAN RX5154</h5>
+                                <h5 class="price">$5400</h5>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <i class="fa fa-chevron-down arrow_down visible-lg visible-md visible-sm" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 visible-lg visible-md visible-sm product_page_bottom">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 product_page_bottom_num">
+                        <button type="button" class="btn btn-default active">20</button>
+                        <button type="button" class="btn btn-default">40</button>
+                        <button type="button" class="btn btn-default">100</button>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 product_page_bottom_page">
+                        <nav>
+                            <ul class="pagination">
+                                <li><a href="#"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a></li>
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#"><span aria-hidden="true">&raquo;</span><span class="sr-only">Next</span></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </div><!--product page-->
     <div class="back_top"></div> <!-- top btn-->
 </div><!--content END-->
 
 
 <footer>
 	<div class="container-fluid footer">
-    	<div class="row footer_top">
+    	<div class="row footer_top max_width">
         	<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
 				<h4 class="title">HELP</h4>
                 <a href="#"><h5>FAQ</h5></a>
 				<a href="login.html"><h5>會員帳號</h5></a>
 				<a href="#"><h5>聯絡我們</h5></a>
-				<a href="#"><h5>護眼教室</h5></a>
 				<a href="reserve.html"><h5>預約賞框</h5></a>
 				<a href="#"><h5>好康下載</h5></a>
 			</div>
@@ -433,7 +446,6 @@ $(document).ready(function(){
                 <a href="about.html"><h5>品牌故事</h5></a>
 				<a href="news.html"><h5>最新消息</h5></a>
 				<a href="#"><h5>人才招募</h5></a>
-				<a href="#"><h5>護眼教室</h5></a>
 				<span class="visible-lg visible-md visible-sm">
                 	<a href="https://zh-tw.facebook.com/wenhsiung.fans/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
                 	<a href="https://www.instagram.com/wenhsiungbear/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
@@ -444,8 +456,10 @@ $(document).ready(function(){
 			</div>
         </div>
         <div class="row footer_bottom">
-        	<div class=" footer_bottom_right"><a href="#">服務條款</a></div>
-            <div class=" footer_bottom_left">© 2016 wenhsiung.com - ALL RIGHTS RESERVED</div>
+        	<div class="max_width">
+        		<div class=" footer_bottom_right"><a href="#">服務條款</a></div>
+            	<div class=" footer_bottom_left">© 2016 wenhsiung.com - ALL RIGHTS RESERVED</div>
+            </div>
         </div>
     </div>
 </footer>

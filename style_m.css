@@ -37,9 +37,10 @@
 .product_detail_page_right_title{padding-bottom:10%;}
 .product_detail_page_choose .css_td{padding:4% 0;}
 .product_detail_page_item_txt{position:relative;}
-.product_detail_page_item_txt_titel_2{position:absolute; top:0; left:80px;} 
-.product_detail_page_item_txt_titel_3{position:absolute; top:0; left:160px;}
+.product_detail_page_item_txt_titel_2{position:absolute; top:0; left:90px;} 
+.product_detail_page_item_txt_titel_3{position:absolute; top:0; left:180px;}
 .product_detail_page_bottom{ padding:1% 10%;}
+.product_detail_page_favor{text-align:center; padding:0 10%;}
 .product_detail_page_favor_title{padding:1% 0;}
 /*product_detail END*/
 
