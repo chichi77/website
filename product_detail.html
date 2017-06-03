@@ -22,6 +22,11 @@
 <link rel="stylesheet" href="css/slick-theme.css"/>
 <script src="js/slick.min.js"></script>
 
+
+<script src="js/jquery.jqzoom.js"></script>
+<link rel="stylesheet" href="css/jquery.jqzoom.css" />
+<!--<script src="js/jquery.min.js"></script>-->
+
 <!--style-->
 <link href="style.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" media="screen and (max-width: 767px)" href="style_m_mobile.css" />
@@ -70,6 +75,23 @@ $(document).ready(function(){
   		centerMode: false,
   		focusOnSelect: true
 	});
+	$('.product_detail_page_other_item').slick({
+		infinite: false,
+  		slidesToShow: 9,
+  		slidesToScroll: 1,
+		arrows: true,
+  		responsive: [
+    	{
+   			breakpoint: 768,
+      		settings: {
+        		slidesToShow: 4,
+        		slidesToScroll: 1,
+        		infinite: true,
+				arrows: false,
+      		}
+    	}
+		]
+	});
 });
 function change_txt(num){
 	if(num==1){
@@ -103,10 +125,19 @@ $(function(){
 			scrollTop:0
 		},500);
 	});
+	$(function() {
+    	 $("#jqzoom").jqzoom( //绑定图片放大插件jqzoom
+         	{
+         		zoomWidth: 230,
+         		zoomHeight: 230,
+         		position: 'right'
+         	}
+    	);
+    });
 });
 </script>
 <style>
-
+.null_div{height:90px;}
 </style>
 <body>
 <header>
@@ -210,7 +241,7 @@ $(function(){
                 <div class="col-lg-7 col-md-7 col-sm-7 product_detail_page_left">
                     <div class="product_page_item_favor"></div>
                     <div class="product_detail_page_slider">
-                        <div><div class="favor_slider_img" style="background-image:url(images/product_1.jpg)"></div></div>
+                        <div><a href="images/product_1.jpg" id="jqzoom" title="我的背包"><div class="favor_slider_img" style="background-image:url(images/product_1.jpg)"></div></a></div>
                         <div><div class="favor_slider_img" style="background-image:url(images/product_2.jpg)"></div></div>
                         <div><div class="favor_slider_img" style="background-image:url(images/product_3.jpg)"></div></div>
                         <div><div class="favor_slider_img" style="background-image:url(images/product_4.jpg)"></div></div>
@@ -222,7 +253,7 @@ $(function(){
                         <div><div class="favor_slider_img" style="background-image:url(images/product_5.jpg)"></div></div>
                     </div>
                     <div class="product_detail_page_slider_ctr">
-                        <div><img src="images/product_1.jpg"></div>
+                        <div><img src="images/product_1.jpg"  data-action="zoom"></div>
                         <div><img src="images/product_2.jpg"></div>
                         <div><img src="images/product_3.jpg"></div>
                         <div><img src="images/product_4.jpg"></div>
@@ -269,6 +300,7 @@ $(function(){
                 </div>
                 <div class="col-lg-5 col-md-5 col-sm-5 product_detail_page_right">
                     <div class="product_detail_page_right_title"><span>RAY-BAN</span><br>RX5154</div>
+                    <div class="null_div"></div><!--加高-->
                     <div class="css_table w10 product_detail_page_choose">
                         <div class="css_tr product_detail_page_choose_color">
                             <div class="css_td w2 table_line">顏色</div>
@@ -293,7 +325,7 @@ $(function(){
                     </div>
                     <div class="row">
                         <form name="postForm_2" id="postForm_2" action="product_detail.html">
-                            <a href="#"><button type="submit" class="col-lg-12 col-md-12 col-sm-12 col-xs-6 add_cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i>　加入購物車</button></a>
+                            <a href="#"><button type="submit" class="col-lg-12 col-md-12 col-sm-12 col-xs-6 add_cart">加入比較</button></a>
                             <a href="reserve.html"><button class="col-lg-12 col-md-12 col-sm-12 col-xs-6 add_cancel">預約賞框</button></a>
                         </form>
                     </div>
@@ -301,6 +333,26 @@ $(function(){
                         <a href="https://zh-tw.facebook.com/wenhsiung.fans/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
                         <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                     </div>
+                </div>
+            </div>
+            <div class="product_detail_page_other">
+            	<div class="title">相關商品</div>
+                <div class="product_detail_page_other_item">
+                	<div><img src="images/product_1.jpg"></div>
+                    <div><img src="images/product_2.jpg"></div>
+                    <div><img src="images/product_3.jpg"></div>
+                    <div><img src="images/product_4.jpg"></div>
+                    <div><img src="images/product_5.jpg"></div>
+                    <div><img src="images/product_1.jpg"></div>
+                    <div><img src="images/product_2.jpg"></div>
+                    <div><img src="images/product_3.jpg"></div>
+                    <div><img src="images/product_4.jpg"></div>
+                    <div><img src="images/product_5.jpg"></div>
+                    <div><img src="images/product_1.jpg"></div>
+                    <div><img src="images/product_2.jpg"></div>
+                    <div><img src="images/product_3.jpg"></div>
+                    <div><img src="images/product_4.jpg"></div>
+                    <div><img src="images/product_5.jpg"></div>
                 </div>
             </div>
             <div class="product_detail_page_item_txt">
@@ -381,7 +433,14 @@ $(function(){
                     </div>
                 </div>
             </div>
-    	</div>
+    	</div><!--max width-->
+    	<div class="menu_right">
+        	<ul>
+            	<li><a href="m_reserve.html"><img src="images/list.svg"><span>我的預約</span></a> <a href="reserve_help.html"><i class="fa fa-question-circle" aria-hidden="true"></i></a></li>
+                <li><a href="reserve_glasses.html"><img src="images/glasses.svg"><div class="right_menu_txt blue">2</div></a></li>
+                <li><a href="reserve_contact.html"><img src="images/contact_lenses.svg"><div class="right_menu_txt red">4</div></a></li>
+            </ul>
+        </div>
     </div>
     <div class="back_top"></div>
 </div><!--content END-->
@@ -389,13 +448,12 @@ $(function(){
 
 <footer>
 	<div class="container-fluid footer">
-    	<div class="row footer_top">
+    	<div class="row footer_top max_width">
         	<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
 				<h4 class="title">HELP</h4>
                 <a href="#"><h5>FAQ</h5></a>
 				<a href="login.html"><h5>會員帳號</h5></a>
 				<a href="#"><h5>聯絡我們</h5></a>
-				<a href="#"><h5>護眼教室</h5></a>
 				<a href="reserve.html"><h5>預約賞框</h5></a>
 				<a href="#"><h5>好康下載</h5></a>
 			</div>
@@ -421,7 +479,6 @@ $(function(){
                 <a href="about.html"><h5>品牌故事</h5></a>
 				<a href="news.html"><h5>最新消息</h5></a>
 				<a href="#"><h5>人才招募</h5></a>
-				<a href="#"><h5>護眼教室</h5></a>
 				<span class="visible-lg visible-md visible-sm">
                 	<a href="https://zh-tw.facebook.com/wenhsiung.fans/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
                 	<a href="https://www.instagram.com/wenhsiungbear/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
@@ -432,8 +489,10 @@ $(function(){
 			</div>
         </div>
         <div class="row footer_bottom">
-        	<div class=" footer_bottom_right"><a href="#">服務條款</a></div>
-            <div class=" footer_bottom_left">© 2016 wenhsiung.com - ALL RIGHTS RESERVED</div>
+        	<div class="max_width">
+        		<div class=" footer_bottom_right"><a href="#">服務條款</a></div>
+            	<div class=" footer_bottom_left">© 2016 wenhsiung.com - ALL RIGHTS RESERVED</div>
+            </div>
         </div>
     </div>
 </footer>
