@@ -96,11 +96,11 @@ $(function(){
 			</div>
 			<div id="navbar" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
-                	<li class="header_menu_txt"><a href="product_glasses.html">光學眼鏡</a></li>
-                    <li class="header_menu_txt"><a href="product_glasses.html">太陽眼鏡</a></li>
+                	<li class="header_menu_txt"><a href="product_opticalglasses.html">光學眼鏡</a></li>
+                    <li class="header_menu_txt"><a href="product_sunglasses.html">太陽眼鏡</a></li>
                     <li class="header_menu_txt"><a href="#">眼鏡周邊</a></li>
 					<li class="header_menu_txt dropdown">
-						<a href="product_brand.html" class=" dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">品牌眼鏡 <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+						<a href="javascript:;" class=" dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">品牌眼鏡 <i class="fa fa-caret-down" aria-hidden="true"></i></a>
                         <ul class="dropdown-menu" role="menu">
                         	<li><a href="product_brand.html" class="header_menu_second_floor">agnes b</a></li>
                             <li><a href="product_brand.html" class="header_menu_second_floor">Anna Sui 安娜蘇</a></li>
@@ -135,8 +135,20 @@ $(function(){
                             <li><a href="product_brand.html" class="header_menu_second_floor">VOGUE</a></li>
                         </ul>
                     </li>
-					<li class="header_menu_txt"><a href="reserve.html">預約賞框</a></li>
-                    <li class="header_menu_txt"><a href="#">護眼教室</a></li>
+					<li class="header_menu_txt dropdown">
+                    	<a href="javascript:;" class=" dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">隱形眼鏡 <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu" role="menu">
+                        	<li><a href="product_lenses.html" class="header_menu_second_floor">RICHBABY</a></li>
+                            <li><a href="product_lenses.html" class="header_menu_second_floor">嬌生</a></li>
+                            <li><a href="product_lenses.html" class="header_menu_second_floor">博士倫</a></li>
+                            <li><a href="product_lenses.html" class="header_menu_second_floor">愛爾康</a></li>
+                            <li><a href="product_lenses.html" class="header_menu_second_floor">海昌</a></li>
+                            <li><a href="product_lenses.html" class="header_menu_second_floor">睛靚</a></li>
+                            <li><a href="product_lenses.html" class="header_menu_second_floor">酷柏</a></li>
+                            <li><a href="product_lenses.html" class="header_menu_second_floor">博士倫</a></li>
+                        </ul>                   	
+                    </li>
+                    <li class="header_menu_txt"><a href="news.html">最新消息</a></li>
 					<li class="header_menu_txt hidden-xs"><a href="store.html">文雄門市</a></li>
                     <li class="header_menu_txt hidden-md hidden-lg hidden-sm"><a href="store_list.html">文雄門市</a></li>
 					<li class="header_menu_link visible-lg visible-md visible-sm">
@@ -159,217 +171,228 @@ $(function(){
 	 <div class="container-fluid box_inner inner_page_type">
      	<div class="max_width"><a href="index.html">首頁</a>&nbsp;&nbsp;|&nbsp;&nbsp;<span>會員帳號</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span>預約賞框</span></div>
      </div>
-     <div class="row m_page">
-     	<div class="col-lg-3 col-md-4 col-sm-4 m_page_left_menu">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-4 m_page_left_menu_item"><a href="m_info">會員資訊</a></div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-4 m_page_left_menu_item"><a href="#">購物資訊</a></div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-4 m_page_left_menu_item active"><a href="m_reserve.html">預約賞框</a></div>
-            </div>
-     	</div>
-        <div class="col-md-12 col-xs-12 m_page_top visible-lg visible-md visible-sm">
-        	<div class="row">
-     			<div class="col-lg-4 col-md-4 col-sm-4 m_page_top_current_type">正在瀏覽<span>會員帳號</span></div>
-     		</div>
-        </div>
-        <div class="col-lg-9 col-md-8 col-sm-8 col-xs-12 m_page_right m_reserve_page">
-        	<div class="m_page_right_inner">
-                <div class="m_page_right_titel">預約賞框</div>
+     <div class="m_page">
+         <div class="row m_page_inner max_width">
+            <div class="col-lg-3 col-md-3 col-sm-3 m_page_left_menu">
                 <div class="row">
-                    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">預約編號</div>
-                    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">預約狀況</div>
-                </div>
-                <div class="m_reserve_page_item"><!--訂單1-->
-                	<div class="row gray">
-                    	<form name="postFrom_2" id="postForm_2" action="m_reserve.html">
-                    		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 m_reserve_page_item_btn">C223123</div>
-                        	<div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">已完成</div>
-                        	<button type="submit" form="postForm_3" value="del" class="col-lg-2 col-md-2 col-sm-2 col-xs-2 del">刪除</button>
-                    	</form>
-                    </div>
-                	<div id="C223123_more" style="display:none;"><!--訂單要顯示的區塊id=訂單編號+"_more"-->
-                    	<div class=" table-responsive reserve_page_item">
-                        	<table class="table">
-                        		<tbody>
-                            		<tr>
-                                		<td class="col_1">鏡框</td>
-                                    	<td class="col_2">鏡片</td>
-                                    	<td class="col_3">其他</td>
-                                	</tr>
-                                	<tr>
-                                		<td class="col_1"><div class=" reserve_page_item_img" style="background-image:url(images/product_1.jpg)"></div></td>
-                                    	<td class="col_2 reserve_page_item_txt">UV</td>
-                                    	<td class="col_3 reserve_page_item_txt"></td>
-                                	</tr>
-                            	</tbody>
-                        	</table>
-                    	</div>
-                        <div class=" table-responsive m_reserve_page_info_tabe">
-                        	<table class="table">
-                            	<tbody>
-                            		<tr>
-                                		<td class="col_1 w2">預約編號:</td>
-                                    	<td class="col_2 w3">C223123</td>
-                                    	<td class="col_3 w2">預約狀況:</td>
-                                        <td class="col_4 w3">未完成預約</td>
-                                	</tr>
-                                	<tr>
-                                		<td class="col_1">預約時間:</td>
-                                    	<td class="col_2">上午11:00</td>
-                                    	<td class="col_3">預約店面:</td>
-                                        <td class="col_4">高雄左營店</td>
-                                	</tr>
-                            	</tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div><!--訂單1END-->
-                <div class="m_reserve_page_item"><!--訂單2-->
-                	<div class="row">
-                    	<form name="postFrom_3" id="postForm_3" action="m_reserve.html">
-                    		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 m_reserve_page_item_btn">C223456</div>
-                        	<div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">未完成預約</div>
-                        	<button type="submit" form="postForm_3" value="cancel" class="col-lg-2 col-md-2 col-sm-2 col-xs-2 cancel">取消</button>
-                    	</form>
-                    </div>
-                	<div id="C223456_more" style="display:none;"><!--訂單要顯示的區塊id=訂單編號+"_more"-->
-                    	<div class=" table-responsive reserve_page_item">
-                        	<table class="table">
-                        		<tbody>
-                            		<tr>
-                                		<td class="col_1">鏡框</td>
-                                    	<td class="col_2">鏡片</td>
-                                    	<td class="col_3">其他</td>
-                                	</tr>
-                                	<tr>
-                                		<td class="col_1"><div class=" reserve_page_item_img" style="background-image:url(images/product_1.jpg)"></div></td>
-                                    	<td class="col_2 reserve_page_item_txt">UV</td>
-                                    	<td class="col_3 reserve_page_item_txt"></td>
-                                	</tr>
-                            	</tbody>
-                        	</table>
-                    	</div>
-                        <div class=" table-responsive m_reserve_page_info_tabe">
-                        	<table class="table">
-                            	<tbody>
-                            		<tr>
-                                		<td class="col_1 w2">預約編號:</td>
-                                    	<td class="col_2 w3">C223123</td>
-                                    	<td class="col_3 w2">預約狀況:</td>
-                                        <td class="col_4 w3">未完成預約</td>
-                                	</tr>
-                                	<tr>
-                                		<td class="col_1">預約時間:</td>
-                                    	<td class="col_2">上午11:00</td>
-                                    	<td class="col_3">預約店面:</td>
-                                        <td class="col_4">高雄左營店</td>
-                                	</tr>
-                            	</tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div><!--訂單2 END-->
-                <div class="m_reserve_page_item"><!--訂單3-->
-                	<div class="row gray">
-                    	<form name="postFrom_3" id="postForm_3" action="m_reserve.html">
-                    		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 m_reserve_page_item_btn">C223789</div>
-                        	<div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">未完成預約</div>
-                        	<button type="submit" form="postForm_3" value="cancel" class="col-lg-2 col-md-2 col-sm-2 col-xs-2 cancel">取消</button>
-                    	</form>
-                    </div>
-                	<div id="C223789_more" style="display:none;"><!--訂單要顯示的區塊id=訂單編號+"_more"-->
-                    	<div class=" table-responsive reserve_page_item">
-                        	<table class="table">
-                        		<tbody>
-                            		<tr>
-                                		<td class="col_1">鏡框</td>
-                                    	<td class="col_2">鏡片</td>
-                                    	<td class="col_3">其他</td>
-                                	</tr>
-                                	<tr>
-                                		<td class="col_1"><div class=" reserve_page_item_img" style="background-image:url(images/product_1.jpg)"></div></td>
-                                    	<td class="col_2 reserve_page_item_txt">UV</td>
-                                    	<td class="col_3 reserve_page_item_txt"></td>
-                                	</tr>
-                            	</tbody>
-                        	</table>
-                    	</div>
-                        <div class=" table-responsive m_reserve_page_info_tabe">
-                        	<table class="table">
-                            	<tbody>
-                            		<tr>
-                                		<td class="col_1 w2">預約編號:</td>
-                                    	<td class="col_2 w3">C223123</td>
-                                    	<td class="col_3 w2">預約狀況:</td>
-                                        <td class="col_4 w3">未完成預約</td>
-                                	</tr>
-                                	<tr>
-                                		<td class="col_1">預約時間:</td>
-                                    	<td class="col_2">上午11:00</td>
-                                    	<td class="col_3">預約店面:</td>
-                                        <td class="col_4">高雄左營店</td>
-                                	</tr>
-                            	</tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div><!--訂單3 END-->
-            </div>
-            <div class="row m_reserve_page_bottom">
-            	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 show_num">
-                   	<button type="button" class="btn btn-default active">20</button>
-  					<button type="button" class="btn btn-default">40</button>
-  					<button type="button" class="btn btn-default">100</button>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 dir_ctr">
-                    <button type="button" class="btn btn-default disabled"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
-  					<button type="button" class="btn btn-default"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-4 m_page_left_menu_item"><a href="m_info.html">會員資訊</a></div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-4 m_page_left_menu_item"><a href="m_shop.html">購物資訊</a></div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-4 m_page_left_menu_item active"><a href="m_reserve.html">預約賞框</a></div>
                 </div>
             </div>
+            <div class="col-md-12 col-xs-12 m_page_top visible-lg visible-md visible-sm">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4 m_page_top_current_type">正在瀏覽<span>會員帳號</span></div>
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 m_page_right m_reserve_page">
+                <div class="m_page_right_inner">
+                    <div class="m_page_right_titel">預約賞框</div>
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">預約編號</div>
+                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">預約狀況</div>
+                    </div>
+                    <div class="m_reserve_page_item"><!--訂單1-->
+                        <div class="row gray">
+                            <form name="postFrom_2" id="postForm_2" action="m_reserve.html">
+                                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 m_reserve_page_item_btn">C223123</div>
+                                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">已完成</div>
+                                <button type="submit" form="postForm_3" value="del" class="col-lg-2 col-md-2 col-sm-2 col-xs-2 del">刪除</button>
+                            </form>
+                        </div>
+                        <div id="C223123_more" style="display:none;"><!--訂單要顯示的區塊id=訂單編號+"_more"-->
+                            <div class=" table-responsive reserve_page_item">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col_1">鏡框</td>
+                                            <td class="col_2">鏡片</td>
+                                            <td class="col_3">其他</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col_1"><div class=" reserve_page_item_img" style="background-image:url(images/product_1.jpg)"></div></td>
+                                            <td class="col_2 reserve_page_item_txt">UV</td>
+                                            <td class="col_3 reserve_page_item_txt"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class=" table-responsive m_reserve_page_info_tabe">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col_1 w2">預約編號:</td>
+                                            <td class="col_2 w3">C223123</td>
+                                            <td class="col_3 w2">預約狀況:</td>
+                                            <td class="col_4 w3">未完成預約</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col_1">預約時間:</td>
+                                            <td class="col_2">上午11:00</td>
+                                            <td class="col_3">預約店面:</td>
+                                            <td class="col_4">高雄左營店</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div><!--訂單1END-->
+                    <div class="m_reserve_page_item"><!--訂單2-->
+                        <div class="row">
+                            <form name="postFrom_3" id="postForm_3" action="m_reserve.html">
+                                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 m_reserve_page_item_btn">C223456</div>
+                                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">未完成預約</div>
+                                <button type="submit" form="postForm_3" value="cancel" class="col-lg-2 col-md-2 col-sm-2 col-xs-2 cancel">取消</button>
+                            </form>
+                        </div>
+                        <div id="C223456_more" style="display:none;"><!--訂單要顯示的區塊id=訂單編號+"_more"-->
+                            <div class=" table-responsive reserve_page_item">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col_1">鏡框</td>
+                                            <td class="col_2">鏡片</td>
+                                            <td class="col_3">其他</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col_1"><div class=" reserve_page_item_img" style="background-image:url(images/product_1.jpg)"></div></td>
+                                            <td class="col_2 reserve_page_item_txt">UV</td>
+                                            <td class="col_3 reserve_page_item_txt"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class=" table-responsive m_reserve_page_info_tabe">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col_1 w2">預約編號:</td>
+                                            <td class="col_2 w3">C223123</td>
+                                            <td class="col_3 w2">預約狀況:</td>
+                                            <td class="col_4 w3">未完成預約</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col_1">預約時間:</td>
+                                            <td class="col_2">上午11:00</td>
+                                            <td class="col_3">預約店面:</td>
+                                            <td class="col_4">高雄左營店</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div><!--訂單2 END-->
+                    <div class="m_reserve_page_item"><!--訂單3-->
+                        <div class="row gray">
+                            <form name="postFrom_3" id="postForm_3" action="m_reserve.html">
+                                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 m_reserve_page_item_btn">C223789</div>
+                                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">未完成預約</div>
+                                <button type="submit" form="postForm_3" value="cancel" class="col-lg-2 col-md-2 col-sm-2 col-xs-2 cancel">取消</button>
+                            </form>
+                        </div>
+                        <div id="C223789_more" style="display:none;"><!--訂單要顯示的區塊id=訂單編號+"_more"-->
+                            <div class=" table-responsive reserve_page_item">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col_1">鏡框</td>
+                                            <td class="col_2">鏡片</td>
+                                            <td class="col_3">其他</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col_1"><div class=" reserve_page_item_img" style="background-image:url(images/product_1.jpg)"></div></td>
+                                            <td class="col_2 reserve_page_item_txt">UV</td>
+                                            <td class="col_3 reserve_page_item_txt"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class=" table-responsive m_reserve_page_info_tabe">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col_1 w2">預約編號:</td>
+                                            <td class="col_2 w3">C223123</td>
+                                            <td class="col_3 w2">預約狀況:</td>
+                                            <td class="col_4 w3">未完成預約</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col_1">預約時間:</td>
+                                            <td class="col_2">上午11:00</td>
+                                            <td class="col_3">預約店面:</td>
+                                            <td class="col_4">高雄左營店</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div><!--訂單3 END-->
+                </div>
+                <div class="row m_reserve_page_bottom">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 show_num">
+                        <button type="button" class="btn btn-default active">20</button>
+                        <button type="button" class="btn btn-default">40</button>
+                        <button type="button" class="btn btn-default">100</button>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 dir_ctr">
+                        <button type="button" class="btn btn-default disabled"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-default"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 inner_page_left_favor">
+                <div class="row inner_page_left_favor_tile">
+                    <picture>
+                        <source srcset="images/favor_title.png" media="(max-width: 400px)">
+                        <source srcset="images/favor_title_sm.png" media="(max-width: 768px) and (min-width:401px;)">
+                        <source srcset="images/favor_title.png" media="(min-width:768px;)">
+                        <img src="images/favor_title.png" alt="My default image">
+                    </picture>
+                    <i class="fa fa-chevron-up arrow_up visible-lg visible-md visible-sm" aria-hidden="true"></i>
+                    <div class="favor_slider">                	
+                        <div>
+                            <div class="favor_slider_img" style="background-image:url(images/product_1.jpg)"></div>
+                            <div class="inner_page_left_favor_slider_txt">
+                                <h5 class="type">RAY-BAN RX5154</h5>
+                                <h5 class="price">$5400</h5>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="favor_slider_img" style="background-image:url(images/product_1.jpg)"></div>
+                            <div class="inner_page_left_favor_slider_txt">
+                                <h5 class="type">RAY-BAN RX5154</h5>
+                                <h5 class="price">$5400</h5>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="favor_slider_img" style="background-image:url(images/product_1.jpg)"></div>
+                            <div class="inner_page_left_favor_slider_txt">
+                                <h5 class="type">RAY-BAN RX5154</h5>
+                                <h5 class="price">$5400</h5>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="favor_slider_img" style="background-image:url(images/product_1.jpg)"></div>
+                            <div class="inner_page_left_favor_slider_txt">
+                                <h5 class="type">RAY-BAN RX5154</h5>
+                                <h5 class="price">$5400</h5>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <i class="fa fa-chevron-down arrow_down visible-lg visible-md visible-sm" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div><!--max width-->
+    	<div class="menu_right">
+        	<ul>
+            	<li><a href="m_reserve.html"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a></li>
+                <li><a href="reserve_glasses.html"><img src="images/glasses.svg"><div class="right_menu_txt">2</div></a></li>
+                <li><a href="reserve_contact.html"><img src="images/contact_lenses.svg"><div class="right_menu_txt">4</div></a></li>
+                <li><a href="reserve_favor.html"><i class="fa fa-heart" aria-hidden="true"></i><div class="right_menu_txt">1</div></a></li>
+                <li><a href="reserve_help.html"><span>預約<i class="fa fa-question-circle" aria-hidden="true"></i></span></a></li>
+            </ul>
         </div>
-     	<div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 inner_page_left_favor">
-        	<div class="row inner_page_left_favor_tile">
-            	<picture>
-    				<source srcset="images/favor_title.png" media="(max-width: 400px)">
-    				<source srcset="images/favor_title_sm.png" media="(max-width: 768px) and (min-width:401px;)">
-    				<source srcset="images/favor_title.png" media="(min-width:768px;)">
-    				<img src="images/favor_title.png" alt="My default image">
-				</picture>
-                <i class="fa fa-chevron-up arrow_up visible-lg visible-md visible-sm" aria-hidden="true"></i>
-                <div class="favor_slider">                	
-                	<div>
-                    	<div class="favor_slider_img" style="background-image:url(images/product_1.jpg)"></div>
-                    	<div class="inner_page_left_favor_slider_txt">
-                    		<h5 class="type">RAY-BAN RX5154</h5>
-                    	    <h5 class="price">$5400</h5>
-                    	</div>
-                    </div>
-                    <div>
-                    	<div class="favor_slider_img" style="background-image:url(images/product_1.jpg)"></div>
-                    	<div class="inner_page_left_favor_slider_txt">
-                    		<h5 class="type">RAY-BAN RX5154</h5>
-                    	    <h5 class="price">$5400</h5>
-                    	</div>
-                    </div>
-                    <div>
-                    	<div class="favor_slider_img" style="background-image:url(images/product_1.jpg)"></div>
-                    	<div class="inner_page_left_favor_slider_txt">
-                    		<h5 class="type">RAY-BAN RX5154</h5>
-                    	    <h5 class="price">$5400</h5>
-                    	</div>
-                    </div>
-                    <div>
-                    	<div class="favor_slider_img" style="background-image:url(images/product_1.jpg)"></div>
-                    	<div class="inner_page_left_favor_slider_txt">
-                    		<h5 class="type">RAY-BAN RX5154</h5>
-                    	    <h5 class="price">$5400</h5>
-                    	</div>
-                    </div>
-                    
-                </div>
-                <i class="fa fa-chevron-down arrow_down visible-lg visible-md visible-sm" aria-hidden="true"></i>
-           	</div>
-     	</div>
     </div>
     <div class="back_top"></div> <!-- top btn-->
 </div><!--content END-->
@@ -377,13 +400,12 @@ $(function(){
 
 <footer>
 	<div class="container-fluid footer">
-    	<div class="row footer_top">
+    	<div class="row footer_top max_width">
         	<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
 				<h4 class="title">HELP</h4>
                 <a href="#"><h5>FAQ</h5></a>
 				<a href="login.html"><h5>會員帳號</h5></a>
 				<a href="#"><h5>聯絡我們</h5></a>
-				<a href="#"><h5>護眼教室</h5></a>
 				<a href="reserve.html"><h5>預約賞框</h5></a>
 				<a href="#"><h5>好康下載</h5></a>
 			</div>
@@ -409,7 +431,6 @@ $(function(){
                 <a href="about.html"><h5>品牌故事</h5></a>
 				<a href="news.html"><h5>最新消息</h5></a>
 				<a href="#"><h5>人才招募</h5></a>
-				<a href="#"><h5>護眼教室</h5></a>
 				<span class="visible-lg visible-md visible-sm">
                 	<a href="https://zh-tw.facebook.com/wenhsiung.fans/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
                 	<a href="https://www.instagram.com/wenhsiungbear/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
@@ -420,8 +441,10 @@ $(function(){
 			</div>
         </div>
         <div class="row footer_bottom">
-        	<div class=" footer_bottom_right"><a href="#">服務條款</a></div>
-            <div class=" footer_bottom_left">© 2016 wenhsiung.com - ALL RIGHTS RESERVED</div>
+        	<div class="max_width">
+        		<div class=" footer_bottom_right"><a href="#">服務條款</a></div>
+            	<div class=" footer_bottom_left">© 2016 wenhsiung.com - ALL RIGHTS RESERVED</div>
+            </div>
         </div>
     </div>
 </footer>
