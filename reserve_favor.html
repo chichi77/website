@@ -60,9 +60,13 @@ $(document).ready(function(){
 		},500);
 	});
 });
+function check_all(obj,cName) { 
+    var checkboxs = document.getElementsByName(cName); 
+    for(var i=0;i<checkboxs.length;i++){checkboxs[i].checked = obj.checked;} 
+} 
 </script>
 <style>
-
+.col_3.reserve_page_item_txt{word-break: break-all; padding-top:3% !important;}
 </style>
 <body>
 <header>
@@ -163,7 +167,7 @@ $(document).ready(function(){
      </div>
      <div class="m_page">
          <div class="row m_page_inner max_width">
-            <div class="col-lg-3 col-md-3 col-sm-4 m_page_left_menu">
+            <div class="col-lg-3 col-md-3 col-sm-3 m_page_left_menu">
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-4 m_page_left_menu_item active">資訊確認</div>
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-4 m_page_left_menu_item">完成預約</div>
@@ -171,70 +175,71 @@ $(document).ready(function(){
             </div>
             <div class="col-md-12 col-xs-12 m_page_top visible-lg visible-md visible-sm">
                 <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-4 m_page_top_current_type">正在瀏覽<span>預約賞框</span></div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 m_page_top_current_type">正在瀏覽<span>商品比較清單</span></div>
                 </div>
             </div>
-            <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12 m_page_right">
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 m_page_right">
                 <form name="postForm_2" id="postForm_2" action="reserve_2.html">
                     <div class="m_page_right_inner">
-                        <div class="m_page_right_titel">商品清單</div>
+                        <div class="m_page_right_titel">商品比較</div>
                         <div class=" table-responsive reserve_page_item">
+                        	<input type="checkbox" name="item" value=""  form="postForm_3" class="reserve_page_item_del" />
+                            <form name="postForm_3" id="postForm_3" method="post" action="reserve.html">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col_1 w3">鏡框</td>
+                                            <td class="col_2 w2">名稱</td>
+                                            <td class="col_3">尺寸規格</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col_1"><a href="product_glasses_detail.html"><div class=" reserve_page_item_img" style="background-image:url(images/product_1.jpg)"></div></a></td>
+                                            <td class="col_2 reserve_page_item_txt">RAY-BAN<br>RX5154</td>
+                                            <td class="col_3 reserve_page_item_txt">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </form>
+                        </div>
+                        <div class=" table-responsive reserve_page_item">
+                        	<input type="checkbox" name="item" value=""  form="postForm_3" class="reserve_page_item_del" />
                             <form name="postForm_3" id="postForm_3" method="post" action="reserve.html">
                                 <table class="table">
                                     <tbody>
                                         <tr>
                                             <td class="col_1">鏡框</td>
                                             <td class="col_2">名稱</td>
-                                            <td class="col_3">售價</td>
+                                            <td class="col_3">尺寸規格</td>
                                         </tr>
                                         <tr>
                                             <td class="col_1"><a href="product_glasses_detail.html"><div class=" reserve_page_item_img" style="background-image:url(images/product_1.jpg)"></div></a></td>
                                             <td class="col_2 reserve_page_item_txt">RAY-BAN<br>RX5154</td>
-                                            <td class="col_3 reserve_page_item_price">$7900</td>
+                                            <td class="col_3 reserve_page_item_txt">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</td>
                                         </tr>
                                     </tbody>
                                 </table>
-                                <button type="submit" form="postForm_3" class="reserve_page_item_del"><i class="fa fa-times" aria-hidden="true"></i></button>
                             </form>
                         </div>
                         <div class=" table-responsive reserve_page_item">
-                            <form name="postForm_3" id="postForm_3" method="post" action="reserve.html">
-                                <table class="table">
-                                    <tbody>
-                                        <tr>
-                                            <td class="col_1">鏡框</td>
-                                            <td class="col_2">名稱</td>
-                                            <td class="col_3">售價</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="col_1"><a href="product_glasses_detail.html"><div class=" reserve_page_item_img" style="background-image:url(images/product_1.jpg)"></div></a></td>
-                                            <td class="col_2 reserve_page_item_txt">RAY-BAN<br>RX5154</td>
-                                            <td class="col_3 reserve_page_item_price">$7900</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <button type="submit" form="postForm_3" class="reserve_page_item_del"><i class="fa fa-times" aria-hidden="true"></i></button>
-                            </form>
-                        </div>
-                        <div class=" table-responsive reserve_page_item">
+                        	<input type="checkbox" name="item" value=""  form="postForm_3" class="reserve_page_item_del" />
                             <form name="postForm_3" id="postForm_5" method="post" action="reserve.html">
                                 <table class="table">
                                     <tbody>
                                         <tr>
                                             <td class="col_1">鏡框</td>
                                             <td class="col_2">名稱</td>
-                                            <td class="col_3">售價</td>
+                                            <td class="col_3">尺寸規格</td>
                                         </tr>
                                         <tr>
                                             <td class="col_1"><a href="product_glasses_detail.html"><div class=" reserve_page_item_img" style="background-image:url(images/product_1.jpg)"></div></a></td>
                                             <td class="col_2 reserve_page_item_txt">RAY-BAN<br>RX5154</td>
-                                            <td class="col_3 reserve_page_item_price">$7900</td>
+                                            <td class="col_3 reserve_page_item_txt">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</td>
                                         </tr>
                                     </tbody>
                                 </table>
-                                <button type="submit" form="postForm_5" class="reserve_page_item_del"><i class="fa fa-times" aria-hidden="true"></i></button>
                             </form>
                         </div>
+                        <img src="images/reserve_favor_help.jpg" width="100%">
                     </div>
                     <div class="m_page_right_inner" style="margin-top:20px;">
                         <div class="table-responsive">
@@ -321,13 +326,13 @@ $(document).ready(function(){
                         </div>
                     </div>
                     <div class="row m_page_bottom_btn">
-                        <a href="reserve_glasses_2.html"><button type="submit" form="postFrom_2" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 add_next">確定預約</button></a>
+                        <a href="reserve_glasses.html"><button type="submit" form="postFrom_2" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 add_next">加入預約賞框</button></a>
                         <a href="product_sunglasses.html"><button class="col-lg-6 col-md-6 col-sm-6 col-xs-6 add_cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i>　繼續選框</button></a>
                         <a href="product_sunglasses.html"><button class="col-lg-6 col-md-6 col-sm-6 col-xs-6 add_cancel">取消預約</button></a>
                     </div>
                 </form>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 inner_page_left_favor">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 inner_page_left_favor">
                 <div class="row inner_page_left_favor_tile">
                     <picture>
                         <source srcset="images/favor_title.png" media="(max-width: 400px)">
@@ -373,9 +378,11 @@ $(document).ready(function(){
         </div><!--max width-->
     	<div class="menu_right">
         	<ul>
-            	<li><a href="m_reserve.html"><img src="images/list.svg"><span>我的預約</span></a> <a href="reserve_help.html"><i class="fa fa-question-circle" aria-hidden="true"></i></a></li>
-                <li><a href="reserve_glasses.html"><img src="images/glasses.svg"><div class="right_menu_txt blue">2</div></a></li>
-                <li><a href="reserve_contact.html"><img src="images/contact_lenses.svg"><div class="right_menu_txt red">4</div></a></li>
+            	<li><a href="m_reserve.html"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a></li>
+                <li><a href="reserve_glasses.html"><img src="images/glasses.svg"><div class="right_menu_txt">2</div></a></li>
+                <li><a href="reserve_contact.html"><img src="images/contact_lenses.svg"><div class="right_menu_txt">4</div></a></li>
+                <li><a href="reserve_favor.html"><i class="fa fa-heart" aria-hidden="true"></i><div class="right_menu_txt">1</div></a></li>
+                <li><a href="reserve_help.html"><span>預約<i class="fa fa-question-circle" aria-hidden="true"></i></span></a></li>
             </ul>
         </div>
     </div>
