@@ -310,6 +310,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 .bg-inverse {color: #fff; background-color: #292b2c;}
 .reserve_page_total .col_1, .reserve_page_total .col_2{background:#ACACAD; color:#FFF; border-right:1px #FFF solid; border-top: 0 !important; padding:20px 0 !important;}
 .reserve_page_total .col_3{ background:#ACACAD; color:#FFF;border-top: 0 !important; padding:20px 0 !important;}
+.reserve_page_check_all{margin:2% 0 0 2%;}
 
 .reserve_contact_page_item  .col_1,.reserve_contact_page_item  .col_3{width:30%;}
 .reserve_contact_page_item  .col_2{width:20%;}
