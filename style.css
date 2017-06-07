@@ -183,7 +183,7 @@ div{padding:0; margin:0; border:0; box-sizing: border-box;}
 .add_cancel{ background:#ACACAD;}
 .add_next{ background:#26B7EC;}
 
-.public_inner_wrap{width:100%;margin:auto;}
+.public_inner_wrap{width:100%;margin:auto;padding:2% 10% 2% 10%;}
 input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus{border:solid thin #ABABAC;}
 .locate_current{padding:20px 15px;border-bottom: 1px #D3D4D4 solid;margin-bottom:10px;}
 .inner_left_menu{padding:0 2% 10px 10px;}
@@ -192,7 +192,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 .cursor_pointer{cursor:pointer;}
 .page_bk{background-color:#EEE;}
 
-.m_page{ background:#EEE;}
+.m_page{ padding:0 10% 2% 10%; background:#EEE;}
 .m_page_left_menu_item{padding:10px 0 10px 15px;}
 .m_page_left_menu{padding:10px; background:#FFF;}
 .m_page_left_menu_item, .m_page_left_menu_item a{color:#777;}
@@ -208,7 +208,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 .m_page_bottom_btn .add_cancel{ margin:10px 0 0 0;}
 
 /*product*/
-.product_page{ background:#EEE;}
+.product_page{ padding:0 10% 2% 10%; background:#EEE;}
 .product_page button { border-radius:0; padding: 5px 8px;}
 .product_page_top{ border-bottom:1px #D3D4D4 solid; padding: 0 0 10px 0;}
 .product_page_top_current_type{ font-size:14px; color:#727171;}

@@ -146,77 +146,53 @@ $(document).ready(function(){
 <!--content-->
 <div class="container-fluid box_inner">
 	 <div class="container-fluid box_inner inner_page_type">
-     	<div class="max_width"><a href="index.html">首頁</a>&nbsp;&nbsp;|&nbsp;&nbsp;<span>會員帳號</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span>會員資訊</span></div>
+     	<div class="max_width"><a href="index.html">首頁</a>&nbsp;&nbsp;|&nbsp;&nbsp;<span>預約賞框</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span>賞框資訊</span></div>
      </div>
-     <div class="row product_page">
+     <div class="row m_page">
      	<div class="col-lg-3 col-md-4 col-sm-4 m_page_left_menu">
             <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-4 m_page_left_menu_item active"><a href="m_info.html">會員資訊</a></div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-4 m_page_left_menu_item"><a href="#">購物資訊</a></div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-4 m_page_left_menu_item"><a href="m_reserve.html">預約賞框</a></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-4 m_page_left_menu_item">賞框資訊</div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-4 m_page_left_menu_item">預約資訊</div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-4 m_page_left_menu_item active">完成預約</div>
             </div>
      	</div>
         <div class="col-md-12 col-xs-12 m_page_top visible-lg visible-md visible-sm">
         	<div class="row">
-     			<div class="col-lg-4 col-md-4 col-sm-4 m_page_top_current_type">正在瀏覽<span>會員資訊</span></div>
+     			<div class="col-lg-4 col-md-4 col-sm-4 m_page_top_current_type">正在瀏覽<span>賞框資訊</span></div>
      		</div>
         </div>
-        <div class="col-lg-9 col-md-8 col-sm-8 col-xs-12 m_page_right">
+        <div class="col-lg-9 col-md-8 col-sm-8 col-xs-12 m_page_right reserve_2_page">
         	<div class="m_page_right_inner">
-            	<div class="m_page_right_titel">帳號資訊</div>
+            	<div class="m_page_right_titel">預約完成</div>
+                <div class="reserve_2_page_txt">感謝您的預約!<br>以下是您的預約資訊</div>
+                <div class="table-responsive">
+                    <table class="table reserve_2_page_table table-striped">
+                        <tbody>
+                            <tr>
+                                <td class="col_1">姓名</td>
+                                <td class="col_2">陳大文</td>
+                            </tr>
+                            <tr>
+                                <td class="col_1">電話/手機</td>
+                                <td class="col_2">0900000000</td>
+                            </tr>
+                            <tr>
+                                <td class="col_1">預約店面</td>
+                                <td class="col_2">高雄市 左營新光店</td>
+                            </tr>
+                            <tr>
+                                <td class="col_1">選擇時間</td>
+                                <td class="col_2">早上9:00-10:30</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-            <div style="margin-top:30px;">
-            	<form>
-                	<ul class="member_form_ul">
-                    	<li>
-                        	<div class="member_form_div">Email</div><div class="member_form_div1">
-                            	<input type="text" value="service@gmail.com.tw">
-                            </div>
-                        </li>
-                    	<li>
-                        	<div class="member_form_div">密碼</div><div class="member_form_div1">
-                            	<input type="password">
-                            </div>
-                        </li>
-                    	<li>
-                        	<div class="member_form_div">確認密碼</div><div class="member_form_div1">
-                            	<input type="password">
-                            </div>
-                        </li>
-                    	<li>
-                        	<div class="member_form_div">姓名</div><div class="member_form_div1">
-                            	<input type="text" value="文雄眼鏡">
-                            </div>
-                        </li>
-                    	<li>
-                        	<div class="member_form_div">聯絡地址</div><div class="member_form_div1">
-                            	<input type="text" value="高雄市新興區五福路53號">
-                            </div>
-                        </li>
-                    	<li>
-                        	<div class="member_form_div">送貨地址</div><div class="member_form_div1">
-                            	<input type="text" value="高雄市新興區五福路53號">
-                            </div>
-                        </li>
-                    	<li>
-                        	<div class="member_form_div">電話/手機</div><div class="member_form_div1">
-                            	<input type="text" value="0933123456">
-                            </div>
-                        </li>
-                    	<li>
-                        	<div class="member_form_div">身分證號碼</div><div class="member_form_div1">
-                            	<input type="text" value="B123456798">
-                            </div>
-                        </li>
-                    	<li>
-                        	<div class="member_form_div"></div><div class="member_form_divA">
-                            	<input type="button" value="送出" class="send_btn_style">
-                            </div>
-                        </li>
-                    </ul>
-                </form>
-            </div>
-     	</div>
+            <div class="row m_page_bottom_btn">
+                <a href="product_glass.html"><button class="col-lg-6 col-md-6 col-sm-6 col-xs-6 add_cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i>　繼續選框</button></a>
+                <a href="m_reserve.html"><button class="col-lg-6 col-md-6 col-sm-6 col-xs-6 add_cancel">查詢預約</button></a>
+     		</div>
+        </div>
      	<div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 inner_page_left_favor">
         	<div class="row inner_page_left_favor_tile">
             	<picture>
@@ -260,7 +236,7 @@ $(document).ready(function(){
                 <i class="fa fa-chevron-down arrow_down visible-lg visible-md visible-sm" aria-hidden="true"></i>
            	</div>
      	</div>
-	</div>
+    </div>
     <div class="back_top"></div> <!-- top btn-->
 </div><!--content END-->
 
@@ -299,7 +275,7 @@ $(document).ready(function(){
                 <a href="about.html"><h5>品牌故事</h5></a>
 				<a href="news.html"><h5>最新消息</h5></a>
 				<a href="#"><h5>人才招募</h5></a>
-				<a href="eyesinfo.html"><h5>護眼教室</h5></a>
+				<a href="#"><h5>護眼教室</h5></a>
 				<span class="visible-lg visible-md visible-sm">
                 	<a href="https://zh-tw.facebook.com/wenhsiung.fans/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
                 	<a href="https://www.instagram.com/wenhsiungbear/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
