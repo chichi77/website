@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!--[if lt IE 9]>
-<script src="js/html5.js"></script>
+<script src="//demo.dake.com.tw/~dake/jquery/html5.js"></script>
 <![endif]-->
 <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 
@@ -85,11 +85,11 @@ $(document).ready(function(){
 			</div>
 			<div id="navbar" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
-                	<li class="header_menu_txt"><a href="product_glasses.html">光學眼鏡</a></li>
-                    <li class="header_menu_txt"><a href="product_glasses.html">太陽眼鏡</a></li>
+                	<li class="header_menu_txt"><a href="product_opticalglasses.html">光學眼鏡</a></li>
+                    <li class="header_menu_txt"><a href="product_sunglasses.html">太陽眼鏡</a></li>
                     <li class="header_menu_txt"><a href="#">眼鏡周邊</a></li>
 					<li class="header_menu_txt dropdown">
-						<a href="product_brand.html" class=" dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">品牌眼鏡 <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+						<a href="javascript:;" class=" dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">品牌眼鏡 <i class="fa fa-caret-down" aria-hidden="true"></i></a>
                         <ul class="dropdown-menu" role="menu">
                         	<li><a href="product_brand.html" class="header_menu_second_floor">agnes b</a></li>
                             <li><a href="product_brand.html" class="header_menu_second_floor">Anna Sui 安娜蘇</a></li>
@@ -124,8 +124,20 @@ $(document).ready(function(){
                             <li><a href="product_brand.html" class="header_menu_second_floor">VOGUE</a></li>
                         </ul>
                     </li>
-					<li class="header_menu_txt"><a href="reserve.html">預約賞框</a></li>
-                    <li class="header_menu_txt"><a href="#">護眼教室</a></li>
+					<li class="header_menu_txt dropdown">
+                    	<a href="javascript:;" class=" dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">隱形眼鏡 <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu" role="menu">
+                        	<li><a href="product_contact.html" class="header_menu_second_floor">RICHBABY</a></li>
+                            <li><a href="product_contact.html" class="header_menu_second_floor">嬌生</a></li>
+                            <li><a href="product_contact.html" class="header_menu_second_floor">博士倫</a></li>
+                            <li><a href="product_contact.html" class="header_menu_second_floor">愛爾康</a></li>
+                            <li><a href="product_contact.html" class="header_menu_second_floor">海昌</a></li>
+                            <li><a href="product_contact.html" class="header_menu_second_floor">睛靚</a></li>
+                            <li><a href="product_contact.html" class="header_menu_second_floor">酷柏</a></li>
+                            <li><a href="product_contact.html" class="header_menu_second_floor">博士倫</a></li>
+                        </ul>                   	
+                    </li>
+                    <li class="header_menu_txt"><a href="news.html">最新消息</a></li>
 					<li class="header_menu_txt hidden-xs"><a href="store.html">文雄門市</a></li>
                     <li class="header_menu_txt hidden-md hidden-lg hidden-sm"><a href="store_list.html">文雄門市</a></li>
 					<li class="header_menu_link visible-lg visible-md visible-sm">
@@ -134,7 +146,7 @@ $(document).ready(function(){
                 		</form>
                     </li>
                     </li>
-					<li class="header_menu_link visible-lg visible-md visible-sm"><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+					<li class="header_menu_link visible-lg visible-md visible-sm"><a href="m_shop.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
 				</ul>
 			</div><!--/.nav-collapse -->
 		</div><!--/.container-fluid -->
@@ -143,81 +155,183 @@ $(document).ready(function(){
 </header>
 
 
+
 <!--content-->
 <div class="container-fluid box_inner">
 	 <div class="container-fluid box_inner inner_page_type">
-     	<div class="max_width"><a href="index.html">首頁</a>&nbsp;&nbsp;|&nbsp;&nbsp;<span>會員帳號</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span>會員資訊</span></div>
+     	<div class="max_width"><a href="index.html">首頁</a>&nbsp;&nbsp;|&nbsp;&nbsp;<span>預約賞框</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span>賞框資訊</span></div>
      </div>
      <div class="m_page">
          <div class="row m_page_inner max_width">
             <div class="col-lg-3 col-md-3 col-sm-3 m_page_left_menu">
                 <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-4 m_page_left_menu_item active"><a href="m_info.html">會員資訊</a></div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-4 m_page_left_menu_item"><a href="#">購物資訊</a></div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-4 m_page_left_menu_item"><a href="m_reserve_glasses.html">預約賞框</a></div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-4 m_page_left_menu_item"><a href="m_reserve_contact.html">預購隱形眼鏡</a></div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-4 m_page_left_menu_item active">資訊確認</div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-4 m_page_left_menu_item">完成預約</div>
                 </div>
             </div>
             <div class="col-md-12 col-xs-12 m_page_top visible-lg visible-md visible-sm">
                 <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-4 m_page_top_current_type">正在瀏覽<span>會員資訊</span></div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 m_page_top_current_type">正在瀏覽<span>隱形眼鏡預購</span></div>
                 </div>
             </div>
             <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 m_page_right">
-                <div class="m_page_right_inner">
-                    <div class="m_page_right_titel">帳號資訊</div>
-                </div>
-                <div style="margin-top:30px;">
-                    <form>
-                        <ul class="member_form_ul">
-                            <li>
-                                <div class="member_form_div">Email</div><div class="member_form_div1">
-                                    <input type="text" value="service@gmail.com.tw">
-                                </div>
-                            </li>
-                            <li>
-                                <div class="member_form_div">密碼</div><div class="member_form_div1">
-                                    <input type="password">
-                                </div>
-                            </li>
-                            <li>
-                                <div class="member_form_div">確認密碼</div><div class="member_form_div1">
-                                    <input type="password">
-                                </div>
-                            </li>
-                            <li>
-                                <div class="member_form_div">姓名</div><div class="member_form_div1">
-                                    <input type="text" value="文雄眼鏡">
-                                </div>
-                            </li>
-                            <li>
-                                <div class="member_form_div">聯絡地址</div><div class="member_form_div1">
-                                    <input type="text" value="高雄市新興區五福路53號">
-                                </div>
-                            </li>
-                            <li>
-                                <div class="member_form_div">送貨地址</div><div class="member_form_div1">
-                                    <input type="text" value="高雄市新興區五福路53號">
-                                </div>
-                            </li>
-                            <li>
-                                <div class="member_form_div">電話/手機</div><div class="member_form_div1">
-                                    <input type="text" value="0933123456">
-                                </div>
-                            </li>
-                            <li>
-                                <div class="member_form_div">身分證號碼</div><div class="member_form_div1">
-                                    <input type="text" value="B123456798">
-                                </div>
-                            </li>
-                            <li>
-                                <div class="member_form_div"></div><div class="member_form_divA">
-                                    <input type="button" value="送出" class="send_btn_style">
-                                </div>
-                            </li>
-                        </ul>
-                    </form>
-                </div>
+                <form name="postForm_2" id="postForm_2">
+                    <div class="m_page_right_inner">
+                        <div class="m_page_right_titel">預約取貨資訊</div>
+                        <div class=" table-responsive reserve_page_item reserve_contact_page_item">
+                            <form name="postForm_3" id="postForm_3" method="post" action="reserve.html">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col_1"></td>
+                                            <td class="col_2">度數</td>
+                                            <td class="col_2">數量</td>
+                                            <td class="col_3">售價</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col_1"><a href="product_contact_detail.html"><div class=" reserve_page_item_img" style="background-image:url(images/contact_1.jpg)"></div></a></td>
+                                            <td class="col_2 reserve_page_item_txt">-1.5</td>
+                                            <td class="col_2 reserve_page_item_txt">1</td>
+                                            <td class="col_3 reserve_page_item_price">$790</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <button type="submit" form="postForm_3" class="reserve_page_item_del"><i class="fa fa-times" aria-hidden="true"></i></button>
+                            </form>
+                        </div>
+                        <div class=" table-responsive reserve_page_item reserve_contact_page_item">
+                            <form name="postForm_3" id="postForm_3" method="post" action="reserve.html">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col_1"></td>
+                                            <td class="col_2">度數</td>
+                                            <td class="col_2">數量</td>
+                                            <td class="col_3">售價</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col_1"><a href="product_contact_detail.html"><div class=" reserve_page_item_img" style="background-image:url(images/contact_1.jpg)"></div></a></td>
+                                            <td class="col_2 reserve_page_item_txt">-1.5</td>
+                                            <td class="col_2 reserve_page_item_txt">1</td>
+                                            <td class="col_3 reserve_page_item_price">$790</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <button type="submit" form="postForm_3" class="reserve_page_item_del"><i class="fa fa-times" aria-hidden="true"></i></button>
+                            </form>
+                        </div>
+                        <div class=" table-responsive reserve_page_item reserve_contact_page_item">
+                            <form name="postForm_3" id="postForm_5" method="post" action="reserve.html">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col_1"></td>
+                                            <td class="col_2">度數</td>
+                                            <td class="col_2">數量</td>
+                                            <td class="col_3">售價</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col_1"><a href="product_contact_detail.html"><div class=" reserve_page_item_img" style="background-image:url(images/contact_1.jpg)"></div></a></td>
+                                            <td class="col_2 reserve_page_item_txt">-1.5</td>
+                                            <td class="col_2 reserve_page_item_txt">1</td>
+                                            <td class="col_3 reserve_page_item_price">$790</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <button type="submit" form="postForm_5" class="reserve_page_item_del"><i class="fa fa-times" aria-hidden="true"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="m_page_right_inner" style="margin-top:20px;">
+                        <div class="table-responsive">
+                        	<div class="m_page_right_titel">預約資訊</div>
+                            <table class="table reserve_2_page_table">
+                                <tbody>
+                                    <tr>
+                                        <td class="col_1">姓名</td>
+                                        <td class="col_2">陳大文</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col_1">電話/手機</td>
+                                        <td class="col_2">0900000000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col_1 bg-inverse">選擇店面</td>
+                                        <td class="col_2 bg-inverse"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col_1 bg-gray">
+                                            <select class="form-control black_select">
+                                                <option value="KH">高雄</option>
+                                                <option value="TN">台南</option>
+                                                <option value="TP">台北</option>
+                                                <option value="TC">台中</option>
+                                            </select>
+                                        </td>
+                                        <td class="col_2 bg-gray">
+                                            <select class="form-control black_select">
+                                                <option value="store_1">左營新光店</option>
+                                                <option value="store_2">西門新光店</option>
+                                                <option value="store_3">逢甲店</option>
+                                                <option value="store_4">中山店</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col_1">選擇時間</td>
+                                        <td class="col_2">
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="time" id="time_1" value="time_1">
+                                                    早上9:00-10:30
+                                                </label>
+                                            </div>
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="time" id="time_2" value="time_2">
+                                                    早上10:30-12:00
+                                                </label>
+                                            </div>
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="time" id="time_3" value="time_3">
+                                                    下午13:00-15:00
+                                                </label>
+                                            </div>
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="time" id="time_4" value="time_4">
+                                                    下午15:00-17:00
+                                                </label>
+                                            </div>
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="time" id="time_5" value="time_5">
+                                                    下午17:00-19:00
+                                                </label>
+                                            </div>
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="time" id="time_2" value="time_2">
+                                                    晚上19:00-21:00
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col_1">注意事項</td>
+                                        <td class="col_2">1.注意事項注意事項注意事項注意事項注意事項注意事項注意事項注意事項<br>2.注意事項注意事項注意事項注意事項注意事項<br>3.注意事項注意事項注意事項</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row m_page_bottom_btn">
+                        <a href="reserve_glasses_2.html"><button type="submit" form="postFrom_2" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 add_next">確定預約</button></a>
+                        <a href="product_sunglasses.html"><button class="col-lg-6 col-md-6 col-sm-6 col-xs-6 add_cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i>　繼續選框</button></a>
+                        <a href="product_sunglasses.html"><button class="col-lg-6 col-md-6 col-sm-6 col-xs-6 add_cancel">取消預約</button></a>
+                    </div>
+                </form>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 inner_page_left_favor">
                 <div class="row inner_page_left_favor_tile">
@@ -262,8 +376,8 @@ $(document).ready(function(){
                     <i class="fa fa-chevron-down arrow_down visible-lg visible-md visible-sm" aria-hidden="true"></i>
                 </div>
             </div>
-		</div><!--max_width END-->
-        <div class="menu_right">
+        </div><!--max width-->
+    	<div class="menu_right">
         	<ul>
             	<li><a href="m_info.html"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a></li>
                 <li><a href="reserve_glasses.html"><img src="images/glasses.svg"><div class="right_menu_txt">2</div></a></li>
