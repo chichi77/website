@@ -60,6 +60,17 @@ $(document).ready(function(){
 		},500);
 	});
 });
+$(function(){
+	 $(".m_reserve_page_item_btn").click(function(){
+		num=this.innerHTML+"_more";
+		if(document.getElementById(num).style.display=="none"){
+			document.getElementById(num).style.display="block";
+		}
+		else{
+			document.getElementById(num).style.display="none";
+		}
+	});
+});
 </script>
 <style>
 
@@ -146,189 +157,176 @@ $(document).ready(function(){
 <!--content-->
 <div class="container-fluid box_inner">
 	 <div class="container-fluid box_inner inner_page_type">
-     	<div class="max_width"><a href="index.html">首頁</a>&nbsp;&nbsp;|&nbsp;&nbsp;<span>光學眼鏡</span></div>
+     	<div class="max_width"><a href="index.html">首頁</a>&nbsp;&nbsp;|&nbsp;&nbsp;<span>會員帳號</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span>預約賞框</span></div>
      </div>
-     <div class="row product_page">
-     	<div class="col-lg-3 col-md-4 col-sm-4 product_page_left_menu">
-        	<span class=" visible-lg visible-md visible-sm">正在顯示 1-20 個 | 共230個產品</span>
+     <div class="row m_page">
+     	<div class="col-lg-3 col-md-4 col-sm-4 m_page_left_menu">
             <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-4 product_page_left_menu_item">
-            		<select class="form-control black_select" title="排序">
-  						<option value="high_price">價格最高</option>
-  						<option value="low_price">價格最低</option>
-					</select>
-                </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-4 product_page_left_menu_item">
-                    <select class="form-control black_select">
-  						<option value="optical_glass">光學眼鏡</option>
-  						<option value="sun_glass">太陽眼鏡</option>
-					</select>
-                </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-4 product_page_left_menu_item">	
-                    <select class="form-control black_select" title="品牌">
-  						<option value="high_price">agnes b</option>
-  						<option value="low_price">Anna Sui 安娜蘇</option>
-                    	<option value="low_price">Ray Ban 雷朋</option>
-                    	<option value="low_price">TODS</option>
-                    	<option value="low_price">VOGUE</option>
-					</select>
-            	</div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-4 m_page_left_menu_item"><a href="m_info">會員資訊</a></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-4 m_page_left_menu_item"><a href="#">購物資訊</a></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-4 m_page_left_menu_item active"><a href="m_reserve.html">預約賞框</a></div>
             </div>
      	</div>
-        <div class="col-md-12 col-xs-12 product_page_top">
+        <div class="col-md-12 col-xs-12 m_page_top visible-lg visible-md visible-sm">
         	<div class="row">
-     			<div class="col-lg-4 col-md-4 col-sm-4 visible-lg visible-md visible-sm product_page_top_current_type">正在瀏覽<span>光學眼鏡</span></div>
-        		<div class="col-lg-4 col-md-4 col-sm-4 visible-lg visible-md visible-sm">
-  					<button type="button" class="btn btn-default active">20</button>
-  					<button type="button" class="btn btn-default">40</button>
-  					<button type="button" class="btn btn-default">100</button>
-        		</div>
-        		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 product_page_top_page_ctrl">
-            		<button type="button" class="btn btn-default disabled"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
-  					<button type="button" class="btn btn-default"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
-            	</div>
+     			<div class="col-lg-4 col-md-4 col-sm-4 m_page_top_current_type">正在瀏覽<span>會員帳號</span></div>
      		</div>
         </div>
-        <div class="col-lg-9 col-md-8 col-sm-8 col-xs-12 product_page_item_box">
-        	<div class="row">
-            	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                	<a href="product_detail.html">
-                    	<div class="product_page_item">
-                			<div class="product_page_item_favor active"></div>
-                    		<div class="product_page_item_img" style="background-image:url(images/product_1.jpg)"></div>
-                    		<div class="product_page_item_txt">
-                    			<h5 class="type">RAY-BAN RX5154</h5>
-                    	    	<h5 class="price">$5400</h5>
-                    		</div>
-                    		<div class="product_page_item_type">
-                    			<a href="#"><img src="images/product_type.jpg" class="img-circle"></a>
-                    	    	<a href="#"><img src="images/product_type.jpg" class="img-circle active"></a>
-                    	    	<a href="#"><img src="images/product_type.jpg" class="img-circle"></a>
-                    		</div>
-                		</div>
-                    </a>
+        <div class="col-lg-9 col-md-8 col-sm-8 col-xs-12 m_page_right m_reserve_page">
+        	<div class="m_page_right_inner">
+                <div class="m_page_right_titel">預約賞框</div>
+                <div class="row">
+                    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">預約編號</div>
+                    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">預約狀況</div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                	<a href="product_detail.html">
-                    	<div class="product_page_item">
-                			<div class="product_page_item_favor"></div>
-                    		<div class="product_page_item_img" style="background-image:url(images/product_1.jpg)"></div>
-                    		<div class="product_page_item_txt">
-                    			<h5 class="type">RAY-BAN RX5154</h5>
-                    	    	<h5 class="price">$5400</h5>
-                    		</div>
-                    		<div class="product_page_item_type">
-                    			<a href="#"><img src="images/product_type.jpg" class="img-circle"></a>
-                    	    	<a href="#"><img src="images/product_type.jpg" class="img-circle active"></a>
-                    	    	<a href="#"><img src="images/product_type.jpg" class="img-circle"></a>
-                    		</div>
-                		</div>
-                    </a>
+                <div class="m_reserve_page_item"><!--訂單1-->
+                	<div class="row gray">
+                    	<form name="postFrom_2" id="postForm_2" action="m_reserve.html">
+                    		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 m_reserve_page_item_btn">C223123</div>
+                        	<div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">已完成</div>
+                        	<button type="submit" form="postForm_3" value="del" class="col-lg-2 col-md-2 col-sm-2 col-xs-2 del">刪除</button>
+                    	</form>
+                    </div>
+                	<div id="C223123_more" style="display:none;"><!--訂單要顯示的區塊id=訂單編號+"_more"-->
+                    	<div class=" table-responsive reserve_page_item">
+                        	<table class="table">
+                        		<tbody>
+                            		<tr>
+                                		<td class="col_1">鏡框</td>
+                                    	<td class="col_2">鏡片</td>
+                                    	<td class="col_3">其他</td>
+                                	</tr>
+                                	<tr>
+                                		<td class="col_1"><div class=" reserve_page_item_img" style="background-image:url(images/product_1.jpg)"></div></td>
+                                    	<td class="col_2 reserve_page_item_txt">UV</td>
+                                    	<td class="col_3 reserve_page_item_txt"></td>
+                                	</tr>
+                            	</tbody>
+                        	</table>
+                    	</div>
+                        <div class=" table-responsive m_reserve_page_info_tabe">
+                        	<table class="table">
+                            	<tbody>
+                            		<tr>
+                                		<td class="col_1 w2">預約編號:</td>
+                                    	<td class="col_2 w3">C223123</td>
+                                    	<td class="col_3 w2">預約狀況:</td>
+                                        <td class="col_4 w3">未完成預約</td>
+                                	</tr>
+                                	<tr>
+                                		<td class="col_1">預約時間:</td>
+                                    	<td class="col_2">上午11:00</td>
+                                    	<td class="col_3">預約店面:</td>
+                                        <td class="col_4">高雄左營店</td>
+                                	</tr>
+                            	</tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div><!--訂單1END-->
+                <div class="m_reserve_page_item"><!--訂單2-->
+                	<div class="row">
+                    	<form name="postFrom_3" id="postForm_3" action="m_reserve.html">
+                    		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 m_reserve_page_item_btn">C223456</div>
+                        	<div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">未完成預約</div>
+                        	<button type="submit" form="postForm_3" value="cancel" class="col-lg-2 col-md-2 col-sm-2 col-xs-2 cancel">取消</button>
+                    	</form>
+                    </div>
+                	<div id="C223456_more" style="display:none;"><!--訂單要顯示的區塊id=訂單編號+"_more"-->
+                    	<div class=" table-responsive reserve_page_item">
+                        	<table class="table">
+                        		<tbody>
+                            		<tr>
+                                		<td class="col_1">鏡框</td>
+                                    	<td class="col_2">鏡片</td>
+                                    	<td class="col_3">其他</td>
+                                	</tr>
+                                	<tr>
+                                		<td class="col_1"><div class=" reserve_page_item_img" style="background-image:url(images/product_1.jpg)"></div></td>
+                                    	<td class="col_2 reserve_page_item_txt">UV</td>
+                                    	<td class="col_3 reserve_page_item_txt"></td>
+                                	</tr>
+                            	</tbody>
+                        	</table>
+                    	</div>
+                        <div class=" table-responsive m_reserve_page_info_tabe">
+                        	<table class="table">
+                            	<tbody>
+                            		<tr>
+                                		<td class="col_1 w2">預約編號:</td>
+                                    	<td class="col_2 w3">C223123</td>
+                                    	<td class="col_3 w2">預約狀況:</td>
+                                        <td class="col_4 w3">未完成預約</td>
+                                	</tr>
+                                	<tr>
+                                		<td class="col_1">預約時間:</td>
+                                    	<td class="col_2">上午11:00</td>
+                                    	<td class="col_3">預約店面:</td>
+                                        <td class="col_4">高雄左營店</td>
+                                	</tr>
+                            	</tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div><!--訂單2 END-->
+                <div class="m_reserve_page_item"><!--訂單3-->
+                	<div class="row gray">
+                    	<form name="postFrom_3" id="postForm_3" action="m_reserve.html">
+                    		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 m_reserve_page_item_btn">C223789</div>
+                        	<div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">未完成預約</div>
+                        	<button type="submit" form="postForm_3" value="cancel" class="col-lg-2 col-md-2 col-sm-2 col-xs-2 cancel">取消</button>
+                    	</form>
+                    </div>
+                	<div id="C223789_more" style="display:none;"><!--訂單要顯示的區塊id=訂單編號+"_more"-->
+                    	<div class=" table-responsive reserve_page_item">
+                        	<table class="table">
+                        		<tbody>
+                            		<tr>
+                                		<td class="col_1">鏡框</td>
+                                    	<td class="col_2">鏡片</td>
+                                    	<td class="col_3">其他</td>
+                                	</tr>
+                                	<tr>
+                                		<td class="col_1"><div class=" reserve_page_item_img" style="background-image:url(images/product_1.jpg)"></div></td>
+                                    	<td class="col_2 reserve_page_item_txt">UV</td>
+                                    	<td class="col_3 reserve_page_item_txt"></td>
+                                	</tr>
+                            	</tbody>
+                        	</table>
+                    	</div>
+                        <div class=" table-responsive m_reserve_page_info_tabe">
+                        	<table class="table">
+                            	<tbody>
+                            		<tr>
+                                		<td class="col_1 w2">預約編號:</td>
+                                    	<td class="col_2 w3">C223123</td>
+                                    	<td class="col_3 w2">預約狀況:</td>
+                                        <td class="col_4 w3">未完成預約</td>
+                                	</tr>
+                                	<tr>
+                                		<td class="col_1">預約時間:</td>
+                                    	<td class="col_2">上午11:00</td>
+                                    	<td class="col_3">預約店面:</td>
+                                        <td class="col_4">高雄左營店</td>
+                                	</tr>
+                            	</tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div><!--訂單3 END-->
+            </div>
+            <div class="row m_reserve_page_bottom">
+            	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 show_num">
+                   	<button type="button" class="btn btn-default active">20</button>
+  					<button type="button" class="btn btn-default">40</button>
+  					<button type="button" class="btn btn-default">100</button>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                	<a href="product_detail.html">
-                    	<div class="product_page_item">
-                			<div class="product_page_item_favor"></div>
-                    		<div class="product_page_item_img" style="background-image:url(images/product_1.jpg)"></div>
-                    		<div class="product_page_item_txt">
-                    			<h5 class="type">RAY-BAN RX5154</h5>
-                    	    	<h5 class="price">$5400</h5>
-                    		</div>
-                    		<div class="product_page_item_type">
-                    			<a href="#"><img src="images/product_type.jpg" class="img-circle"></a>
-                    	    	<a href="#"><img src="images/product_type.jpg" class="img-circle active"></a>
-                    	    	<a href="#"><img src="images/product_type.jpg" class="img-circle"></a>
-                    		</div>
-                		</div>
-                    </a>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                	<a href="product_detail.html">
-                    	<div class="product_page_item">
-                			<div class="product_page_item_favor"></div>
-                    		<div class="product_page_item_img" style="background-image:url(images/product_1.jpg)"></div>
-                    		<div class="product_page_item_txt">
-                    			<h5 class="type">RAY-BAN RX5154</h5>
-                    	    	<h5 class="price">$5400</h5>
-                    		</div>
-                    		<div class="product_page_item_type">
-                    			<a href="#"><img src="images/product_type.jpg" class="img-circle"></a>
-                    	    	<a href="#"><img src="images/product_type.jpg" class="img-circle active"></a>
-                    	    	<a href="#"><img src="images/product_type.jpg" class="img-circle"></a>
-                    		</div>
-                		</div>
-                    </a>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                	<a href="product_detail.html">
-                    	<div class="product_page_item">
-                			<div class="product_page_item_favor"></div>
-                    		<div class="product_page_item_img" style="background-image:url(images/product_1.jpg)"></div>
-                    		<div class="product_page_item_txt">
-                    			<h5 class="type">RAY-BAN RX5154</h5>
-                    	    	<h5 class="price">$5400</h5>
-                    		</div>
-                    		<div class="product_page_item_type">
-                    			<a href="#"><img src="images/product_type.jpg" class="img-circle"></a>
-                    	    	<a href="#"><img src="images/product_type.jpg" class="img-circle active"></a>
-                    	    	<a href="#"><img src="images/product_type.jpg" class="img-circle"></a>
-                    		</div>
-                		</div>
-                    </a>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                	<a href="product_detail.html">
-                    	<div class="product_page_item">
-                			<div class="product_page_item_favor"></div>
-                    		<div class="product_page_item_img" style="background-image:url(images/product_1.jpg)"></div>
-                    		<div class="product_page_item_txt">
-                    			<h5 class="type">RAY-BAN RX5154</h5>
-                    	    	<h5 class="price">$5400</h5>
-                    		</div>
-                    		<div class="product_page_item_type">
-                    			<a href="#"><img src="images/product_type.jpg" class="img-circle"></a>
-                    	    	<a href="#"><img src="images/product_type.jpg" class="img-circle active"></a>
-                    	    	<a href="#"><img src="images/product_type.jpg" class="img-circle"></a>
-                    		</div>
-                		</div>
-                    </a>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                	<a href="product_detail.html">
-                    	<div class="product_page_item">
-                			<div class="product_page_item_favor"></div>
-                    		<div class="product_page_item_img" style="background-image:url(images/product_1.jpg)"></div>
-                    		<div class="product_page_item_txt">
-                    			<h5 class="type">RAY-BAN RX5154</h5>
-                    	    	<h5 class="price">$5400</h5>
-                    		</div>
-                    		<div class="product_page_item_type">
-                    			<a href="#"><img src="images/product_type.jpg" class="img-circle"></a>
-                    	    	<a href="#"><img src="images/product_type.jpg" class="img-circle active"></a>
-                    	    	<a href="#"><img src="images/product_type.jpg" class="img-circle"></a>
-                    		</div>
-                		</div>
-                    </a>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                	<a href="product_detail.html">
-                    	<div class="product_page_item">
-                			<div class="product_page_item_favor"></div>
-                    		<div class="product_page_item_img" style="background-image:url(images/product_1.jpg)"></div>
-                    		<div class="product_page_item_txt">
-                    			<h5 class="type">RAY-BAN RX5154</h5>
-                    	    	<h5 class="price">$5400</h5>
-                    		</div>
-                    		<div class="product_page_item_type">
-                    			<a href="#"><img src="images/product_type.jpg" class="img-circle"></a>
-                    	    	<a href="#"><img src="images/product_type.jpg" class="img-circle active"></a>
-                    	    	<a href="#"><img src="images/product_type.jpg" class="img-circle"></a>
-                    		</div>
-                		</div>
-                    </a>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 dir_ctr">
+                    <button type="button" class="btn btn-default disabled"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+  					<button type="button" class="btn btn-default"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
                 </div>
             </div>
-     	</div>
+        </div>
      	<div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 inner_page_left_favor">
         	<div class="row inner_page_left_favor_tile">
             	<picture>
@@ -372,28 +370,6 @@ $(document).ready(function(){
                 <i class="fa fa-chevron-down arrow_down visible-lg visible-md visible-sm" aria-hidden="true"></i>
            	</div>
      	</div>
-        <div class="col-lg-12 col-md-12 col-sm-12 visible-lg visible-md visible-sm product_page_bottom">
-        	<div class="row">
-        		<div class="col-lg-6 col-md-6 col-sm-6 product_page_bottom_num">
-  					<button type="button" class="btn btn-default active">20</button>
-  					<button type="button" class="btn btn-default">40</button>
-  					<button type="button" class="btn btn-default">100</button>
-        		</div>
-                <div class="col-lg-6 col-md-6 col-sm-6 product_page_bottom_page">
-                	<nav>
-  						<ul class="pagination">
-    						<li><a href="#"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a></li>
-    						<li class="active"><a href="#">1</a></li>
-    						<li><a href="#">2</a></li>
-    						<li><a href="#">3</a></li>
-    						<li><a href="#">4</a></li>
-    						<li><a href="#">5</a></li>
-    						<li><a href="#"><span aria-hidden="true">&raquo;</span><span class="sr-only">Next</span></a></li>
-  						</ul>
-					</nav>
-                </div>
-        	</div>
-        </div>
     </div>
     <div class="back_top"></div> <!-- top btn-->
 </div><!--content END-->
