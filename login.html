@@ -138,67 +138,69 @@ $(document).on('ready', function() {
      	<div class="max_width"><a href="index.html">首頁</a>&nbsp;&nbsp;|&nbsp;&nbsp;<span>光學眼鏡</span></div>
      </div>
     <div class="public_inner_wrap product_page">
-    	<div>
-        	<a class="hidden-md hidden-lg hidden-sm login_a">登入</a>
-        	<a class="hidden-md hidden-lg hidden-sm register_a">註冊</a>
-        </div>
-        <div class="row equalheight">
-        	<!--login-->
-            <div id="login_container" class="col-lg-6 col-md-6 col-sm-12 col-xs-12 login_left_box">
-                <div class="login_title_text" style="color:#2A9FD2;">登入</div>
-                <div class="login_account_text">登入你的帳號</div>
-                <a class="login_a_btn" href="#" style="background-color:#152B51;color:#FFF;">Facebook登入</a>
-                <div class="login_or_box">
-                    <span class="login_or_item">OR</span>
-                </div>
-                <form class="form_title_style">
-                    <div style="padding:1vh 0;">
-                         Email
-                        <input type="email" class="public_input_style">
+    	<div class="max_width">
+            <div>
+                <a class="hidden-md hidden-lg hidden-sm login_a">登入</a>
+                <a class="hidden-md hidden-lg hidden-sm register_a">註冊</a>
+            </div>
+            <div class="row equalheight">
+                <!--login-->
+                <div id="login_container" class="col-lg-6 col-md-6 col-sm-12 col-xs-12 login_left_box">
+                    <div class="login_title_text" style="color:#2A9FD2;">登入</div>
+                    <div class="login_account_text">登入你的帳號</div>
+                    <a class="login_a_btn" href="#" style="background-color:#152B51;color:#FFF;">Facebook登入</a>
+                    <div class="login_or_box">
+                        <span class="login_or_item">OR</span>
                     </div>
-                    <div style="padding:1vh 0 6vh 0;">
-                         密碼
-                        <input type="password" class="public_input_style">
+                    <form class="form_title_style">
+                        <div style="padding:1vh 0;">
+                             Email
+                            <input type="email" class="public_input_style">
+                        </div>
+                        <div style="padding:1vh 0 6vh 0;">
+                             密碼
+                            <input type="password" class="public_input_style">
+                        </div>
+                        <a class="login_a_btn" href="m_info.html">登入</a>
+                        <div class="forget_pwd_box">
+                            <a href="#" style="font-size:1.2em;color:#211714;">忘記密碼</a>
+                        </div>
+                    </form>
+                </div><!--login_left_box END-->
+                <div id="register_container" class="col-lg-6 col-md-6 col-sm-12 col-xs-12 hidden-xs hidden-sm login_right_box">
+                    <div class="login_title_text" style="color:#2A9FD2;">註冊</div>
+                    <div class="login_account_text">歡迎註冊你的帳號</div>
+                    <a class="login_a_btn" href="#" style="background-color:#152B51;color:#FFF;">Facebook註冊</a>
+                    <div class="login_or_box">
+                        <span class="login_or_item">OR</span>
                     </div>
-                    <a class="login_a_btn" href="m_info.html">登入</a>
-                    <div class="forget_pwd_box">
-                        <a href="#" style="font-size:1.2em;color:#211714;">忘記密碼</a>
-                    </div>
-                </form>
-            </div><!--login_left_box END-->
-            <div id="register_container" class="col-lg-6 col-md-6 col-sm-12 col-xs-12 hidden-xs hidden-sm login_right_box">
-                <div class="login_title_text" style="color:#2A9FD2;">註冊</div>
-                <div class="login_account_text">歡迎註冊你的帳號</div>
-                <a class="login_a_btn" href="#" style="background-color:#152B51;color:#FFF;">Facebook註冊</a>
-                <div class="login_or_box">
-                    <span class="login_or_item">OR</span>
-                </div>
-                <form class="form_title_style">
-                    <div style="padding:1vh 0;">
-                         姓名
-                        <input type="text" class="public_input_style">
-                    </div>
-                    <div style="padding:1vh 0;">
-                         Email
-                        <input type="email" class="public_input_style">
-                    </div>
-                    <div style="padding:1vh 0;">
-                         密碼
-                        <input type="password" class="public_input_style">
-                    </div>
-                    <div style="padding:1vh 0 6vh 0;">
-                         確認密碼
-                        <input type="password" class="public_input_style">
-                    </div>
-                    <div class="forget_pwd_box">
-                        <label>
-                            <input type="checkbox"> 同意會員條款
-                        </label>
-                    </div>
-                    <a class="login_a_btn" href="#">註冊</a>
-                </form>
-            </div><!--login_right_box END-->
-        </div><!--row END-->
+                    <form class="form_title_style">
+                        <div style="padding:1vh 0;">
+                             姓名
+                            <input type="text" class="public_input_style">
+                        </div>
+                        <div style="padding:1vh 0;">
+                             Email
+                            <input type="email" class="public_input_style">
+                        </div>
+                        <div style="padding:1vh 0;">
+                             密碼
+                            <input type="password" class="public_input_style">
+                        </div>
+                        <div style="padding:1vh 0 6vh 0;">
+                             確認密碼
+                            <input type="password" class="public_input_style">
+                        </div>
+                        <div class="forget_pwd_box">
+                            <label>
+                                <input type="checkbox"> 同意會員條款
+                            </label>
+                        </div>
+                        <a class="login_a_btn" href="#">註冊</a>
+                    </form>
+                </div><!--login_right_box END-->
+            </div><!--row END-->
+        </div><!--max_width END-->
     </div><!--public_inner_wrap END-->
     <div class="back_top"></div> <!-- top btn-->
 </div><!--content END-->

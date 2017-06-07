@@ -66,6 +66,8 @@
 .shop_list_outer_box{padding:50px;}
 .shop_list_ul li{width:20%;padding:20px 10px;}
 
+/*SHOP_DETAIL*/
+.a_tel{padding:5px 0;color:#3B79B3;font-size:1.2em;}
 
 /*MEMBER*/
 .member_form_ul li{padding:20px 0;}
