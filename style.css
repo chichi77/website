@@ -116,7 +116,7 @@ div{padding:0; margin:0; border:0; box-sizing: border-box;}
 /*right menu END*/
 
 /*index*/
-.index_page, edit_page{background-color:#FFF;}
+.index_page, .edit_page{background-color:#FFF;}
 .index_page_banner_img{width:100%;}
 .carousel-indicators li{ background-color:#A2A2A3; border:0; width:15px; height:15px; margin:0 10px 5px 10px;}
 .carousel-indicators .active {
