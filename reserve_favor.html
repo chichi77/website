@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!--[if lt IE 9]>
-<script src="js/html5.js"></script>
+<script src="//demo.dake.com.tw/~dake/jquery/html5.js"></script>
 <![endif]-->
 <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 
@@ -29,17 +29,44 @@
 <script src="https://use.fontawesome.com/9d6bc01732.js"></script>
 </head>
 <script>
-$(document).on('ready', function() {
-	$('.index_page_product_item_slider').slick({
-  		slidesToShow: 5,
+$(document).ready(function(){
+	$('.favor_slider').slick({
+  		infinite: false,
+  		slidesToShow: 3,
   		slidesToScroll: 1,
-  		autoplay: true,
-  		autoplaySpeed: 2000,
+		vertical:true,
+		verticalSwiping:true,
+		arrows: true,
+		prevArrow: $('.arrow_up'),
+		nextArrow: $('.arrow_down'),
+  		responsive: [
+    	{
+   			breakpoint: 768,
+      		settings: {
+        		slidesToShow: 2,
+        		slidesToScroll: 1,
+        		infinite: true,
+				arrows: false
+      		}
+    	}
+    	// You can unslick at a given breakpoint now by adding:
+    	// settings: "unslick"
+    	// instead of a settings object
+  		]
+	});
+	$(".back_top").click(function(){
+		jQuery("html,body").animate({
+			scrollTop:0
+		},500);
 	});
 });
+function check_all(obj,cName) { 
+    var checkboxs = document.getElementsByName(cName); 
+    for(var i=0;i<checkboxs.length;i++){checkboxs[i].checked = obj.checked;} 
+} 
 </script>
 <style>
-
+.col_3.reserve_page_item_txt{word-break: break-all; padding-top:3% !important;}
 </style>
 <body>
 <header>
@@ -132,116 +159,140 @@ $(document).on('ready', function() {
 </header>
 
 
+
 <!--content-->
-<div class="container-fluid box_inner page_bk">
-	<div class="max_width index_page">
-        <!--banner-->
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner" role="listbox">
-                <div class="item active"><a href="#"><img class="index_page_banner_img" src="images/banner_1.jpg" alt="First slide"></a></div>
-                <div class="item"><a href="#"><img class="index_page_banner_img" src="images/banner_2.jpg" alt="Second slide"></a></div>
-                <div class="item"><a href="#"><img class="index_page_banner_img" src="images/banner_4.jpg" alt="Third slide"></a></div>
-            </div>
-            <a class="left carousel-control" href="#carouselExampleIndicators" data-slide="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
-            <a class="right carousel-control" href="#carouselExampleIndicators" data-slide="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
-        </div><!--banner END-->
-        
-        <!--news-->
-        <div class="row index_page_news">
-            <a href="#"><div class="view hm-black-strong col-lg-4 col-md-4 col-sm-4 col-xs-4 news_item">
-                <div class="index_page_news_img" style="background-image:url(images/news_1.jpg);"></div>
-                <div class="mask flex-center">
-                    <p class="white-text">.pattern-1</p>       
-                </div>
-            </div></a>
-            <a href="#"><div class="view hm-black-strong col-lg-4 col-md-4 col-sm-4 col-xs-4 news_item">
-                <div class="index_page_news_img" style="background-image:url(images/news_2.jpg);"></div>
-                <div class="mask flex-center">
-                    <p class="white-text">.pattern-1</p>       
-                </div>
-            </div></a>
-            <a href="#"><div class="view hm-black-strong col-lg-4 col-md-4 col-sm-4 col-xs-4 news_item">
-                <div class="index_page_news_img" style="background-image:url(images/news_3.jpg);"></div>
-                <div class="mask flex-center">
-                    <p class="white-text">.pattern-1</p>       
-                </div>
-            </div></a>
-        </div><!--news END-->
-        
-        <!--product slider-->
-        <div class="index_page_product">
-            <div class="row index_page_title">
-                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-4"><hr size="1" color="#999"></div>
-                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4 index_page_product_title_txt"><h3><strong>最新款式</strong></h3></div>
-                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-4"><hr size="1" color="#555"></div>
-            </div>
-            <div class="index_page_product_item_slider">
-                <div>
-                    <a href="#"><img data-lazy="images/product_1.jpg"/></a>
-                </div>
-                <div>
-                    <a href="#"><img data-lazy="images/product_2.jpg"/></a>
-                </div>
-                <div>
-                    <a href="#"><img data-lazy="images/product_3.jpg"/></a>
-                </div>
-                <div>
-                    <a href="#"><img data-lazy="images/product_4.jpg"/></a>
-                </div>
-                <div>
-                    <a href="#"><img data-lazy="images/product_5.jpg"/></a>
-                </div>
-                <div>
-                    <a href="#"><img data-lazy="images/product_1.jpg"/></a>
-                </div>
-                <div>
-                    <a href="#"><img src="images/product_2.jpg" data-lazy="images/product_2.jpg"/></a>
+<div class="container-fluid box_inner">
+	 <div class="container-fluid box_inner inner_page_type">
+     	<div class="max_width"><a href="index.html">首頁</a>&nbsp;&nbsp;|&nbsp;&nbsp;<span>預約賞框</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span>賞框資訊</span></div>
+     </div>
+     <div class="m_page">
+         <div class="row m_page_inner max_width">
+            <div class="col-lg-3 col-md-3 col-sm-3 m_page_left_menu">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-4 m_page_left_menu_item active">資訊確認</div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-4 m_page_left_menu_item">完成預約</div>
                 </div>
             </div>
-        </div><!--product slider END-->
-        
-        <!--編輯器-->
-        <div class="container-fluid box_inner edit_style">
-            <style>
-                .index_page_edit_title_txt{text-align:center; padding: 0;}
-                .index_page_edit_item{ padding:0;}
-                .top:hover{ opacity:0.7; filter:alpha(opacity=70);}
-                .index_page_edit_item img {width:100%;}
-            </style>
-            <div class="row index_page_title">
-                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-4"><hr size="1" color="#999"></div>
-                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4 index_page_edit_title_txt"><h3><strong>歐美流行</strong></h3></div>
-                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-4"><hr size="1" color="#555"></div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 index_page_edit_item top">
-                    <img src="images/edit_1.jpg">
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 index_page_edit_item top">
-                    <img src="images/edit_2.jpg">
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 index_page_edit_item top">
-                    <img src="images/edit_3.jpg">
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 index_page_edit_item top">
-                    <img src="images/edit_4.jpg">
+            <div class="col-md-12 col-xs-12 m_page_top visible-lg visible-md visible-sm">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4 m_page_top_current_type">正在瀏覽<span>商品比較清單</span></div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 index_page_edit_item">
-                    <img src="images/edit_5.jpg">
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 m_page_right">
+                <form name="postForm_2" id="postForm_2" action="reserve_2.html">
+                    <div class="m_page_right_inner">
+                        <div class="m_page_right_titel">商品比較</div>
+                        <div class=" table-responsive reserve_page_item">
+                        	<input type="checkbox" name="item" value=""  form="postForm_3" class="reserve_page_item_del" />
+                            <form name="postForm_3" id="postForm_3" method="post" action="reserve.html">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col_1 w3">鏡框</td>
+                                            <td class="col_2 w2">名稱</td>
+                                            <td class="col_3">尺寸規格</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col_1"><a href="product_glasses_detail.html"><div class=" reserve_page_item_img" style="background-image:url(images/product_1.jpg)"></div></a></td>
+                                            <td class="col_2 reserve_page_item_txt">RAY-BAN<br>RX5154</td>
+                                            <td class="col_3 reserve_page_item_txt">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </form>
+                        </div>
+                        <div class=" table-responsive reserve_page_item">
+                        	<input type="checkbox" name="item" value=""  form="postForm_3" class="reserve_page_item_del" />
+                            <form name="postForm_3" id="postForm_3" method="post" action="reserve.html">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col_1">鏡框</td>
+                                            <td class="col_2">名稱</td>
+                                            <td class="col_3">尺寸規格</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col_1"><a href="product_glasses_detail.html"><div class=" reserve_page_item_img" style="background-image:url(images/product_1.jpg)"></div></a></td>
+                                            <td class="col_2 reserve_page_item_txt">RAY-BAN<br>RX5154</td>
+                                            <td class="col_3 reserve_page_item_txt">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </form>
+                        </div>
+                        <div class=" table-responsive reserve_page_item">
+                        	<input type="checkbox" name="item" value=""  form="postForm_3" class="reserve_page_item_del" />
+                            <form name="postForm_3" id="postForm_5" method="post" action="reserve.html">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col_1">鏡框</td>
+                                            <td class="col_2">名稱</td>
+                                            <td class="col_3">尺寸規格</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col_1"><a href="product_glasses_detail.html"><div class=" reserve_page_item_img" style="background-image:url(images/product_1.jpg)"></div></a></td>
+                                            <td class="col_2 reserve_page_item_txt">RAY-BAN<br>RX5154</td>
+                                            <td class="col_3 reserve_page_item_txt">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </form>
+                        </div>
+                        <img src="images/reserve_favor_help.jpg" width="100%">
+                    </div>
+                    <div class="row m_page_bottom_btn">
+                        <a href="reserve_glasses.html"><button type="submit" form="postFrom_2" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 add_next">加入預約賞框</button></a>
+                        <a href="product_sunglasses.html"><button class="col-lg-6 col-md-6 col-sm-6 col-xs-6 add_cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i>　繼續選框</button></a>
+                        <a href="product_sunglasses.html"><button class="col-lg-6 col-md-6 col-sm-6 col-xs-6 add_cancel">取消預約</button></a>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 inner_page_left_favor">
+                <div class="row inner_page_left_favor_tile">
+                    <picture>
+                        <source srcset="images/favor_title.png" media="(max-width: 400px)">
+                        <source srcset="images/favor_title_sm.png" media="(max-width: 768px) and (min-width:401px;)">
+                        <source srcset="images/favor_title.png" media="(min-width:768px;)">
+                        <img src="images/favor_title.png" alt="My default image">
+                    </picture>
+                    <i class="fa fa-chevron-up arrow_up visible-lg visible-md visible-sm" aria-hidden="true"></i>
+                    <div class="favor_slider">                	
+                        <div>
+                            <div class="favor_slider_img" style="background-image:url(images/product_1.jpg)"></div>
+                            <div class="inner_page_left_favor_slider_txt">
+                                <h5 class="type">RAY-BAN RX5154</h5>
+                                <h5 class="price">$5400</h5>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="favor_slider_img" style="background-image:url(images/product_1.jpg)"></div>
+                            <div class="inner_page_left_favor_slider_txt">
+                                <h5 class="type">RAY-BAN RX5154</h5>
+                                <h5 class="price">$5400</h5>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="favor_slider_img" style="background-image:url(images/product_1.jpg)"></div>
+                            <div class="inner_page_left_favor_slider_txt">
+                                <h5 class="type">RAY-BAN RX5154</h5>
+                                <h5 class="price">$5400</h5>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="favor_slider_img" style="background-image:url(images/product_1.jpg)"></div>
+                            <div class="inner_page_left_favor_slider_txt">
+                                <h5 class="type">RAY-BAN RX5154</h5>
+                                <h5 class="price">$5400</h5>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <i class="fa fa-chevron-down arrow_down visible-lg visible-md visible-sm" aria-hidden="true"></i>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 index_page_edit_item">
-                    <img src="images/edit_6.jpg">
-                </div>
-            </div>     
-        </div><!--編輯器 END---> 
-        <div class="menu_right">
+            </div>
+        </div><!--max width-->
+    	<div class="menu_right">
         	<ul>
             	<li><a href="m_info.html"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a></li>
                 <li><a href="reserve_glasses.html"><img src="images/glasses.svg"><div class="right_menu_txt">2</div></a></li>
@@ -250,7 +301,8 @@ $(document).on('ready', function() {
                 <li><a href="reserve_help.html"><span>預約<i class="fa fa-question-circle" aria-hidden="true"></i></span></a></li>
             </ul>
         </div>
-	</div><!--max_width-->
+    </div>
+    <div class="back_top"></div> <!-- top btn-->
 </div><!--content END-->
 
 

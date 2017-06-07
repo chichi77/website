@@ -36,6 +36,11 @@ $(document).on('ready', function() {
   		autoplay: true,
   		autoplaySpeed: 2000,
 	});
+	$(".back_top").click(function(){
+		jQuery("html,body").animate({
+			scrollTop:0
+		},500);
+	});
 });
 </script>
 <style>
@@ -134,113 +139,10 @@ $(document).on('ready', function() {
 
 <!--content-->
 <div class="container-fluid box_inner page_bk">
-	<div class="max_width index_page">
-        <!--banner-->
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner" role="listbox">
-                <div class="item active"><a href="#"><img class="index_page_banner_img" src="images/banner_1.jpg" alt="First slide"></a></div>
-                <div class="item"><a href="#"><img class="index_page_banner_img" src="images/banner_2.jpg" alt="Second slide"></a></div>
-                <div class="item"><a href="#"><img class="index_page_banner_img" src="images/banner_4.jpg" alt="Third slide"></a></div>
-            </div>
-            <a class="left carousel-control" href="#carouselExampleIndicators" data-slide="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
-            <a class="right carousel-control" href="#carouselExampleIndicators" data-slide="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
-        </div><!--banner END-->
-        
-        <!--news-->
-        <div class="row index_page_news">
-            <a href="#"><div class="view hm-black-strong col-lg-4 col-md-4 col-sm-4 col-xs-4 news_item">
-                <div class="index_page_news_img" style="background-image:url(images/news_1.jpg);"></div>
-                <div class="mask flex-center">
-                    <p class="white-text">.pattern-1</p>       
-                </div>
-            </div></a>
-            <a href="#"><div class="view hm-black-strong col-lg-4 col-md-4 col-sm-4 col-xs-4 news_item">
-                <div class="index_page_news_img" style="background-image:url(images/news_2.jpg);"></div>
-                <div class="mask flex-center">
-                    <p class="white-text">.pattern-1</p>       
-                </div>
-            </div></a>
-            <a href="#"><div class="view hm-black-strong col-lg-4 col-md-4 col-sm-4 col-xs-4 news_item">
-                <div class="index_page_news_img" style="background-image:url(images/news_3.jpg);"></div>
-                <div class="mask flex-center">
-                    <p class="white-text">.pattern-1</p>       
-                </div>
-            </div></a>
-        </div><!--news END-->
-        
-        <!--product slider-->
-        <div class="index_page_product">
-            <div class="row index_page_title">
-                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-4"><hr size="1" color="#999"></div>
-                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4 index_page_product_title_txt"><h3><strong>最新款式</strong></h3></div>
-                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-4"><hr size="1" color="#555"></div>
-            </div>
-            <div class="index_page_product_item_slider">
-                <div>
-                    <a href="#"><img data-lazy="images/product_1.jpg"/></a>
-                </div>
-                <div>
-                    <a href="#"><img data-lazy="images/product_2.jpg"/></a>
-                </div>
-                <div>
-                    <a href="#"><img data-lazy="images/product_3.jpg"/></a>
-                </div>
-                <div>
-                    <a href="#"><img data-lazy="images/product_4.jpg"/></a>
-                </div>
-                <div>
-                    <a href="#"><img data-lazy="images/product_5.jpg"/></a>
-                </div>
-                <div>
-                    <a href="#"><img data-lazy="images/product_1.jpg"/></a>
-                </div>
-                <div>
-                    <a href="#"><img src="images/product_2.jpg" data-lazy="images/product_2.jpg"/></a>
-                </div>
-            </div>
-        </div><!--product slider END-->
-        
-        <!--編輯器-->
-        <div class="container-fluid box_inner edit_style">
-            <style>
-                .index_page_edit_title_txt{text-align:center; padding: 0;}
-                .index_page_edit_item{ padding:0;}
-                .top:hover{ opacity:0.7; filter:alpha(opacity=70);}
-                .index_page_edit_item img {width:100%;}
-            </style>
-            <div class="row index_page_title">
-                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-4"><hr size="1" color="#999"></div>
-                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4 index_page_edit_title_txt"><h3><strong>歐美流行</strong></h3></div>
-                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-4"><hr size="1" color="#555"></div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 index_page_edit_item top">
-                    <img src="images/edit_1.jpg">
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 index_page_edit_item top">
-                    <img src="images/edit_2.jpg">
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 index_page_edit_item top">
-                    <img src="images/edit_3.jpg">
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 index_page_edit_item top">
-                    <img src="images/edit_4.jpg">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 index_page_edit_item">
-                    <img src="images/edit_5.jpg">
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 index_page_edit_item">
-                    <img src="images/edit_6.jpg">
-                </div>
-            </div>     
-        </div><!--編輯器 END---> 
+	<div class="m_page">
+		<div class="max_width edit_page edit_style"><!--編輯器-->
+    	    
+		</div><!--max_width--><!--編輯器-->
         <div class="menu_right">
         	<ul>
             	<li><a href="m_info.html"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a></li>
@@ -250,7 +152,8 @@ $(document).on('ready', function() {
                 <li><a href="reserve_help.html"><span>預約<i class="fa fa-question-circle" aria-hidden="true"></i></span></a></li>
             </ul>
         </div>
-	</div><!--max_width-->
+    </div>
+    <div class="back_top"></div> <!-- top btn-->
 </div><!--content END-->
 
 
