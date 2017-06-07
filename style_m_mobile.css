@@ -10,10 +10,6 @@
 .header_logo{padding:5px;}
 .navbar-inverse .navbar-nav>.active>a {background-image: none; background: #555; -webkit-box-shadow: none; box-shadow: none;}
 /*header END*/
-
-/*right menu*/
-.menu_right{width:50px; padding:5px 5px; right:5px; top:30%;}
-/*right menu END*/
 	
 .carousel-indicators li{ width:10px; height:10px; margin:0 4px;}
 .carousel-indicators .active { width:10px; height:10px;  margin:0 4px;}
@@ -103,6 +99,10 @@
 .shop_list_outer_box{padding:10px;}
 .shop_list_ul li{width:50%;padding:10px 10px;}
 .shop_list_area_select{width:100%;padding:10px 5px;margin:10px 0 20px 0;}
+
+/*SHOP_DETAIL*/
+.a_tel{display:block;text-align:center;padding:5px 30px;background:#C00;color:#FFF;font-size:0.9em;}
+
 
 /*NEWS*/
 .news_right_container, .news_detail_right_container{padding:0;}
