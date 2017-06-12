@@ -363,6 +363,9 @@ a.member_left_a_btn{width:100%;display:inline-block;padding:2vh 1vw;}
 
 .member_acount_topic{color:#2A9FD2;text-align:center;background:#fff;box-shadow:0 5px 2px 0px #D6D6D6;}
 
+.login_fb_a{display:inline-block;width:49%;margin-right:1%;letter-spacing:0.05em;background-color:#152B51;color:#FFF;}
+.login_google_a{display:inline-block;width:50%;letter-spacing:0.05em;background-color:#C40001;color:#FFF;}
+
 /*STORE*/
 .shop_page_top{border-bottom:1px #D3D4D4 solid; padding: 20px 0 20px 0;}
 .store_country_name{width:100%;text-align:center;color:#F00;font-size:60px;padding:20px 0;}
