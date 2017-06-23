@@ -96,8 +96,8 @@ div{padding:0; margin:0; border:0; box-sizing: border-box;}
 .header_search_form input[type=text]:focus {
 	background-color: white;
 	background-image: url(images/searchicon_dark.png);
-	background-position: 105px 5px;
-    width: 130px;
+	background-position: right 5px;
+    width: 300%;
 }
 /*header END*/
 
