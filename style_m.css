@@ -45,7 +45,7 @@
 /*product_detail END*/
 
 /*reserve_2*/
-.reserve_2_page_table .col_1{ padding:15px 0 15px 10%; width:40%;}
+.reserve_2_page_table .col_1{ padding:20px 0 20px 10%; width:40%;}
 .reserve_2_page_table .col_2{ padding:15px 10% 15px 0; width:60%;}
 /*reserve_2 END*/
 
@@ -60,8 +60,8 @@
 .login_account_text{font-size:1.3em;padding:3vh 0 7vh 0;}
 .login_or_box{padding:5vh 0;}
 .login_or_item{padding:2vh;border-radius:4vh;}
-.login_fb_a{font-size:1.4em;}
-.login_google_a{font-size:1.4em;}
+.login_fb_a{font-size:1.2em;}
+.login_google_a{font-size:1.2em;}
 
 /*SHOP*/
 
