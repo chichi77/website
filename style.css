@@ -368,6 +368,9 @@ input[type="radio" i]{ font-size:20px;}
 .form_title_style{font-size:1.3em;}
 .forget_pwd_box{width:100%;text-align:center;padding:3vh 0;}
 .forget_pwd_box i{cursor:pointer;}
+.forget_pwd_window_form_cancel{background:#DDD; text-shadow:none; border-radius:0; border:0;}
+.forget_pwd_window_form_submit{ background:#2A9FD2; color:#FFF; border-radius:0; border:0;}
+.forget_pwd_email_input{width:100%; max-width:400px; padding:5px 10px;}
 
 a.member_left_a_btn{width:100%;display:inline-block;padding:2vh 1vw;}
 

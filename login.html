@@ -177,7 +177,7 @@ $(document).on('ready', function() {
                         </div>
                         <a class="login_a_btn" href="m_info.html">登入</a>
                         <div class="forget_pwd_box">
-                            <a href="#" style="font-size:1.2em;color:#211714;">忘記密碼</a>
+                            <a href="#" style="font-size:1.2em;color:#211714; cursor:pointer;" data-toggle="modal" data-target="#forget_psd_window">忘記密碼</a>
                         </div>
                     </form>
                 </div><!--login_left_box END-->
@@ -251,6 +251,29 @@ $(document).on('ready', function() {
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
                 </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
+    </div>
+    
+    <!-- 忘記密碼視窗 -->
+    <div class="modal fade" id="forget_psd_window" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content edit_style">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">忘記密碼</h4>
+                </div>
+                <form>
+                	<div class="modal-body">
+                		<p>請輸入您註冊時的信箱以找回您的密碼：</p>
+                    	<input type="email" class="forget_pwd_email_input">
+                    
+            		</div>
+                	<div class="modal-footer">
+                		<button type="submit" class="btn forget_pwd_window_form_submit">送出</button>
+                    	<button type="button" class="btn btn-default forget_pwd_window_form_cancel" data-dismiss="modal">取消</button>
+                	</div>
+                </form>
             </div><!-- /.modal-content -->
         </div><!-- /.modal -->
     </div>
