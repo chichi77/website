@@ -11,6 +11,10 @@ body {
 		font-size:16px !important;
 	}
 }
+@media screen and (min-width:1024px){
+	.login_fb_a{font-size:1.2em;}
+	.login_google_a{font-size:1.2em;}
+}
 a img {border:0}
 img {vertical-align:middle}
 ul,li {list-style:none; margin:0; padding:0}
@@ -172,8 +176,7 @@ div{padding:0; margin:0; border:0; box-sizing: border-box;}
 .footer_top span {font-size:20px;}
 .footer_top div{ padding:2%;}
 .footer_bottom{ background:#969797; padding:2% 4%; color:#FFF; font-size:14px;}
-.footer_bottom_right a { color:#FFF;}
-.footer_bottom_right{ float:right;}
+.footer_bottom_right{ float:right; cursor:pointer;}
 .footer_bottom_left{}
 /*footer END*/
 
@@ -205,6 +208,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 .send_btn_style{border:none;border-radius:0;width:30%;padding:20px;font-size:1.5em;background-color:#31ACDC;color:#FFF;}
 .cursor_pointer{cursor:pointer;}
 .page_bk{background-color:#EEE;}
+.modal-title{text-align:center; font-weight:bold; color: #2A9FD2;}
 
 .m_page{ background:#EEE;}
 .m_page_inner{ padding:0 10% 2% 10%;}
@@ -351,6 +355,7 @@ input[type="radio" i]{ font-size:20px;}
 
 /*login*/
 .login_a, .register_a{display:inline-block;margin:0 5px 0 3px;background:#fff;padding:5px 10px;font-size:1.6em;color:#000;cursor:pointer;}
+.register_a{ background-color:#D6D6D6;}
 .login_left_box{background:#fff;}
 .login_right_box{background:#D6D6D6;}
 .login_title_text{width:100%;text-align:center;color:#2A9FD2;letter-spacing:0.1em;}
@@ -362,6 +367,7 @@ input[type="radio" i]{ font-size:20px;}
 .public_input_style{width:100%;padding:8px 5px;border:solid thin #ABABAC;}
 .form_title_style{font-size:1.3em;}
 .forget_pwd_box{width:100%;text-align:center;padding:3vh 0;}
+.forget_pwd_box i{cursor:pointer;}
 
 a.member_left_a_btn{width:100%;display:inline-block;padding:2vh 1vw;}
 
@@ -369,6 +375,7 @@ a.member_left_a_btn{width:100%;display:inline-block;padding:2vh 1vw;}
 
 .login_fb_a{display:inline-block;width:49%;margin-right:1%;letter-spacing:0.05em;background-color:#152B51;color:#FFF;}
 .login_google_a{display:inline-block;width:50%;letter-spacing:0.05em;background-color:#C40001;color:#FFF;}
+.login_fb_a:hover, .login_google_a:hover, .login_a_btn:hover{color:#FFF;}
 
 /*STORE*/
 .shop_page_top{border-bottom:1px #D3D4D4 solid; padding: 20px 0 20px 0;}

@@ -433,6 +433,43 @@ $(function(){
         </div>
     </div>
     <div class="back_top"></div>
+    
+    <!-- 服務/會員條款視窗 -->
+    <div class="modal fade" id="service_window" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content edit_style">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">會員服務條款</h4>
+                </div>
+                <div class="modal-body">
+                	<p style="color:#003F00;">以下為文字編輯內容，目前編排僅示意用途。</p>
+                	<strong>一、個人資料蒐集之種類</strong><br>
+					我們會依據本網站提供之服務，請您提供必要之資料：<br>
+					<br>
+					基本資料：包含會員資料、姓名、性別、身分證統一編號、出生年月日、聯絡電話、聯絡地址、電子郵件信箱等以利聯繫。<br>
+                    健康記錄：例如裸視視力、矯正視力、及其他與隱形眼鏡、度數配鏡等配戴相關之健康紀錄等資料﹐<br>
+                    使用習慣：例如：使用產品之種類、使用本服務之紀錄、寶島眼鏡各門市的消費紀錄及模式等。<br>
+                    配送資料：包含收件人之姓名、聯絡電話、聯絡地址及其他必要配送聯絡資料。<br>
+                    帳務資料：當您有實際消費行為時，我們會留存您的帳務資料。<br>
+                    使用者IP及站內瀏覽活動：為提升服務品質，本網站會依照所提供服務之性質，記錄使用者的IP位址、以及在本網站相關網站內的瀏覽活動(例如，使用者所使用的軟硬體、所點選的網頁)等資料，但是這些資料僅供作流量分析和網路行為調查，以便於改善本站相關網站的服務品質，這些資料也只是總量上的分析，不會和特定個人相連繫。<br>
+                    權利通知資料：我們基於市場分析、贈獎活動、會員及客戶權益通知、或提供現在或未來寶島眼鏡網站平台衍生之其他服務或附隨以上各樣服務，為必要作業將請您提供其他資料。 依據法務部頒佈之「個人資料保護法之特定目的及個人資料之類別」，蒐集之個人資料類別如下：<br>  
+                    (1) C001辨識個人者，如姓名、職稱、住址、住家電話號碼、行動電話、網路平臺申請之帳號、通訊及戶籍地址、電子郵遞地址、憑證卡序號、憑證序號、提供網路身分認證或申辦查詢服務之紀錄及其他任何可辨識資料本人者等<br>
+                    (2) C002辨識財務者，如金融機構帳戶之號碼與姓名、信用卡或簽帳卡之號碼、個人之其他號碼或帳戶等。<br>
+                    (3) C003政府資料中之辨識者，如身分證號碼等。<br>
+                    (4) C011個人描述，如年齡、性別、出生年月日等。<br>
+                    (5) C093財務交易，如收付金額、信用額度、支付方式、往來紀錄等。<br>
+                    (6) C102約定或契約，如關於交易、商業、法律或其他契約等。<br>
+                    (7) Ｃ111健康紀錄，如治療與診斷紀錄、檢驗結果等。<br>
+                    (8) C131書面文件之檢索，如未經自動化機器處理之書面文件之代號等。<br>
+                    (9) C132未分類之資料，如無法歸類之檔案、報告或電子郵件等。<br>
+            	</div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
+    </div>
 </div><!--content END-->
 
 
@@ -480,7 +517,7 @@ $(function(){
         </div>
         <div class="row footer_bottom">
         	<div class="max_width">
-        		<div class=" footer_bottom_right"><a href="#">服務條款</a></div>
+        		<div class=" footer_bottom_right" data-toggle="modal" data-target="#service_window">服務條款</div>
             	<div class=" footer_bottom_left">© 2016 wenhsiung.com - ALL RIGHTS RESERVED</div>
             </div>
         </div>
