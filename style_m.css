@@ -1,4 +1,4 @@
-/*用bootstrap3讓div等高*/
+﻿/*用bootstrap3讓div等高*/
 .equalheight {
   display: table;
   width: 100%;
@@ -33,7 +33,7 @@
 /*product_detail*/
 .product_detail_page{ padding:0 10% 2% 10%;}
 .product_detail_page_left{ padding:2%; margin:2% 0;}
-.product_page_left_menu > .row{height:151px;}
+.product_page_left_menu > form > .row{height:151px;}
 .product_detail_page_right{padding:2%; margin:2% 0;}
 .product_detail_page_right_title{padding-bottom:10%;}
 .product_detail_page_choose .css_td{padding:4% 0;}
