@@ -27,43 +27,10 @@
 <link rel="stylesheet" media="screen and (max-width: 767px)" href="style_m_mobile.css" />
 <link rel="stylesheet" media="screen and (min-width: 768px)" href="style_m.css" />
 <script src="https://use.fontawesome.com/9d6bc01732.js"></script>
-</head>
-<script>
-$(document).ready(function(){
-	$('.favor_slider').slick({
-  		infinite: false,
-  		slidesToShow: 3,
-  		slidesToScroll: 1,
-		vertical:true,
-		verticalSwiping:true,
-		arrows: true,
-		prevArrow: $('.arrow_up'),
-		nextArrow: $('.arrow_down'),
-  		responsive: [
-    	{
-   			breakpoint: 768,
-      		settings: {
-        		slidesToShow: 2,
-        		slidesToScroll: 1,
-        		infinite: true,
-				arrows: false
-      		}
-    	}
-    	// You can unslick at a given breakpoint now by adding:
-    	// settings: "unslick"
-    	// instead of a settings object
-  		]
-	});
-	$(".back_top").click(function(){
-		jQuery("html,body").animate({
-			scrollTop:0
-		},500);
-	});
-});
-</script>
-<style>
 
-</style>
+<script src="js/page.js"></script>
+</head>
+
 <body>
 <header>
 <div class="container-fluid header">
@@ -77,7 +44,7 @@ $(document).ready(function(){
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-                <a href="#"><i class="fa fa-shopping-cart visible-xs navbar-toggle" aria-hidden="true"></i></a>
+                <a href="shop.html"><i class="fa fa-shopping-cart visible-xs navbar-toggle" aria-hidden="true"></i></a>
                 <a href="#"><form class="form-inline visible-xs navbar-toggle header_search_form"  id="postForm_1" name="postForm_1" action="product_search.html">
     				<input type="text" name="search" id="search" name="search">
                 </form></a>
@@ -146,9 +113,9 @@ $(document).ready(function(){
                 		</form>
                     </li>
                     </li>
-					<li class="header_menu_link visible-lg visible-md visible-sm"><a href="m_shop.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+					<li class="header_menu_link visible-lg visible-md visible-sm"><a href="shop.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
 				</ul>
-			</div><!--/.nav-collapse -->
+			</div>
 		</div><!--/.container-fluid -->
 	</nav>
 </div>
@@ -175,11 +142,11 @@ $(document).ready(function(){
                 </div>
             </div>
             <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12 m_page_right">
-                <form name="postForm_2" id="postForm_2" action="reserve_2.html">
+                <form>
                     <div class="m_page_right_inner">
                         <div class="m_page_right_titel">商品清單</div>
                         <div class=" table-responsive reserve_page_item">
-                            <form name="postForm_3" id="postForm_3" method="post" action="reserve.html">
+                            <form>
                                 <table class="table">
                                     <tbody>
                                         <tr>
@@ -194,11 +161,11 @@ $(document).ready(function(){
                                         </tr>
                                     </tbody>
                                 </table>
-                                <button type="submit" form="postForm_3" class="reserve_page_item_del"><i class="fa fa-times" aria-hidden="true"></i></button>
+                            	<button type="submit" class="reserve_page_item_del"><i class="fa fa-times" aria-hidden="true"></i></button>
                             </form>
                         </div>
                         <div class=" table-responsive reserve_page_item">
-                            <form name="postForm_3" id="postForm_3" method="post" action="reserve.html">
+                            <form>
                                 <table class="table">
                                     <tbody>
                                         <tr>
@@ -213,11 +180,11 @@ $(document).ready(function(){
                                         </tr>
                                     </tbody>
                                 </table>
-                                <button type="submit" form="postForm_3" class="reserve_page_item_del"><i class="fa fa-times" aria-hidden="true"></i></button>
+                            	<button type="submit" class="reserve_page_item_del"><i class="fa fa-times" aria-hidden="true"></i></button>
                             </form>
                         </div>
                         <div class=" table-responsive reserve_page_item">
-                            <form name="postForm_3" id="postForm_5" method="post" action="reserve.html">
+                            <form>
                                 <table class="table">
                                     <tbody>
                                         <tr>
@@ -232,7 +199,7 @@ $(document).ready(function(){
                                         </tr>
                                     </tbody>
                                 </table>
-                                <button type="submit" form="postForm_5" class="reserve_page_item_del"><i class="fa fa-times" aria-hidden="true"></i></button>
+                            	<button type="submit" class="reserve_page_item_del"><i class="fa fa-times" aria-hidden="true"></i></button>
                             </form>
                         </div>
                     </div>
@@ -347,7 +314,7 @@ $(document).ready(function(){
                         </div>
                     </div>
                     <div class="row m_page_bottom_btn">
-                        <a href="reserve_glasses_2.html"><button type="submit" form="postFrom_2" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 add_next">確定預約</button></a>
+                        <a href="reserve_glasses_2.html"><button type="submit" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 add_next">確定預約</button></a>
                         <a href="product_sunglasses.html"><button class="col-lg-6 col-md-6 col-sm-6 col-xs-6 add_cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i>　繼續選框</button></a>
                         <a href="product_sunglasses.html"><button class="col-lg-6 col-md-6 col-sm-6 col-xs-6 add_cancel">取消預約</button></a>
                     </div>

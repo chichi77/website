@@ -22,49 +22,21 @@
 <link rel="stylesheet" href="css/slick-theme.css"/>
 <script src="js/slick.min.js"></script>
 
+<!-- Include KillerCarousel CSS -->
+<link href="css/killercarousel.css" type="text/css" rel="stylesheet" />
+
+<!-- Include KillerCarousel JavaScript -->
+<script type="text/javascript" src="js/killercarousel.js"></script>
+
 <!--style-->
 <link href="style.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" media="screen and (max-width: 767px)" href="style_m_mobile.css" />
 <link rel="stylesheet" media="screen and (min-width: 768px)" href="style_m.css" />
 <script src="https://use.fontawesome.com/9d6bc01732.js"></script>
 
-<!-- Include KillerCarousel CSS -->
-<link href="css/killercarousel.css" type="text/css" rel="stylesheet" />
-
-<!-- Include KillerCarousel JavaScript -->
-<script type="text/javascript" src="js/killercarousel.js"></script>
-        
- 
+<script src="js/page.js"></script>
 </head>
-<script>
-$(document).ready(function(){
-	
-	$(".back_top").click(function(){
-		jQuery("html,body").animate({
-			scrollTop:0
-		},500);
-	});
-	
-	
-	$('.kc-wrap').KillerCarousel({
-		// Default natural width of carousel.
-		width: 1000,
-		// Item spacing in 3d (has CSS3 3d) mode.
-		spacing3d: 400,
-		// Item spacing in 2d (no CSS3 3d) mode. 
-		spacing2d: 200,
-		showShadow: true,
-		showReflection: true,
-		// Looping mode.
-		infiniteLoop: true,
-		// Scale at 75% of parent element.
-		autoScale: 50
-	});
-});
-</script>
-<style>
 
-</style>
 <body>
 <header>
 <div class="container-fluid header">
@@ -78,7 +50,7 @@ $(document).ready(function(){
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-                <a href="#"><i class="fa fa-shopping-cart visible-xs navbar-toggle" aria-hidden="true"></i></a>
+                <a href="shop.html"><i class="fa fa-shopping-cart visible-xs navbar-toggle" aria-hidden="true"></i></a>
                 <a href="#"><form class="form-inline visible-xs navbar-toggle header_search_form"  id="postForm_1" name="postForm_1" action="product_search.html">
     				<input type="text" name="search" id="search" name="search">
                 </form></a>
@@ -147,9 +119,9 @@ $(document).ready(function(){
                 		</form>
                     </li>
                     </li>
-					<li class="header_menu_link visible-lg visible-md visible-sm"><a href="m_shop.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+					<li class="header_menu_link visible-lg visible-md visible-sm"><a href="shop.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
 				</ul>
-			</div><!--/.nav-collapse -->
+			</div>
 		</div><!--/.container-fluid -->
 	</nav>
 </div>

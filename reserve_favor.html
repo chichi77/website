@@ -27,47 +27,10 @@
 <link rel="stylesheet" media="screen and (max-width: 767px)" href="style_m_mobile.css" />
 <link rel="stylesheet" media="screen and (min-width: 768px)" href="style_m.css" />
 <script src="https://use.fontawesome.com/9d6bc01732.js"></script>
+
+<script src="js/page.js"></script>
 </head>
-<script>
-$(document).ready(function(){
-	$('.favor_slider').slick({
-  		infinite: false,
-  		slidesToShow: 3,
-  		slidesToScroll: 1,
-		vertical:true,
-		verticalSwiping:true,
-		arrows: true,
-		prevArrow: $('.arrow_up'),
-		nextArrow: $('.arrow_down'),
-  		responsive: [
-    	{
-   			breakpoint: 768,
-      		settings: {
-        		slidesToShow: 2,
-        		slidesToScroll: 1,
-        		infinite: true,
-				arrows: false
-      		}
-    	}
-    	// You can unslick at a given breakpoint now by adding:
-    	// settings: "unslick"
-    	// instead of a settings object
-  		]
-	});
-	$(".back_top").click(function(){
-		jQuery("html,body").animate({
-			scrollTop:0
-		},500);
-	});
-});
-function check_all(obj,cName) { 
-    var checkboxs = document.getElementsByName(cName); 
-    for(var i=0;i<checkboxs.length;i++){checkboxs[i].checked = obj.checked;} 
-} 
-</script>
-<style>
-.col_3.reserve_page_item_txt{word-break: break-all; padding-top:3% !important;}
-</style>
+
 <body>
 <header>
 <div class="container-fluid header">
@@ -81,7 +44,7 @@ function check_all(obj,cName) {
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-                <a href="#"><i class="fa fa-shopping-cart visible-xs navbar-toggle" aria-hidden="true"></i></a>
+                <a href="shop.html"><i class="fa fa-shopping-cart visible-xs navbar-toggle" aria-hidden="true"></i></a>
                 <a href="#"><form class="form-inline visible-xs navbar-toggle header_search_form"  id="postForm_1" name="postForm_1" action="product_search.html">
     				<input type="text" name="search" id="search" name="search">
                 </form></a>
@@ -150,9 +113,9 @@ function check_all(obj,cName) {
                 		</form>
                     </li>
                     </li>
-					<li class="header_menu_link visible-lg visible-md visible-sm"><a href="m_shop.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+					<li class="header_menu_link visible-lg visible-md visible-sm"><a href="shop.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
 				</ul>
-			</div><!--/.nav-collapse -->
+			</div>
 		</div><!--/.container-fluid -->
 	</nav>
 </div>
@@ -179,65 +142,59 @@ function check_all(obj,cName) {
                 </div>
             </div>
             <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 m_page_right">
-                <form name="postForm_2" id="postForm_2" action="reserve_2.html">
+                <form>
                     <div class="m_page_right_inner">
                         <div class="m_page_right_titel">商品比較</div>
                         <div class=" table-responsive reserve_page_item">
                         	<input type="checkbox" name="item" value=""  form="postForm_3" class="reserve_page_item_del" />
-                            <form name="postForm_3" id="postForm_3" method="post" action="reserve.html">
-                                <table class="table">
-                                    <tbody>
-                                        <tr>
-                                            <td class="col_1 w3">鏡框</td>
-                                            <td class="col_2 w2">名稱</td>
-                                            <td class="col_3">尺寸規格</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="col_1"><a href="product_glasses_detail.html"><div class=" reserve_page_item_img" style="background-image:url(images/product_1.jpg)"></div></a></td>
-                                            <td class="col_2 reserve_page_item_txt">RAY-BAN<br>RX5154</td>
-                                            <td class="col_3 reserve_page_item_txt">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </form>
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td class="col_1">鏡框</td>
+                                        <td class="col_2">名稱</td>
+                                        <td class="col_3">尺寸規格</td>
+                                    </tr>
+                                	<tr>
+                                    	<td class="col_1"><a href="product_glasses_detail.html"><div class=" reserve_page_item_img" style="background-image:url(images/product_1.jpg)"></div></a></td>
+                                    	<td class="col_2 reserve_page_item_txt">RAY-BAN<br>RX5154</td>
+                                    	<td class="col_3 reserve_page_item_txt">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</td>
+                                	</tr>
+                            	</tbody>
+                        	</table>
                         </div>
                         <div class=" table-responsive reserve_page_item">
                         	<input type="checkbox" name="item" value=""  form="postForm_3" class="reserve_page_item_del" />
-                            <form name="postForm_3" id="postForm_3" method="post" action="reserve.html">
-                                <table class="table">
-                                    <tbody>
-                                        <tr>
-                                            <td class="col_1">鏡框</td>
-                                            <td class="col_2">名稱</td>
-                                            <td class="col_3">尺寸規格</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="col_1"><a href="product_glasses_detail.html"><div class=" reserve_page_item_img" style="background-image:url(images/product_1.jpg)"></div></a></td>
-                                            <td class="col_2 reserve_page_item_txt">RAY-BAN<br>RX5154</td>
-                                            <td class="col_3 reserve_page_item_txt">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </form>
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td class="col_1">鏡框</td>
+                                        <td class="col_2">名稱</td>
+                                        <td class="col_3">尺寸規格</td>
+                                    </tr>
+                                	<tr>
+                                    	<td class="col_1"><a href="product_glasses_detail.html"><div class=" reserve_page_item_img" style="background-image:url(images/product_1.jpg)"></div></a></td>
+                                    	<td class="col_2 reserve_page_item_txt">RAY-BAN<br>RX5154</td>
+                                    	<td class="col_3 reserve_page_item_txt">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</td>
+                                	</tr>
+                            	</tbody>
+                        	</table>
                         </div>
                         <div class=" table-responsive reserve_page_item">
                         	<input type="checkbox" name="item" value=""  form="postForm_3" class="reserve_page_item_del" />
-                            <form name="postForm_3" id="postForm_5" method="post" action="reserve.html">
-                                <table class="table">
-                                    <tbody>
-                                        <tr>
-                                            <td class="col_1">鏡框</td>
-                                            <td class="col_2">名稱</td>
-                                            <td class="col_3">尺寸規格</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="col_1"><a href="product_glasses_detail.html"><div class=" reserve_page_item_img" style="background-image:url(images/product_1.jpg)"></div></a></td>
-                                            <td class="col_2 reserve_page_item_txt">RAY-BAN<br>RX5154</td>
-                                            <td class="col_3 reserve_page_item_txt">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </form>
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td class="col_1">鏡框</td>
+                                        <td class="col_2">名稱</td>
+                                        <td class="col_3">尺寸規格</td>
+                                    </tr>
+                                	<tr>
+                                    	<td class="col_1"><a href="product_glasses_detail.html"><div class=" reserve_page_item_img" style="background-image:url(images/product_1.jpg)"></div></a></td>
+                                    	<td class="col_2 reserve_page_item_txt">RAY-BAN<br>RX5154</td>
+                                    	<td class="col_3 reserve_page_item_txt">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</td>
+                                	</tr>
+                            	</tbody>
+                        	</table>
                         </div>
                         <img src="images/reserve_favor_help.jpg" width="100%">
                     </div>

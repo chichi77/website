@@ -32,113 +32,10 @@
 <link rel="stylesheet" media="screen and (max-width: 767px)" href="style_m_mobile.css" />
 <link rel="stylesheet" media="screen and (min-width: 768px)" href="style_m.css" />
 <script src="https://use.fontawesome.com/9d6bc01732.js"></script>
+
+<script src="js/page.js"></script>
 </head>
-<script>
-$(document).ready(function(){
-	$('.product_detail_page_choose').hide();
-	$('.product_detail_page_item').hide();
-	$('.favor_slider').slick({
-  		infinite: false,
-  		slidesToShow: 4,
-  		slidesToScroll: 1,
-		arrows: true,
-  		responsive: [
-    	{
-   			breakpoint: 768,
-      		settings: {
-        		slidesToShow: 2,
-        		slidesToScroll: 1,
-        		infinite: true,
-				arrows: false,
-				vertical:true,
-				verticalSwiping:true,
-      		}
-    	}
-    	// You can unslick at a given breakpoint now by adding:
-    	// settings: "unslick"
-    	// instead of a settings object
-  		]
-	});
-	$('.product_detail_page_slider').slick({
-  		slidesToShow: 1,
-  		slidesToScroll: 1,
-  		arrows: true,
-  		fade: true,
-  		asNavFor: '.product_detail_page_slider_ctr'
-	});
-	$('.product_detail_page_slider_ctr').slick({
-  		slidesToShow: 5,
-  		slidesToScroll: 1,
-  		asNavFor: '.product_detail_page_slider',
-  		dots: false,
-		arrows: false,
-  		centerMode: false,
-  		focusOnSelect: true
-	});
-	$('.product_detail_page_other_item').slick({
-		infinite: false,
-  		slidesToShow: 9,
-  		slidesToScroll: 1,
-		arrows: true,
-  		responsive: [
-    	{
-   			breakpoint: 768,
-      		settings: {
-        		slidesToShow: 4,
-        		slidesToScroll: 1,
-        		infinite: true,
-				arrows: false,
-      		}
-    	}
-		]
-	});
-});
-function change_txt(num){
-	if(num==1){
-		$(".product_detail_page_item_txt_1").show();
-		$(".product_detail_page_item_txt_2").hide();
-		$(".product_detail_page_item_txt_3").hide();
-		$(".product_detail_page_item_txt_titel_1").addClass("active");
-		$(".product_detail_page_item_txt_titel_2").removeClass("active");
-		$(".product_detail_page_item_txt_titel_3").removeClass("active");
-	}
-	else if(num==2){
-		$(".product_detail_page_item_txt_1").hide();
-		$(".product_detail_page_item_txt_2").show();
-		$(".product_detail_page_item_txt_3").hide();
-		$(".product_detail_page_item_txt_titel_1").removeClass("active");
-		$(".product_detail_page_item_txt_titel_2").addClass("active");
-		$(".product_detail_page_item_txt_titel_3").removeClass("active");
-	}
-	else{
-		$(".product_detail_page_item_txt_1").hide();
-		$(".product_detail_page_item_txt_2").hide();
-		$(".product_detail_page_item_txt_3").show();
-		$(".product_detail_page_item_txt_titel_1").removeClass("active");
-		$(".product_detail_page_item_txt_titel_2").removeClass("active");
-		$(".product_detail_page_item_txt_titel_3").addClass("active");
-	}
-}
-$(function(){ 
-	$(".back_top").click(function(){
-		jQuery("html,body").animate({
-			scrollTop:0
-		},500);
-	});
-});
-	/*$(function() {
-    	 $("#jqzoom").jqzoom( //绑定图片放大插件jqzoom
-         	{
-         		zoomWidth: 230,
-         		zoomHeight: 230,
-         		position: 'right'
-         	}
-    	);
-    });*/
-</script>
-<style>
-.null_div{height:90px;}
-</style>
+
 <body>
 <header>
 <div class="container-fluid header">
@@ -300,7 +197,7 @@ $(function(){
                 </div>
                 <div class="col-lg-5 col-md-5 col-sm-5 product_detail_page_right">
                     <div class="product_detail_page_right_title"><span>RAY-BAN</span><br>RX5154</div>
-                    <div class="null_div"></div><!--加高-->
+                    <div style="height:90px;"></div><!--加高-->
                     <div class="css_table w10 product_detail_page_choose">
                         <div class="css_tr product_detail_page_choose_color">
                             <div class="css_td w2 table_line">顏色</div>
