@@ -302,7 +302,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 .reserve_page_item{ position:relative; text-align:center;}
 .reserve_page_item_del{position: absolute; border: 0; background: #FFF; top:5px; left:5px; z-index:2;}
 .reserve_page_item_img {background-repeat:no-repeat; background-position: center center; background-size: cover; padding-bottom:52.56%; }
-.reserve_page_item_txt, .reserve_page_item_price{padding-top:6% !important;}
+.reserve_page_item_txt, .reserve_page_item_price{vertical-align: middle !important; word-break: break-all;}
 .reserve_page_item .col_1, .reserve_page_item .col_2{ border-right:1px #231815 solid; border-top: 0 !important; width:33.3%;}
 .reserve_page_item .col_3{border-top: 0 !important;}
 .reserve_page_item .table{margin:10px 0;}
