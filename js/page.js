@@ -47,7 +47,7 @@ $(document).ready(function() {
 		});
 		$('.product_detail_page_other_item').slick({
 			infinite: false,
-			slidesToShow: 9,
+			slidesToShow: 6,
 			slidesToScroll: 1,
 			arrows: true,
 			responsive: [
