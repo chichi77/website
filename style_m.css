@@ -11,6 +11,10 @@
 
 #navbar .dropdown:hover .dropdown-menu {display:block;}
 .navbar>.container-fluid .navbar-brand {margin-left:0}
+.header_menu_txt.dropdown{position:static;}
+.header_menu_txt.dropdown > .dropdown-menu{width:100%; background-color:#777; left:-1px;}
+.header_menu_txt.dropdown > .dropdown-menu > li{width:16%; display:inline-block;}
+.header_menu_txt.dropdown > .dropdown-menu > li > a{ padding:15px 0 !important;}
 
 .m_page_left_menu{margin: 70px 2% 0 0;}
 .m_page_left_menu .row{ padding:7px 0; border-bottom:1px #C0C1C1 solid; height:232px;}
