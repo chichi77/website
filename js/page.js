@@ -81,6 +81,33 @@ $(document).ready(function() {
 	}
 });
 
+function change_txt(num){
+	if(num==1){
+		$(".product_detail_page_item_txt_1").show();
+		$(".product_detail_page_item_txt_2").hide();
+		$(".product_detail_page_item_txt_3").hide();
+		$(".product_detail_page_item_txt_titel_1").addClass("active");
+		$(".product_detail_page_item_txt_titel_2").removeClass("active");
+		$(".product_detail_page_item_txt_titel_3").removeClass("active");
+	}
+	else if(num==2){
+		$(".product_detail_page_item_txt_1").hide();
+		$(".product_detail_page_item_txt_2").show();
+		$(".product_detail_page_item_txt_3").hide();
+		$(".product_detail_page_item_txt_titel_1").removeClass("active");
+		$(".product_detail_page_item_txt_titel_2").addClass("active");
+		$(".product_detail_page_item_txt_titel_3").removeClass("active");
+	}
+	else{
+		$(".product_detail_page_item_txt_1").hide();
+		$(".product_detail_page_item_txt_2").hide();
+		$(".product_detail_page_item_txt_3").show();
+		$(".product_detail_page_item_txt_titel_1").removeClass("active");
+		$(".product_detail_page_item_txt_titel_2").removeClass("active");
+		$(".product_detail_page_item_txt_titel_3").addClass("active");
+	}
+}
+
 function AddJavascript(){
 	$(function(){
 		$(".back_top").click(function(){
@@ -129,34 +156,6 @@ function AddJavascript(){
 				}
 			});
 		});
-	}
-	else if(URL.indexOf("product")!=-1&&URL.indexOf("detail")!=-1){
-		function change_txt(num){
-			if(num==1){
-				$(".product_detail_page_item_txt_1").show();
-				$(".product_detail_page_item_txt_2").hide();
-				$(".product_detail_page_item_txt_3").hide();
-				$(".product_detail_page_item_txt_titel_1").addClass("active");
-				$(".product_detail_page_item_txt_titel_2").removeClass("active");
-				$(".product_detail_page_item_txt_titel_3").removeClass("active");
-			}
-			else if(num==2){
-				$(".product_detail_page_item_txt_1").hide();
-				$(".product_detail_page_item_txt_2").show();
-				$(".product_detail_page_item_txt_3").hide();
-				$(".product_detail_page_item_txt_titel_1").removeClass("active");
-				$(".product_detail_page_item_txt_titel_2").addClass("active");
-				$(".product_detail_page_item_txt_titel_3").removeClass("active");
-			}
-			else{
-				$(".product_detail_page_item_txt_1").hide();
-				$(".product_detail_page_item_txt_2").hide();
-				$(".product_detail_page_item_txt_3").show();
-				$(".product_detail_page_item_txt_titel_1").removeClass("active");
-				$(".product_detail_page_item_txt_titel_2").removeClass("active");
-				$(".product_detail_page_item_txt_titel_3").addClass("active");
-			}
-		}
 	}
 	else if(URL.indexOf("store_detail")!=-1){
 		$(function(){
