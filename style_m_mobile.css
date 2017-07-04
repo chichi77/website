@@ -47,6 +47,7 @@
 
 /*product*/
 .product_page{ padding:0;}
+.product_page_inner { padding: 0 5% 2% 5%;}
 .product_page_left_menu{ padding:3% 2% 0 2%; background:none;}
 .product_page_left_menu .row {border:0;}
 .product_page_left_menu_item {padding:0 3px;}
