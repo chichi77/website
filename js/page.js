@@ -2,31 +2,6 @@ window.onload=AddJavascript;
 var URL = location.pathname;
 
 $(document).ready(function() {
-	$('.favor_slider').slick({
-		infinite: false,
-		slidesToShow: 3,
-		slidesToScroll: 1,
-		vertical:true,
-		verticalSwiping:true,
-		arrows: true,
-		prevArrow: $('.arrow_up'),
-		nextArrow: $('.arrow_down'),
-		responsive: [
-		{
-			breakpoint: 768,
-			settings: {
-				slidesToShow: 2,
-				slidesToScroll: 1,
-				infinite: true,
-				arrows: false
-			}
-		}
-		// You can unslick at a given breakpoint now by adding:
-		// settings: "unslick"
-		// instead of a settings object
-		]
-	});
-	
 	if(URL.indexOf("product")!=-1&&URL.indexOf("detail")!=-1){
 		$('.product_detail_page_slider').slick({
 			slidesToShow: 1,
@@ -62,22 +37,70 @@ $(document).ready(function() {
 			}
 			]
 		});
-	}
-	else if(URL.indexOf("store.html")!=-1){
-		$('.kc-wrap').KillerCarousel({
-			// Default natural width of carousel.
-			width: 1000,
-			// Item spacing in 3d (has CSS3 3d) mode.
-			spacing3d: 400,
-			// Item spacing in 2d (no CSS3 3d) mode. 
-			spacing2d: 200,
-			showShadow: true,
-			showReflection: true,
-			// Looping mode.
-			infiniteLoop: true,
-			// Scale at 75% of parent element.
-			autoScale: 50
+		$('.favor_slider').slick({
+			infinite: false,
+			slidesToShow: 5,
+			slidesToScroll: 1,
+			arrows: true,
+			responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					infinite: true,
+					arrows: false,
+					vertical:true,
+					verticalSwiping:true,
+				}
+			}
+			// You can unslick at a given breakpoint now by adding:
+			// settings: "unslick"
+			// instead of a settings object
+			]
 		});
+	}
+	else{
+		$('.favor_slider').slick({
+			infinite: false,
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			vertical:true,
+			verticalSwiping:true,
+			arrows: true,
+			prevArrow: $('.arrow_up'),
+			nextArrow: $('.arrow_down'),
+			responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					infinite: true,
+					arrows: false
+				}
+			}
+			// You can unslick at a given breakpoint now by adding:
+			// settings: "unslick"
+			// instead of a settings object
+			]
+		});
+		if(URL.indexOf("store.html")!=-1){
+			$('.kc-wrap').KillerCarousel({
+				// Default natural width of carousel.
+				width: 1000,
+				// Item spacing in 3d (has CSS3 3d) mode.
+				spacing3d: 400,
+				// Item spacing in 2d (no CSS3 3d) mode. 
+				spacing2d: 200,
+				showShadow: true,
+				showReflection: true,
+				// Looping mode.
+				infiniteLoop: true,
+				// Scale at 75% of parent element.
+				autoScale: 50
+			});
+		}
 	}
 });
 
