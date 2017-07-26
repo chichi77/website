@@ -261,6 +261,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 /*product_brand*/
 .product_page_item_brand{ background-color:#FFF; padding:3% 2%; margin:0 1% 1% 1%;}
 .product_page_item_brand img{width:100%}
+.product_page_item_brand_txt{margin-top:20px;}
 .product_page_item_brand_more{text-align:center; font-weight:bold; letter-spacing:1px; margin:50px 0 10px 0;}
 /*product_brand END*/
 
