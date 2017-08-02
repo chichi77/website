@@ -121,6 +121,7 @@ div{padding:0; margin:0; border:0; box-sizing: border-box;}
 
 /*index*/
 .index_page, .edit_page{background-color:#FFF;}
+.edit_page{padding:2% 5%;}
 .index_page_banner_img{width:100%;}
 .carousel-indicators li{ background-color:#A2A2A3; border:0; width:15px; height:15px; margin:0 10px 5px 10px;}
 .carousel-indicators .active {
@@ -198,6 +199,10 @@ div{padding:0; margin:0; border:0; box-sizing: border-box;}
 .add_cart{ background:#FF4026;}
 .add_cancel{ background:#ACACAD;}
 .add_next{ background:#26B7EC;}
+.back_page_btn{margin:40px 5% 0 5%;}
+.back_page_btn a{color:#333;}
+.back_page_btn a:hover{color:#555;}
+.back_page_btn i{margin-right:10px;}
 
 .public_inner_wrap{width:100%;margin:auto;padding:2% 10% 2% 10%;}
 input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus{border:solid thin #ABABAC;}
@@ -423,7 +428,9 @@ a.shop_list_button:hover{background:#999;color:#FFF;transition: all 0.5s ease 0s
 .news_page_num{padding:40px 0 20px 0;}
 
 /*NEWS_DETAIL*/
-.news_detail_right_box{background:#FFF;padding:20px 40px;}
+.news_detail_right_box{background:#FFF; padding:20px 40px;}
+.news_detail_box{margin-top:20px;}
+.news_detail_txt{margin:20px 0 0 0;}
 
 /*ABOUT*/
 .about_w_title_span{display:inline-block;width:100%;border-bottom:solid thin #CCC;position:relative;}
