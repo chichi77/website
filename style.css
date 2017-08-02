@@ -135,7 +135,6 @@ div{padding:0; margin:0; border:0; box-sizing: border-box;}
 #carouselExampleIndicators .carousel-control.right, #carouselExampleIndicators .carousel-control.left{font-size:80px; margin:24% 0; width: 8%; background: transparent; color: #F09648;}
 
 .carousel-indicators{bottom:0;}
-.index_page_news_img_box{ display:inline-block; vertical-align:top; width:33.33%;}
 .index_page_news_img{ background-repeat:no-repeat; background-size:cover; background-position:center center; width:100%; padding-bottom:75.22%;}
 .news_item{ padding:0; overflow:hidden;}
 /*mask*/
