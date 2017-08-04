@@ -194,12 +194,20 @@ function AddJavascript(){
 	}
 	else if(URL.indexOf("store_list")!=-1){
 		$(function(){
-			$('.btn').tooltip({title: "<h5>07-2221234</h5><h5>800 高雄市新興區50號</h3>", html: true, placement: "top"});
+			//$('.btn').tooltip({title: "<h5>07-2221234</h5><h5>800 高雄市新興區50號</h3>", html: true, placement: "top"});
+			$('.shop_list_area_menu_title').click(function(){
+				if($('.shop_list_area_menu').css('display')=="none"){
+					$('.shop_list_area_menu').slideDown();
+				}
+				else{
+					$('.shop_list_area_menu').slideUp();
+				}
+			})
 		});
 	}
 	else if(URL.indexOf("store")!=-1){
 		$(function(){
-			$('.btn').tooltip({title: "<h5>07-2221234</h5><h5>800 高雄市新興區50號</h3>", html: true, placement: "top"});
+			//$('.btn').tooltip({title: "<h5>07-2221234</h5><h5>800 高雄市新興區50號</h3>", html: true, placement: "top"});
 		});
 	}
 }

@@ -71,7 +71,11 @@
 /*SHOP*/
 
 /*SHOP_LIST*/
-.shop_list_outer_box{padding:50px;}
+.shop_list_outer_box{padding:50px 50px 100px 50px;}
+.shop_list_area_menu{padding:0 0 10px 0; border-bottom:1px #CCC solid; display:block !important;}
+.shop_list_area_menu>a{width:20%; float:left; padding:10px;}
+.shop_list_area_item:hover{background-color:#EEE;}
+.shop_list_area_item.active{background-color: #26B7EC; color:#FFF;}
 .shop_list_ul li{width:20%;padding:20px 10px;}
 
 /*SHOP_DETAIL*/

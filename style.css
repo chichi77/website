@@ -392,7 +392,19 @@ a.member_left_a_btn{width:100%;display:inline-block;padding:2vh 1vw;}
 .shop_aaaa{position: absolute;left: 10px;bottom: 10px;z-index: 100001;visibility: visible;display: block;padding: 2px;border: none;background:#FFF;width:130px;height:50px;}
 /*STORE_LIST*/
 .shop_list_outer_box{width:100%;background:#FFF;}
-.shop_list_ul li{display:inline-block;vertical-align:top;}
+.shop_list_area_box{}
+.shop_list_area_menu_title{background-color: #26B7EC; color:#FFF; padding:15px 0; text-align:center; cursor:pointer;}
+.shop_list_area_menu{text-align:center;}
+.shop_list_area_item{color:#333; padding:15px 0;}
+.shop_list_table_title{border-bottom:1px #666 solid; margin:30px 10px 10px 10px;}
+.shop_list_table_title h4{width:18%; background-color:#666;color:#FFF; text-align:center;padding:15px 0; margin:0;vertical-align:middle; font-size:1em;}
+.shop_list_table tr:hover{background-color:#EEE;}
+.shop_list_table{text-align:center;}
+.shop_list_table td{padding:10px;}
+.shop_list_table .name, .shop_list_table .tel, .shop_list_table .more{width:20%;}
+.shop_list_table .addr{width:40%;}
+.shop_list_table_more{background-color:#E15514; padding:7px 0; width: 80px; margin: auto; color: #FFF; font-size:0.9em;}
+.shop_list_ul li{}
 a.shop_list_button{width:100%;padding:10px 0;vertical-align:middle;background:#CCC;color:#000;border-radius:0;}
 a.shop_list_button:hover{background:#999;color:#FFF;transition: all 0.5s ease 0s;}
 /*STORE_DETAIL*/

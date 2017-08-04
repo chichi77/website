@@ -18,7 +18,7 @@
 /*header END*/
 
 /*right menu*/
-.menu_right{width:50px; padding:5px 5px; right:5px; top:30%;}
+.menu_right{width:50px; padding:5px 5px; right:5px; top:50%;}
 /*right menu END*/
 	
 .carousel-indicators li{ width:10px; height:10px; margin:0 4px;}
@@ -110,8 +110,16 @@
 .member_form_ul li div.member_form_divA .send_btn_style{width:90%;}
 
 /*SHOP_LIST*/
-.shop_list_outer_box{padding:10px;}
-.shop_list_ul li{width:50%;padding:10px 10px;}
+.shop_list_outer_box{padding:30px 10px 60px 10px;}
+.shop_list_area_menu{display:none;}
+.shop_list_area_item{width:100%;}
+.shop_list_area_item.active{background-color: #DDD; color:#333;}
+.shop_list_table_title h4{width:80px;}
+.shop_list_table .name, .shop_list_table .more{width:25%;}
+.shop_list_table .addr{width:50%;}
+.shop_list_table .tel{display:none;}
+.shop_list_ul{margin-top:20px;}
+.shop_list_ul li{display:inline-block; vertical-align:top;width:49.5%;padding:10px 10px;}
 .shop_list_area_select{width:100%;padding:10px 5px;margin:10px 0 20px 0;}
 
 /*SHOP_DETAIL*/
