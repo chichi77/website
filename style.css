@@ -175,7 +175,7 @@ div{padding:0; margin:0; border:0; box-sizing: border-box;}
 .footer_top .title{font-weight:bold;}
 .footer_top span {font-size:20px;}
 .footer_top div{ padding:2%;}
-.footer_bottom{ background:#969797; padding:2% 4%; color:#FFF; font-size:14px;}
+.footer_bottom{ background:#969797; padding:20px 4%; color:#FFF; font-size:14px;}
 .footer_bottom_right{ float:right; cursor:pointer;}
 .footer_bottom_left{}
 /*footer END*/
@@ -238,6 +238,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 .product_page_top_current_type{ font-size:14px; color:#727171;}
 .product_page_top_current_type span { font-size:18px; font-weight:bold; color:#231815; margin:0 0 0 5px;}
 .product_page_top_page_ctrl{text-align:right;}
+.product_page_top_page_ctrl .pagination>li>a{border-radius:0; background-image: linear-gradient(to bottom,#fff 0,#e0e0e0 100%); background-repeat: repeat-x; border-color:#CCC;}
 .product_page_left_menu{padding:10px; background:#FFF;}
 .product_page_left_menu span {font-size:12px;}
 .product_page_item_box{ }
@@ -395,14 +396,15 @@ a.member_left_a_btn{width:100%;display:inline-block;padding:2vh 1vw;}
 .shop_list_area_box{}
 .shop_list_area_menu_title{background-color: #26B7EC; color:#FFF; padding:15px 0; text-align:center; cursor:pointer;}
 .shop_list_area_menu{text-align:center;}
-.shop_list_area_item{color:#333; padding:15px 0;}
+.shop_list_area_item>a{color:#333; padding:15px 0; display:block;}
 .shop_list_table_title{border-bottom:1px #666 solid; margin:30px 10px 10px 10px;}
 .shop_list_table_title h4{width:18%; background-color:#666;color:#FFF; text-align:center;padding:15px 0; margin:0;vertical-align:middle; font-size:1em;}
 .shop_list_table tr:hover{background-color:#EEE;}
 .shop_list_table{text-align:center;}
 .shop_list_table td{padding:10px;}
 .shop_list_table .name, .shop_list_table .tel, .shop_list_table .more{width:20%;}
-.shop_list_table .addr{width:40%;}
+.shop_list_table .addr{width:40%; text-align:left;}
+.shop_list_table .tel{text-align:left;}
 .shop_list_table_more{background-color:#E15514; padding:7px 0; width: 80px; margin: auto; color: #FFF; font-size:0.9em;}
 .shop_list_ul li{}
 a.shop_list_button{width:100%;padding:10px 0;vertical-align:middle;background:#CCC;color:#000;border-radius:0;}
