@@ -211,3 +211,103 @@ function AddJavascript(){
 		});
 	}
 }
+
+function ChangeContactForm(Form_num){
+	var state=document.getElementsByClassName('contact_page_form').item(Form_num).style.display;
+	
+	$('.contact_page_form').hide();
+	$('.contact_menu>li').removeClass('active');
+	document.getElementsByClassName('contact_page_form').item(Form_num).style.display='block';
+	$('.contact_menu>li').eq(Form_num).addClass('active');
+}
+
+var $data_notify_default = "必填",
+	$data_notify_mail = "信箱錯誤",
+	$data_notify_pass = "請檢查密碼設定";
+	
+function check_submit(object) //FORM_CHECK
+{
+	
+	reEmail = /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z]+$/; 
+	object.find(".required").each(function() {
+        if($(this).val()==""){
+			$(this).addClass("invalid").next(".notify").remove();
+			if($(this).attr("data-notify")){
+				$(this).after("<span class='notify'>"+$(this).attr("data-notify")+"</span>");
+			}else{
+				$(this).after("<span class='notify'>"+$data_notify_default+"</span>");
+			}
+		}else if($(this).hasClass("mail_check")){ //E-mail Check
+			if($(this).val().search(reEmail) == "-1"){
+				$(this).addClass("invalid").next(".notify").remove();
+				$(this).after("<span class='notify'>"+$data_notify_mail+"</span>");
+			}else{
+				$(this).removeClass("invalid");
+				$(this).next(".notify").remove();
+			}
+		}else if($(this).hasClass("pw_check")){ //Password Check
+			if(!$(this).hasClass("pw_db_check")){
+				var $db_check = $(this).parents("form").find("input.pw_db_check");
+				if($(this).val().length < 6 || $(this).val().length > 12){
+					$(this).addClass("invalid").next(".notify").remove();
+					$(this).after("<span class='notify'>"+$data_notify_pass+"</span>");
+				}else{
+					$(this).removeClass("invalid");
+					$(this).next(".notify").remove();
+					//do pw db check
+					if($(this).val() != $db_check.val()){
+						$db_check.addClass("invalid").next(".notify").remove();
+						$db_check.after("<span class='notify'>"+$data_notify_pass+"</span>");
+						return false;
+					}
+
+				}
+			}else{ //if it's db_check_input
+				if($(this).val().length < 6 || $(this).val().length > 12){
+					$(this).addClass("invalid").next(".notify").remove();
+					$(this).after("<span class='notify'>"+$data_notify_pass+"</span>");
+				}else{
+					$(this).removeClass("invalid");
+					$(this).next(".notify").remove();
+				}
+			}
+			
+		}else{
+			$(this).removeClass("invalid");
+			$(this).next(".notify").remove();
+		}
+    });
+	
+	if (object.find("*").hasClass("invalid")){
+		return false;
+	}else{
+		return true;
+	};
+}
+
+$(function(){
+	$(".contact_page_form.service").submit(function(){
+		if (check_submit($(this))){
+			$(this).submit();
+		}else{
+			$(this).find(".invalid").eq(0).focus();
+			return false;
+		};
+	});
+	$(".contact_page_form.offer").submit(function(){
+		if (check_submit($(this))){
+			$(this).submit();
+		}else{
+			$(this).find(".invalid").eq(0).focus();
+			return false;
+		};
+	});
+	$(".contact_page_form.cooperation").submit(function(){
+		if (check_submit($(this))){
+			$(this).submit();
+		}else{
+			$(this).find(".invalid").eq(0).focus();
+			return false;
+		};
+	});
+})
