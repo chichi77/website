@@ -90,7 +90,7 @@
 .m_reserve_page_info_tabe{margin:2%; padding:2%; border:1px #C0C1C1 solid; width: 96%;}
 /*m_reserve END*/
 
-.login_a_btn, .send_btn_style{padding:1vh;font-size:1.8em;letter-spacing:0.1em;}
+.login_a_btn, .send_btn_style{padding:1vh;font-size:1.2em;letter-spacing:0.1em;}
 
 /*login*/
 .login_left_box, .login_right_box{padding:2vh 10vw 20vh 10vw;}
@@ -105,7 +105,7 @@
 .member_form_ul li{padding:20px 0;}
 .member_form_ul li div.member_form_div{width:35%;padding-left:10%;}
 .member_form_ul li div.member_form_div1{width:65%;}
-.member_form_ul li div.member_form_div1 input{width:90%;padding:10px 5px;}
+.member_form_ul li div.member_form_div1 input{width:90%;padding:5px 10px;}
 .member_form_ul li div.member_form_divA{width:65%;}
 .member_form_ul li div.member_form_divA .send_btn_style{width:90%;}
 
@@ -128,10 +128,16 @@
 
 /*NEWS*/
 .news_right_container, .news_detail_right_container{padding:0;}
-.news_topic_selector{width:48%;padding:5px;margin:2% 1%;}
+.news_topic_selector{width:100%;max-width: 400px;padding:5px;margin:10px 1%;}
 .news_item_ul li{padding:20px;}
 .news_detail_right_box{padding:20px;}
 
 /*ABOUT*/
 .about_w_title_box{top:-23px;}
 .about_w_title_text{padding:5px 10px;font-size:1.5em;}
+
+/*contact*/
+.contact_page_right_box{padding:0;}
+.contact_page_form_left{width: 33%; padding-left: 10%;}
+.contact_page_form_right{width: 65%;}
+.contact_page_form_right input[type="text"], .contact_page_form_right input[type="tel"], .contact_page_form_right textarea, .contact_page_form_right input[type="email"], .contact_page_form_right input[type="number"]{width:90%;}

@@ -57,7 +57,7 @@
 /*m_reserve*/
 /*m_reserve END*/
 
-.login_a_btn, .send_btn_style{padding:1vh;font-size:1.8em;letter-spacing:0.1em;}
+.login_a_btn, .send_btn_style{padding:1vh;font-size:1.3em;letter-spacing:0.1em;}
 
 /*login*/
 .login_left_box, .login_right_box{padding:2vh 5vw 20vh 5vw;}
@@ -86,7 +86,7 @@
 .member_form_ul li{padding:20px 0;}
 .member_form_ul li div.member_form_div{width:40%;padding-left:20%;}
 .member_form_ul li div.member_form_div1{width:60%;}
-.member_form_ul li div.member_form_div1 input{width:80%;padding:10px 5px;}
+.member_form_ul li div.member_form_div1 input{width:80%;padding:5px 10px;}
 .member_form_ul li div.member_form_divA{width:60%;}
 .member_form_ul li div.member_form_divA .send_btn_style{width:80%;}
 
@@ -98,3 +98,7 @@
 .about_bottom_left_box{border-right:solid thin #999;}
 .about_w_title_box{top:-35px;}
 .about_w_title_text{padding:10px 20px;font-size:2em;}
+
+/*contact*/
+.contact_page_left_box{background:#FFF;padding:10px;}
+.contact_menu{margin:10px 0;}
