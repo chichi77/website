@@ -350,7 +350,6 @@ input[type="radio" i]{ font-size:20px;}
 .m_reserve_page .m_page_right_inner .row{padding:15px 5%;}
 .m_reserve_page .reserve_page_item{padding:0 3%}
 .m_reserve_page_item_btn{ cursor:pointer;}
-.m_reserve_page_item .row.gray {background-color:#EEEEEE;}
 .m_reserve_page_info_tabe{margin:2%; padding:2%; border:1px #C0C1C1 solid;}
 .m_reserve_page_info_tabe table{margin:0;}
 .m_reserve_page_info_tabe .col_1, .m_reserve_page_info_tabe .col_2, .m_reserve_page_info_tabe .col_3, .m_reserve_page_info_tabe .col_4{border-top:0 !important;}
@@ -421,8 +420,8 @@ a.shop_list_button:hover{background:#999;color:#FFF;transition: all 0.5s ease 0s
 .store_d_open_time_right{vertical-align:top;text-align:center;}
 
 /*MEMBER*/
+.member_form_ul{padding:30px 0;background:#FFF;}
 .member_form_ul li{display:inline-block;width:100%;}
-.member_form_ul li:nth-child(even){background:#FFF;}
 .member_form_ul li div.member_form_div{display:inline-block;margin:0;}
 .member_form_ul li div.member_form_div1{display:inline-block;margin:0;}
 .member_form_ul li div.member_form_divA{display:inline-block;margin:0;}
