@@ -110,11 +110,11 @@
 .member_form_ul li div.member_form_divA .send_btn_style{width:90%;}
 
 /*SHOP_LIST*/
-.shop_list_outer_box{padding:30px 10px 60px 10px;}
+.shop_list_outer_box{padding:20px 10px 60px 10px;}
 .shop_list_area_menu{display:none;}
 .shop_list_area_item{width:100%;}
 .shop_list_area_item.active{background-color: #DDD; color:#333;}
-.shop_list_table_title h4{width:80px;}
+.shop_list_table_title h4{width:80px; padding:10px 0;}
 .shop_list_table .name, .shop_list_table .more{width:25%;}
 .shop_list_table .addr{width:50%;}
 .shop_list_table .tel{display:none;}
@@ -127,7 +127,7 @@
 
 
 /*NEWS*/
-.news_right_container, .news_detail_right_container{padding:0;}
+.news_right_container, .news_detail_right_container{padding:0; background:#FFF;}
 .news_topic_selector{width:100%;max-width: 400px;padding:5px;margin:10px 1%;}
 .news_item_ul li{padding:20px;}
 .news_detail_right_box{padding:20px;}
@@ -137,7 +137,8 @@
 .about_w_title_text{padding:5px 10px;font-size:1.5em;}
 
 /*contact*/
+.contact_page_box{padding:0;}
 .contact_page_right_box{padding:0;}
-.contact_page_form_left{width: 33%; padding-left: 10%;}
-.contact_page_form_right{width: 65%;}
+.contact_page_form_left{width: 33% !important; padding-left: 10%;}
+.contact_page_form_right{width: 65% !important;}
 .contact_page_form_right input[type="text"], .contact_page_form_right input[type="tel"], .contact_page_form_right textarea, .contact_page_form_right input[type="email"], .contact_page_form_right input[type="number"]{width:90%;}
