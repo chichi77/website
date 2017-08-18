@@ -149,6 +149,7 @@ function AddJavascript(){
 				autoplay: true,
 				autoplaySpeed: 2000,
 			});
+			$('.footer').css('border-top','0');
 		});
 	}
 	else if(URL.indexOf("login")!=-1){
