@@ -73,6 +73,7 @@ div{padding:0; margin:0; border:0; box-sizing: border-box;}
 #navbar .dropdown-toggle i {font-size:12px;}
 .navbar-header a { margin:0;}
 .dropdown-menu {padding:0;}
+.fa-shopping-cart:before{margin-right:5px;}
 .header_search_form{ background-color:transparent; border:0; padding:0; margin:10px 5px 0 5px;}
 .header_search_form input[type=text] {
     width: 30px;
