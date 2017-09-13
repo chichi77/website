@@ -291,6 +291,8 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 .product_detail_page_choose .right{ text-align:right;}
 .product_detail_page_choose .table_line{ border-bottom:1px #C0C1C1 solid;}
 .product_detail_page_choose_color img{width:20px;}
+.product_detail_page_activity{font-size:14px; margin:15px 0;}
+.product_detail_page_activity span{color:#FFF; background-color:red; padding:3px 8px; margin-right:10px;}
 .product_detail_page_outlink a{ color:#333335; font-size:24px; margin:0 5px;}
 .product_detail_page_favor_slider_img{background-repeat:no-repeat; background-position: center center; background-size: cover; padding-bottom:5%;}
 .product_detail_page_other{background-color:#FFF; padding:1.5% 2%; margin:1% 0 2% 0; border:1px #ACACAD solid; }
