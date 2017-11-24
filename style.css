@@ -25,7 +25,7 @@ a:hover {text-decoration:none}
 a:active {	text-decoration: none}
 
 .edit_style{padding:0;}
-.edit_style img{max-width:100%;}
+.edit_style img{max-width:100%; height:auto !important;}
 .edit_style *{max-width:100%;}
 .edit_style table{display:block;}
 .edit_style table thead,tbody,tfoot{display:table;width:100%;}
