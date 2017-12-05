@@ -1,11 +1,5 @@
 html{height:100%;}
-body {
-    height:100%;
-    margin:auto;
-	padding:0;
-	font-family:"Microsoft Jhenghei", "微軟正黑體", \5FAE\8EDF\6B63\9ED1\9AD4,Verdana, Arial, Helvetica, sans-serif;	
-	max-width:1920px;
-}
+body {font-family:"Microsoft Jhenghei", "微軟正黑體", \5FAE\8EDF\6B63\9ED1\9AD4,Verdana, Arial, Helvetica, sans-serif;}
 @media screen and (min-width:992px){
 	body{
 		font-size:16px !important;
@@ -28,7 +22,7 @@ a:active {	text-decoration: none}
 .edit_style img{max-width:100%; height:auto !important;}
 .edit_style *{max-width:100%;}
 .edit_style table{display:block;}
-.edit_style table thead,tbody,tfoot{display:table;width:100%;}
+.edit_style table thead,.edit_style table tbody,.edit_style table tfoot{display:table;width:100%;}
 .edit_style::after{content:'';clear:both;}
 
 input:focus, 
@@ -42,6 +36,7 @@ input[type="text"], input[type="tel"], textarea{padding:5px 10px;}
 .css_table{display:table}
 .css_tr{display:table-row;}
 .css_td{display:table-cell;}
+.table-responsive{overflow-x: hidden;}
 .w1{width:10%;}
 .w2{width:20%;}
 .w3{width:30%;}
@@ -363,6 +358,13 @@ input[type="radio" i]{ font-size:20px;}
 .m_reserve_page_bottom button{border-radius:0; padding:5px 8px;}
 .m_reserve_page_bottom .dir_ctr{text-align:right;}
 /*m_reserve END*/
+
+/*m_shop*/
+.shop_total_table{margin-bottom:0;}
+.shop_total_table .bg-inverse{border-right:0;}
+.shop_total_table .bg-gray{color:#FFF; border-right:1px #FFF solid;}
+.shop_total_table .bg-gray:nth-last-child(1){border-right:0;}
+/*m_shop END*/
 
 /*login*/
 .login_a, .register_a{display:inline-block;margin:0 5px 0 3px;background:#fff;padding:5px 10px;font-size:1.6em;color:#000;cursor:pointer;}
