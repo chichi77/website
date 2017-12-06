@@ -25,6 +25,7 @@ a:active {	text-decoration: none}
 .edit_style table thead,.edit_style table tbody,.edit_style table tfoot{display:table;width:100%;}
 .edit_style::after{content:'';clear:both;}
 
+button{border: 0;}
 input:focus, 
 textarea:focus, 
 button:focus {outline-style:none;box-shadow:none;border-color:transparent;border-radius:0;}
@@ -194,7 +195,7 @@ div{padding:0; margin:0; border:0; box-sizing: border-box;}
 .inner_page_left_favor_slider_txt .type{ margin:5px 0; font-weight:bold;}
 .inner_page_left_favor_slider_txt .price{ margin:5px 0; color:#E15514;}
 .add_cart{ background:#FF4026;}
-.add_cancel{ background:#ACACAD;}
+.add_cancel{ background:#26B7EC; /*#ACACAD;*/}
 .add_next{ background:#26B7EC;}
 .back_page_btn{margin:40px 5% 0 5%;}
 .back_page_btn a{color:#333;}
