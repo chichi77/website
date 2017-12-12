@@ -51,7 +51,8 @@
 
 /*reserve_2*/
 .reserve_2_page_table .col_1{ padding:20px 0 20px 10%; width:40%;}
-.reserve_2_page_table .col_2{ padding:15px 10% 15px 0; width:60%;}
+.reserve_2_page_table .col_2{ padding:20px 5% 20px 0; width:60%;}
+.reserve_2_page_table .col_2 .radio:nth-child(1){margin-top:0;}
 /*reserve_2 END*/
 
 /*m_reserve*/

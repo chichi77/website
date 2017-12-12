@@ -1,6 +1,7 @@
 window.onload=AddJavascript;
 var URL = location.pathname;
 
+//觸發slick
 $(document).ready(function() {
 	if(URL.indexOf("product")!=-1&&URL.indexOf("detail")!=-1){
 		$('.product_detail_page_slider').slick({
@@ -131,6 +132,7 @@ function change_txt(num){
 	}
 }
 
+//各頁JS
 function AddJavascript(){
 	$(function(){
 		$(".back_top").click(function(){
@@ -138,6 +140,56 @@ function AddJavascript(){
 				scrollTop:0
 			},500);
 		});
+		$('.menu_right ul li img').addClass('svg');
+		$('.m_page_left_menu_item img').addClass('svg');
+
+		jQuery('img.svg').each(function(){
+		    var $img = jQuery(this);
+		    var imgID = $img.attr('id');
+		    var imgClass = $img.attr('class');
+		    var imgURL = $img.attr('src');
+
+		    jQuery.get(imgURL, function(data) {
+		        // Get the SVG tag, ignore the rest
+		        var $svg = jQuery(data).find('svg');
+
+		        // Add replaced image's ID to the new SVG
+		        if(typeof imgID !== 'undefined') {
+		            $svg = $svg.attr('id', imgID);
+		        }
+		        // Add replaced image's classes to the new SVG
+		        if(typeof imgClass !== 'undefined') {
+		            $svg = $svg.attr('class', imgClass+' replaced-svg');
+		        }
+
+		        // Remove any invalid XML tags as per http://validator.w3.org
+		        $svg = $svg.removeAttr('xmlns:a');
+
+		        // Check if the viewport is set, if the viewport is not set the SVG wont't scale.
+		        if(!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
+		            $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'))
+		        }
+
+		        // Replace image with new SVG
+		        $img.replaceWith($svg);
+
+		    }, 'xml');
+
+		});
+
+		//右邊浮動選單
+		for(let i=0;i<$('.menu_right ul li').length;i++){
+			var reserve_num=parseInt($('.menu_right ul li').eq(1).text());
+			console.log("reserve_num:"+reserve_num);
+			if(reserve_num>0){
+				$('.menu_right ul li').eq(1).addClass('org');
+				
+			}
+			else{
+				$('.menu_right ul li').eq(1).removeClass('org');
+			}
+		}
+		
 		
 	});
 	
@@ -232,6 +284,7 @@ function AddJavascript(){
 	}*/
 }
 
+//聯絡表單換頁
 function ChangeContactForm(Form_num){
 	var state=document.getElementsByClassName('contact_page_form').item(Form_num).style.display;
 	
@@ -241,6 +294,8 @@ function ChangeContactForm(Form_num){
 	$('.contact_menu>li').eq(Form_num).addClass('active');
 }
 
+
+//表單檢查程式
 var $data_notify_default = "必填",
 	$data_notify_mail = "信箱錯誤",
 	$data_notify_pass = "請檢查密碼設定";
@@ -305,6 +360,7 @@ function check_submit(object) //FORM_CHECK
 	};
 }
 
+//表單檢查觸發
 $(function(){
 	$(".contact_page_form.service").submit(function(){
 		if (check_submit($(this))){
@@ -329,38 +385,5 @@ $(function(){
 			$(this).find(".invalid").eq(0).focus();
 			return false;
 		};
-	});
-	jQuery('img.svg').each(function(){
-	    var $img = jQuery(this);
-	    var imgID = $img.attr('id');
-	    var imgClass = $img.attr('class');
-	    var imgURL = $img.attr('src');
-
-	    jQuery.get(imgURL, function(data) {
-	        // Get the SVG tag, ignore the rest
-	        var $svg = jQuery(data).find('svg');
-
-	        // Add replaced image's ID to the new SVG
-	        if(typeof imgID !== 'undefined') {
-	            $svg = $svg.attr('id', imgID);
-	        }
-	        // Add replaced image's classes to the new SVG
-	        if(typeof imgClass !== 'undefined') {
-	            $svg = $svg.attr('class', imgClass+' replaced-svg');
-	        }
-
-	        // Remove any invalid XML tags as per http://validator.w3.org
-	        $svg = $svg.removeAttr('xmlns:a');
-
-	        // Check if the viewport is set, if the viewport is not set the SVG wont't scale.
-	        if(!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
-	            $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'))
-	        }
-
-	        // Replace image with new SVG
-	        $img.replaceWith($svg);
-
-	    }, 'xml');
-
 	});
 })
