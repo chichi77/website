@@ -134,135 +134,24 @@ function change_txt(num){
 
 //各頁JS
 function AddJavascript(){
-	$(function(){
-		$(".back_top").click(function(){
-			jQuery("html,body").animate({
-				scrollTop:0
-			},500);
-		});
-		$('.menu_right ul li img').addClass('svg');
-		$('.m_page_left_menu_item img').addClass('svg');
-
-		jQuery('img.svg').each(function(){
-		    var $img = jQuery(this);
-		    var imgID = $img.attr('id');
-		    var imgClass = $img.attr('class');
-		    var imgURL = $img.attr('src');
-
-		    jQuery.get(imgURL, function(data) {
-		        // Get the SVG tag, ignore the rest
-		        var $svg = jQuery(data).find('svg');
-
-		        // Add replaced image's ID to the new SVG
-		        if(typeof imgID !== 'undefined') {
-		            $svg = $svg.attr('id', imgID);
-		        }
-		        // Add replaced image's classes to the new SVG
-		        if(typeof imgClass !== 'undefined') {
-		            $svg = $svg.attr('class', imgClass+' replaced-svg');
-		        }
-
-		        // Remove any invalid XML tags as per http://validator.w3.org
-		        $svg = $svg.removeAttr('xmlns:a');
-
-		        // Check if the viewport is set, if the viewport is not set the SVG wont't scale.
-		        if(!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
-		            $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'))
-		        }
-
-		        // Replace image with new SVG
-		        $img.replaceWith($svg);
-
-		    }, 'xml');
-
-		});
-
-		//右邊浮動選單
-		for(let i=0;i<$('.menu_right ul li').length;i++){
-			var reserve_num=parseInt($('.menu_right ul li').eq(1).text());
-			console.log("reserve_num:"+reserve_num);
-			if(reserve_num>0){
-				$('.menu_right ul li').eq(1).addClass('org');
-				
-			}
-			else{
-				$('.menu_right ul li').eq(1).removeClass('org');
-			}
-		}
-		
-		
-	});
-	
 	if(URL.indexOf("index")!=-1){
-		$(function(){
-			$('.index_page_product_item_slider').slick({
-				slidesToShow: 5,
-				slidesToScroll: 1,
-				autoplay: true,
-				autoplaySpeed: 2000,
-			});
-			$('.footer').css('border-top','0');
-		});
 	}
 	else if(URL.indexOf("login")!=-1){
 		$(function(){
-			$(".login_a").click(function(){
-				$(this).css({"background":"#FFF","color":"#000"});
-				$(".register_a").css({"background":"#D6D6D6","color":"#000"});
-				$("#login_container").removeClass("hidden-xs hidden-sm");
-				$("#register_container").addClass("hidden-xs hidden-sm");
-			});
-			$(".register_a").click(function(){
-				$(this).css({"background":"#D6D6D6","color":"#000"});
-				$(".login_a").css({"background":"#FFF","color":"#000"});
-				$("#login_container").addClass("hidden-xs hidden-sm");
-				$("#register_container").removeClass("hidden-xs hidden-sm");
-			});
+			
 		});
 	}
 	else if(URL.indexOf("m_")!=-1){
 		$(function(){
-			$(".m_reserve_page_item_btn").click(function(){
-				num=this.innerHTML+"_more";
-				if(document.getElementById(num).style.display=="none"){
-					document.getElementById(num).style.display="block";
-				}
-				else{
-					document.getElementById(num).style.display="none";
-				}
-			});
+			
 			$('.footer').addClass('m_page_footer');
 			$('.back_top').addClass('m_page_back_top');
-		});
-	}
-	else if(URL.indexOf("store_detail")!=-1){
-		$(function(){
-			$(".a_tel").click(function(){
-				if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-					$(this).attr("href","tel:07-5227108");
-				}
-				else {
-					alert("僅限行動裝置使用!");
-				}
-			});
 		});
 	}
 	else if(URL.indexOf("store_list")!=-1){
 		$(function(){
 			//$('.btn').tooltip({title: "<h5>07-2221234</h5><h5>800 高雄市新興區50號</h3>", html: true, placement: "top"});
-			$('.shop_list_area_menu_title').click(function(){
-				if($('.shop_list_area_menu').css('display')=="none"){
-					$('.shop_list_area_menu').slideDown();
-				}
-				else{
-					$('.shop_list_area_menu').slideUp();
-				}
-			})
-		});
-	}
-	else if(URL.indexOf("store")!=-1){
-		$(function(){
-			//$('.btn').tooltip({title: "<h5>07-2221234</h5><h5>800 高雄市新興區50號</h3>", html: true, placement: "top"});
+			
 		});
 	}
 	/*else if(URL.indexOf("shop")!=-1){
@@ -294,96 +183,106 @@ function ChangeContactForm(Form_num){
 	$('.contact_menu>li').eq(Form_num).addClass('active');
 }
 
-
-//表單檢查程式
-var $data_notify_default = "必填",
-	$data_notify_mail = "信箱錯誤",
-	$data_notify_pass = "請檢查密碼設定";
-	
-function check_submit(object) //FORM_CHECK
-{
-	
-	reEmail = /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z]+$/; 
-	object.find(".required").each(function() {
-        if($(this).val()==""){
-			$(this).addClass("invalid").next(".notify").remove();
-			if($(this).attr("data-notify")){
-				$(this).after("<span class='notify'>"+$(this).attr("data-notify")+"</span>");
-			}else{
-				$(this).after("<span class='notify'>"+$data_notify_default+"</span>");
-			}
-		}else if($(this).hasClass("mail_check")){ //E-mail Check
-			if($(this).val().search(reEmail) == "-1"){
-				$(this).addClass("invalid").next(".notify").remove();
-				$(this).after("<span class='notify'>"+$data_notify_mail+"</span>");
-			}else{
-				$(this).removeClass("invalid");
-				$(this).next(".notify").remove();
-			}
-		}else if($(this).hasClass("pw_check")){ //Password Check
-			if(!$(this).hasClass("pw_db_check")){
-				var $db_check = $(this).parents("form").find("input.pw_db_check");
-				if($(this).val().length < 6 || $(this).val().length > 12){
-					$(this).addClass("invalid").next(".notify").remove();
-					$(this).after("<span class='notify'>"+$data_notify_pass+"</span>");
-				}else{
-					$(this).removeClass("invalid");
-					$(this).next(".notify").remove();
-					//do pw db check
-					if($(this).val() != $db_check.val()){
-						$db_check.addClass("invalid").next(".notify").remove();
-						$db_check.after("<span class='notify'>"+$data_notify_pass+"</span>");
-						return false;
-					}
-
-				}
-			}else{ //if it's db_check_input
-				if($(this).val().length < 6 || $(this).val().length > 12){
-					$(this).addClass("invalid").next(".notify").remove();
-					$(this).after("<span class='notify'>"+$data_notify_pass+"</span>");
-				}else{
-					$(this).removeClass("invalid");
-					$(this).next(".notify").remove();
-				}
-			}
-			
-		}else{
-			$(this).removeClass("invalid");
-			$(this).next(".notify").remove();
-		}
-    });
-	
-	if (object.find("*").hasClass("invalid")){
-		return false;
-	}else{
-		return true;
-	};
-}
-
-//表單檢查觸發
 $(function(){
-	$(".contact_page_form.service").submit(function(){
-		if (check_submit($(this))){
-			$(this).submit();
-		}else{
-			$(this).find(".invalid").eq(0).focus();
-			return false;
-		};
+	//共用區塊
+	//滑動到頂部
+	$(".back_top").click(function(){
+		jQuery("html,body").animate({
+			scrollTop:0
+		},500);
 	});
-	$(".contact_page_form.offer").submit(function(){
-		if (check_submit($(this))){
-			$(this).submit();
-		}else{
-			$(this).find(".invalid").eq(0).focus();
-			return false;
-		};
+
+	//svg處理
+	$('.menu_right ul li img').addClass('svg');
+	$('.m_page_left_menu_item img').addClass('svg');
+	jQuery('img.svg').each(function(){
+	    var $img = jQuery(this);
+	    var imgID = $img.attr('id');
+	    var imgClass = $img.attr('class');
+	    var imgURL = $img.attr('src');
+
+	    jQuery.get(imgURL, function(data) {
+	        // Get the SVG tag, ignore the rest
+	        var $svg = jQuery(data).find('svg');
+
+	        // Add replaced image's ID to the new SVG
+	        if(typeof imgID !== 'undefined') {
+	            $svg = $svg.attr('id', imgID);
+	        }
+	        // Add replaced image's classes to the new SVG
+	        if(typeof imgClass !== 'undefined') {
+	            $svg = $svg.attr('class', imgClass+' replaced-svg');
+	        }
+
+	        // Remove any invalid XML tags as per http://validator.w3.org
+	        $svg = $svg.removeAttr('xmlns:a');
+
+	        // Check if the viewport is set, if the viewport is not set the SVG wont't scale.
+	        if(!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
+	            $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'))
+	        }
+
+	        // Replace image with new SVG
+	        $img.replaceWith($svg);
+
+	    }, 'xml');
+
 	});
-	$(".contact_page_form.cooperation").submit(function(){
-		if (check_submit($(this))){
-			$(this).submit();
-		}else{
-			$(this).find(".invalid").eq(0).focus();
-			return false;
-		};
+
+	//右邊浮動選單
+	for(let i=0;i<$('.menu_right ul li').length;i++){
+		var reserve_num=parseInt($('.menu_right ul li').eq(1).text());
+		if(reserve_num>0){
+			$('.menu_right ul li').eq(1).addClass('org');
+			
+		}
+		else{
+			$('.menu_right ul li').eq(1).removeClass('org');
+		}
+	}
+
+
+	//首頁
+	$('.index_page_product_item_slider').slick({
+		slidesToShow: 5,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 2000,
+	});
+
+	//登入頁
+	$(".login_a").click(function(){
+		$(this).css({"background":"#FFF","color":"#000"});
+		$(".register_a").css({"background":"#D6D6D6","color":"#000"});
+		$("#login_container").removeClass("hidden-xs hidden-sm");
+		$("#register_container").addClass("hidden-xs hidden-sm");
+	});
+	$(".register_a").click(function(){
+		$(this).css({"background":"#D6D6D6","color":"#000"});
+		$(".login_a").css({"background":"#FFF","color":"#000"});
+		$("#login_container").addClass("hidden-xs hidden-sm");
+		$("#register_container").removeClass("hidden-xs hidden-sm");
+	});
+
+	//門市頁面縣市選擇手機板目錄
+	$('.shop_list_area_menu_title').click(function(){
+		if($('.shop_list_area_menu').css('display')=="none"){
+			$('.shop_list_area_menu').slideDown();
+		}
+		else{
+			$('.shop_list_area_menu').slideUp();
+		}
+	})
+
+	//會員頁
+	//會員預約查詢點擊可查看明細
+	$(".m_reserve_page_item_btn").click(function(){
+		num=this.innerHTML+"_more";
+		if(document.getElementById(num).style.display=="none"){
+			document.getElementById(num).style.display="block";
+		}
+		else{
+			document.getElementById(num).style.display="none";
+		}
 	});
 })
