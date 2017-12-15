@@ -132,47 +132,6 @@ function change_txt(num){
 	}
 }
 
-//各頁JS
-function AddJavascript(){
-	if(URL.indexOf("index")!=-1){
-	}
-	else if(URL.indexOf("login")!=-1){
-		$(function(){
-			
-		});
-	}
-	else if(URL.indexOf("m_")!=-1){
-		$(function(){
-			
-			$('.footer').addClass('m_page_footer');
-			$('.back_top').addClass('m_page_back_top');
-		});
-	}
-	else if(URL.indexOf("store_list")!=-1){
-		$(function(){
-			//$('.btn').tooltip({title: "<h5>07-2221234</h5><h5>800 高雄市新興區50號</h3>", html: true, placement: "top"});
-			
-		});
-	}
-	/*else if(URL.indexOf("shop")!=-1){
-		$(function(){
-			$('.deliver_way').hide();
-			
-			$('.reserve_2_page_table input[name="deliver"]').click(function(e) {
-				$('.deliver_way').hide();
-                var deliver_way=$('.reserve_2_page_table input[name="deliver"]').index(this);
-				console.log("deliver_way"+deliver_way);
-				if(deliver_way==0){
-					$('.deliver_way.store').show();
-				}
-				else if(deliver_way==1){
-					$('.deliver_way.online').show();
-				}
-            });
-		});
-	}*/
-}
-
 //聯絡表單換頁
 function ChangeContactForm(Form_num){
 	var state=document.getElementsByClassName('contact_page_form').item(Form_num).style.display;
@@ -285,4 +244,20 @@ $(function(){
 			document.getElementById(num).style.display="none";
 		}
 	});
+
+
+	//購物車頁面
+	/*$('.deliver_way').hide();
+			
+	$('.reserve_2_page_table input[name="deliver"]').click(function(e) {
+		$('.deliver_way').hide();
+        var deliver_way=$('.reserve_2_page_table input[name="deliver"]').index(this);
+		console.log("deliver_way"+deliver_way);
+		if(deliver_way==0){
+			$('.deliver_way.store').show();
+		}
+		else if(deliver_way==1){
+			$('.deliver_way.online').show();
+		}
+    });*/
 })
