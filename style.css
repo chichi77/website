@@ -111,7 +111,7 @@ div{padding:0; margin:0; border:0; box-sizing: border-box;}
 .menu_right li{margin:10px 0;}
 .menu_right li a{color:#333;}
 .menu_right span{font-size:0.8em;}
-.menu_right .svg{width:85%; height: auto;}
+.menu_right .svg{width:32px; height: 32px;}
 .right_menu_txt{width:20px; height:20px; margin:auto; padding:1px 0 0 0; border-radius:50%; color:#FFF; font-size:0.8em;}
 .menu_right li.org .right_menu_txt{background-color:#E15514;}
 .menu_right li.org i{color: #E15514;}
