@@ -217,6 +217,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 .m_page{ background:#EEE;}
 .m_page_inner{ padding:0 10% 2% 10%;}
 .m_page_left_menu_item{padding:10px 0 10px 15px;}
+.m_page_left_menu_item:nth-child(2), .m_page_left_menu_item:nth-child(4){display: none;}
 .m_page_left_menu_item.active .fa-check{color: green;}
 .m_page_left_menu{padding:10px; background:#FFF;}
 .m_page_left_menu_item, .m_page_left_menu_item a{color:#777;}

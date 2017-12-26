@@ -43,7 +43,7 @@
 .m_page_inner{ padding:0 0 2% 0;}
 .m_page_left_menu{ padding:0; background:#FFF; position: fixed; z-index: 3; width:100%; left: 0; bottom: 0; box-shadow: 2px -2px 4px rgba(0,0,0,0.3);}
 .m_page_left_menu .row {border:0;}
-.m_page_left_menu_item{padding: 1px 0 0 0; text-align: center;}
+.m_page_left_menu_item{padding: 1px 0 0 0; text-align: center; width: 50%;}
 .m_page_left_menu_item a{padding: 10px 5px; display: block; color: #333}
 .m_page_left_menu_item .svg{width: 25px; height: auto;margin: auto; padding: 3px 0;}
 .m_page_left_menu_item.active a{background-color: #22AAE2; color: #fff; font-weight:normal;}
