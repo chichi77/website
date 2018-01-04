@@ -71,36 +71,10 @@ div{padding:0; margin:0; border:0; box-sizing: border-box;}
 .dropdown-menu {padding:0;}
 .fa-shopping-cart::before{margin-right:5px;}
 .header_search_form{ background-color:transparent; border:0; padding:0; margin:10px 5px 0 5px;}
-.header_search_form input[type=text] {
-    width: 30px;
-	z-index: 2;
-	border:0;
-	padding: 5px;
-	border-radius:3px;
-	background-color: transparent;
-    background-image: url(images/searchicon.png);
-	background-size:auto 65%;
-    background-position: 10px 5px;
-    background-repeat: no-repeat;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-	position: relative;
-}
-.header_search_form input[type=text]::before {
-    content: "\f002";
-    font-family: FontAwesome;
-	color:#FFF;
-    left:0px;
-    position:absolute;
-    top:0;
- }
+.header_search_form input[type=text] {width: 30px;z-index: 2;border:0;padding: 5px;border-radius:3px;background-color: transparent;background-image: url(images/searchicon.png);background-size:auto 65%;background-position: 10px 5px;background-repeat: no-repeat;-webkit-transition: width 0.4s ease-in-out;transition: width 0.4s ease-in-out;position: relative;}
+.header_search_form input[type=text]::before {content: "\f002";font-family: FontAwesome;color:#FFF;left:0px;position:absolute;top:0;}
 /* When the input field gets focus, change its width to 100% */
-.header_search_form input[type=text]:focus {
-	background-color: white;
-	background-image: url(images/searchicon_dark.png);
-	background-position: right 5px;
-    width: 300%;
-}
+.header_search_form input[type=text]:focus {background-color: white;background-image: url(images/searchicon_dark.png);background-position: right 5px;width: 300%;}
 /*header END*/
 
 /*right menu*/
@@ -203,6 +177,7 @@ div{padding:0; margin:0; border:0; box-sizing: border-box;}
 .back_page_btn a{color:#333;}
 .back_page_btn a:hover{color:#555;}
 .back_page_btn i{margin-right:10px;}
+.txt_red{color: #ED0000;}
 
 .public_inner_wrap{width:100%;margin:auto;padding:2% 10% 2% 10%;}
 input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, input[type="tel"]:focus, textarea:focus{border:solid thin #ABABAC;}
@@ -329,8 +304,11 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 .reserve_page_check_all{margin:2% 0 0 2%;}
 .reserve_page_userinfo{}
 .reserve_page_userinfo input{width:100%; padding:5px;}
+.reserve_page_updateinfo label{margin-right: 10px; font-weight:normal;}
+.reserve_page_updateinfo label input{width: auto;}
 .reserve_page_userinfo_submit{text-align:right;}
 .reserve_page_userinfo_submit input{background-color:#ACACAD; font-size: 16px; padding: 5px 20px; color:#FFF; border:0;}
+.reserve_page_requiredfield{text-align: right; font-size: 14px; padding: 15px 5% 0 5%;}
 
 .reserve_contact_page_item  .col_1,.reserve_contact_page_item  .col_3{width:30%;}
 .reserve_contact_page_item  .col_2{width:20%;}
