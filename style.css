@@ -279,6 +279,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 .product_detail_page_item_txt .active{background:#FFF;}
 .product_detail_page_item_txt_1, .product_detail_page_item_txt_2, .product_detail_page_item_txt_3{padding:2%; background-color:#FFF;}
 .product_detail_page_item_txt_2, .product_detail_page_item_txt_3{display:none;}
+.product_detail_page_item_txt.edit_style img{width: 100% !important;}
 .product_detail_page_bottom_box{ background-color:#FFF;}
 .product_detail_page_bottom img {width:100%;}
 .product_detail_page_favor{text-align:center;}
