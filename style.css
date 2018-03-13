@@ -189,7 +189,6 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 .page_bk{background-color:#EEE;}
 .modal-title{text-align:center; font-weight:bold; color: #2A9FD2;}
 
-.m_page{ background:#EEE;}
 .m_page_inner{ padding:0 10% 2% 10%;}
 .m_page_left_menu_item{padding:10px 0 10px 15px;}
 .m_page_left_menu_item:nth-child(2), .m_page_left_menu_item:nth-child(4){display: none;}
@@ -208,7 +207,6 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 .m_page_bottom_btn .add_cancel{ margin:10px 0 0 0;}
 
 /*product*/
-.product_page{background:#EEE;}
 .product_page_inner{ padding:0 7% 2% 7%;}
 .product_page button { border-radius:0; padding: 5px 8px;}
 .product_page_top{ border-bottom:1px #D3D4D4 solid; padding: 0 0 10px 0;}
