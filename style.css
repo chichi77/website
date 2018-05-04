@@ -191,7 +191,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 
 .m_page_inner{ padding:0 10% 2% 10%;}
 .m_page_left_menu_item{padding:10px 0 10px 15px;}
-.m_page_left_menu_item:nth-child(2), .m_page_left_menu_item:nth-child(4){display: none;}
+.member .m_page_left_menu_item:nth-child(2), .m_page_left_menu_item:nth-child(4){display: none;}
 .m_page_left_menu_item.active .fa-check{color: green;}
 .m_page_left_menu{padding:10px; background:#FFF;}
 .m_page_left_menu_item, .m_page_left_menu_item a{color:#777;}
@@ -320,6 +320,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 .reserve_2_page_table .col_1{ border-top: 0 !important;}
 .reserve_2_page_table .col_2{ border-top: 0 !important;}
 .reserve_2_page_table .black_select{width:70%; background-color:#595757;}
+.reserve_2_page_table .col_2 .black_select{ width: 45%; display: inline-block;}
 .reserve_2_page_table .col_1.bg-inverse, .reserve_2_page_table .col_2.bg-inverse{ padding-top:5px; padding-bottom:5px;}
 .bg-gray{ background-color:#ACACAD;}
 input[type="radio" i]{ font-size:20px;}
