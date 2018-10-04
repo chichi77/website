@@ -375,8 +375,7 @@ a.member_left_a_btn{width:100%;display:inline-block;padding:2vh 1vw;}
 
 .member_acount_topic{color:#2A9FD2;text-align:center;background:#fff;box-shadow:0 5px 2px 0px #D6D6D6;}
 
-.login_fb_a{display:inline-block;width:48.5%;margin-right:1%;letter-spacing:0.05em;background-color:#152B51;color:#FFF;}
-.login_google_a{display:inline-block;width:50%;letter-spacing:0.05em;background-color:#C40001;color:#FFF;}
+.login_fb_a{display:inline-block;width:100%;margin-right:1%;letter-spacing:0.05em;background-color:#152B51;color:#FFF;}
 .login_fb_a:hover, .login_google_a:hover, .login_a_btn:hover{color:#FFF;}
 
 /*STORE*/
@@ -417,7 +416,12 @@ a.shop_list_button:hover{background:#999;color:#FFF;transition: all 0.5s ease 0s
 .member_form_ul li div.member_form_div1{display:inline-block;margin:0;}
 .member_form_ul li div.member_form_divA{display:inline-block;margin:0;}
 
-.m_info_form_div{display:inline-block;width:50%;vertical-align:top;padding:0 10px;text-align:center;}
+.m_info_form_div{font-size: 0; text-align: center; font-size: 0; padding: 0 5%;}
+.m_info_form_div .send_btn_style{font-size: 16px; display: block; width: 100%;}
+.m_info_form_div .inline{display:inline-block;width:47.5%;vertical-align:top; text-align:center;}
+.m_info_form_div .send_btn_style:nth-child(1){margin-right: 2.5%;}
+.m_info_form_div .send_btn_style:nth-child(2){margin-left: 2.5%;}
+.m_info_form_div .send_btn_style:nth-child(3){margin-top: 4%;}
 
 /*NEWS*/
 .news_left_container{background:#FFF;padding:10px;}

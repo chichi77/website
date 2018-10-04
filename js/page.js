@@ -1,4 +1,3 @@
-window.onload=AddJavascript;
 var URL = location.pathname;
 
 //觸發slick
